@@ -1,23 +1,32 @@
 {
   "files": {
     "main.css": "/website-2.0/static/css/main.9a1f62cf.css",
-    "main.js": "/website-2.0/static/js/main.8872cf61.js",
+    "main.js": "/website-2.0/static/js/main.5316a8c7.js",
     "static/js/787.933ba907.chunk.js": "/website-2.0/static/js/787.933ba907.chunk.js",
     "static/media/nasavid.mp4": "/website-2.0/static/media/nasavid.6f405261f41b88c996cd.mp4",
     "static/media/robot-2019.jpg": "/website-2.0/static/media/robot-2019.addb5a8fadde653bffc4.jpg",
     "static/media/balloon-team.jpeg": "/website-2.0/static/media/balloon-team.d10c78cdaffb0151a08e.jpeg",
-    "static/media/interview.gif": "/website-2.0/static/media/interview.fc648a6aa2da50b6eb03.gif",
     "static/media/rocksat17.jpeg": "/website-2.0/static/media/rocksat17.b210f202407220b10172.jpeg",
+    "static/media/rocksat-2017.jpeg": "/website-2.0/static/media/rocksat-2017.c9a89dcfe4c960b6bbe2.jpeg",
     "static/media/rmc-team.jpeg": "/website-2.0/static/media/rmc-team.561f51639b7c19ac8f95.jpeg",
+    "static/media/rocksat-2011.bmp": "/website-2.0/static/media/rocksat-2011.579d918557625999d457.bmp",
+    "static/media/rocksat-2016.png": "/website-2.0/static/media/rocksat-2016.1d5fc4826a9969022407.png",
+    "static/media/rocksat-2020.jpeg": "/website-2.0/static/media/rocksat-2020.ba2f799f3cec9638af11.jpeg",
+    "static/media/rocksat-2014-3.jpeg": "/website-2.0/static/media/rocksat-2014-3.9e5b17cbc3db2bf42333.jpeg",
+    "static/media/interview.jpeg": "/website-2.0/static/media/interview.d7dac261b2fab2f15ad7.jpeg",
     "static/media/expo.jpeg": "/website-2.0/static/media/expo.955d476a5f01ae1307ea.jpeg",
     "static/media/vex.jpeg": "/website-2.0/static/media/vex.6d9bad6dedd277ad40a2.jpeg",
     "static/media/space-background.jpeg": "/website-2.0/static/media/space-background.69fbb27cddb9c58e24ad.jpeg",
     "static/media/rmc-2011.jpeg": "/website-2.0/static/media/rmc-2011.660760b7e53d0cfdf1e4.jpeg",
+    "static/media/rocksat-2014-2.jpeg": "/website-2.0/static/media/rocksat-2014-2.bfe5545c3f1c206b0396.jpeg",
     "static/media/club-filing.jpg": "/website-2.0/static/media/club-filing.3b96867d536efd76717d.jpg",
     "static/media/ethernet-screwup.jpg": "/website-2.0/static/media/ethernet-screwup.0fc7dff8e79fe4974987.jpg",
     "static/media/nasa.png": "/website-2.0/static/media/nasa.14d078eeb3212dc0108c.png",
     "static/media/arrow.png": "/website-2.0/static/media/arrow.4ff3c2d4a7ac666ef788.png",
+    "static/media/rocksat-2014-1.jpeg": "/website-2.0/static/media/rocksat-2014-1.4b4bd0c9e2e4603cf65e.jpeg",
+    "static/media/rocksat-2019.jpeg": "/website-2.0/static/media/rocksat-2019.cdf9c3f2d1d424b48c79.jpeg",
     "static/media/rmc-2010.jpeg": "/website-2.0/static/media/rmc-2010.6f5df0c919d52bc67a7e.jpeg",
+    "static/media/rocksat-2015.jpeg": "/website-2.0/static/media/rocksat-2015.0f147ea1eb3d076ac57f.jpeg",
     "static/media/rmc-2009.jpeg": "/website-2.0/static/media/rmc-2009.153681afb1f1da6f613e.jpeg",
     "static/media/botshop.jpeg": "/website-2.0/static/media/botshop.20d19c93c2549db86fce.jpeg",
     "static/media/robotics-red.png": "/website-2.0/static/media/robotics-red.afaf182f27c819a001f5.png",
@@ -30,11 +39,11 @@
     "static/media/arcamajora3-heavy-webfont.woff2": "/website-2.0/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
     "index.html": "/website-2.0/index.html",
     "main.9a1f62cf.css.map": "/website-2.0/static/css/main.9a1f62cf.css.map",
-    "main.8872cf61.js.map": "/website-2.0/static/js/main.8872cf61.js.map",
+    "main.5316a8c7.js.map": "/website-2.0/static/js/main.5316a8c7.js.map",
     "787.933ba907.chunk.js.map": "/website-2.0/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1f62cf.css",
-    "static/js/main.8872cf61.js"
+    "static/js/main.5316a8c7.js"
   ]
 }
