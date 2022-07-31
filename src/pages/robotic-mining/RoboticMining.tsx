@@ -10,9 +10,9 @@ import Styles, { GALLERY_INFO } from './RoboticMiningStyles'
 
 // Images
 import robot from '../../assets/pics/robot-2019.jpg'
-import outreachPhoto1 from '../../assets/pics/outreach/vex.jpg'
-import outreachPhoto2 from '../../assets/pics/outreach/expo.jpg'
-import outreachPhoto3 from '../../assets/pics/outreach/interview.gif'
+import outreachPhoto1 from '../../assets/pics/outreach/vex.jpeg'
+import outreachPhoto2 from '../../assets/pics/outreach/expo.jpeg'
+import outreachPhoto3 from '../../assets/pics/outreach/interview.jpeg'
 import title from '../../assets/pics/logos/robotics-red.png'
 import RmcDescription from './SectionDescription'
 
@@ -73,7 +73,7 @@ const RoboticMining = (): React.ReactElement => {
 					</div>
 				</Styles.OutreachGallery>
 
-				<PhotoGallery id={'photo-gallery'} galleryInfo={ GALLERY_INFO }/>
+				<PhotoGallery galleryInfo={ GALLERY_INFO }/>
 			</Styles.SpaceBackground>
 
 			<Contact/>

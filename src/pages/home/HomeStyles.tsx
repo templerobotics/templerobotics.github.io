@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import Button from '../general/button/Button'
 import { SlideInfo } from '../general/carousel/CarouselStyles'
 import { COLORS, FONT_FAMILY, PATHS } from '../../tools/Constants'
-import slide1 from '../../assets/pics/carousel/rocksat17.jpg'
-import slide2 from '../../assets/pics/carousel/rmc-team.jpg'
-import slide3 from '../../assets/pics/carousel/ballon-team.jpg'
+import slide1 from '../../assets/pics/carousel/rocksat17.jpeg'
+import slide2 from '../../assets/pics/carousel/rmc-team.jpeg'
+import slide3 from '../../assets/pics/carousel/balloon-team.jpeg'
 
 
 export default class HomeStyles {

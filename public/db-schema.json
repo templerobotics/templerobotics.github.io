@@ -5,7 +5,7 @@
         "events": {
             "type": "array",
             "items": {
-                "required": ["id", "date", "title", "description", "location"],
+                "required": ["id", "date", "title", "description", "location", "time"],
                 "properties": {
                     "title": {
                         "type": "string",
@@ -18,11 +18,15 @@
                     "date": {
                         "type": "string",
                         "pattern": "[0-9]{2}\/[0-9]{2}\/[0-9]{4}|^(?![\\s\\S])",
-                        "description": "Date of the event"
+                        "description": "Date of the event. Blank for TBD. Example: 08/26/2022."
                     },
                     "location": {
                         "type": "string",
                         "description": "Location of the event"
+                    },
+                    "time": {
+                        "type": "string",
+                        "description": "Time of the event. Blank for TBD"
                     },
                     "id": { "type": "number" }
                 },

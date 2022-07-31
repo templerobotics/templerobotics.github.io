@@ -45,7 +45,7 @@ const Navigation = (): React.ReactElement => {
 						<NavLink eventKey='2' as={Link} to={Constants.PATHS.EVENTS} onClick={scrollToTop}>Events</NavLink>
 						<NavLink eventKey='3' as={Link} to={Constants.PATHS.SPONSORS} onClick={scrollToTop}>Sponsors</NavLink>
 						<NavLink eventKey='7' as={Link} to={Constants.PATHS.ROBOTICS} onClick={scrollToTop}>Robotics</NavLink>
-						<NavLink eventKey='7' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>Rocksat</NavLink>
+						<NavLink eventKey='7' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>RockSat</NavLink>
 						{/* <NavLink eventKey='4' as={HashLink} to='/home#programs'>Programs</NavLink> */}
 						{/* <NavLink eventKey='5' as={HashLink} to='/home#sponsors'>Sponsors</NavLink> */}
 						{/* <NavLink eventKey='6' as={HashLink} to='/home#contact'>Contact Us</NavLink> */}

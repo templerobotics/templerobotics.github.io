@@ -1,10 +1,11 @@
 import React from 'react'
 import { AiOutlineDash } from 'react-icons/ai'
-import EventSection from './EventSection'
+import EventSection from './EventList'
 
 import Styles from './EventsStyles'
 
 import { getEventsFromDatabase } from '../../tools/HelpfulFunctions'
+import Contact from '../contact/Contact'
 
 const Events = (): React.ReactElement => {
 	const events = getEventsFromDatabase()
@@ -17,6 +18,7 @@ const Events = (): React.ReactElement => {
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
 			<EventSection events={events}/>
+			<Contact/>
 		</Styles.EventsContainer>
 	)
 }

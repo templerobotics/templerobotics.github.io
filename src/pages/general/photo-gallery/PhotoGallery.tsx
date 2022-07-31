@@ -54,6 +54,7 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 
 		return (
 			<Styles.GalleryContainer id={this.props.id}>
+				<Styles.Title>{this.props.title ?? 'Photo Gallery'}</Styles.Title>
 				<Styles.Chevron as={BsChevronLeft} size={parseFloat(width) * 0.05} onClick={this.slideLeft}/>
 				<Styles.SlideContainer gridColumns={gridColumns}>
 					{this.renderSlide()}

@@ -7,17 +7,18 @@ import Contact from '../contact/Contact'
 import SectionDescription from '../robotic-mining/SectionDescription'
 
 // Custom styles
-import Styles, { TableInfo } from './RocksatStyles'
+import Styles, { GALLERY_INFO, TableInfo } from './RocksatStyles'
 
 // Images
-import rocksat from '../../assets/pics/carousel/rocksat17.jpg'
+import rocksat from '../../assets/pics/carousel/rocksat17.jpeg'
 import createTable from '../../tools/Table'
+import PhotoGallery from '../general/photo-gallery/PhotoGallery'
 
 const Rocksat = (): React.ReactElement => {
 	return (
 		<Styles.RocksatContainer>
 			<Styles.TitleContainer className='title-container'>
-				<h2 className='title'>Temple Rocksat</h2>
+				<h2 className='title'>Temple RockSat-C</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
 			<SectionDescription
@@ -29,6 +30,7 @@ const Rocksat = (): React.ReactElement => {
 				src='https://spacegrant.colorado.edu/rs-c-2020-current-teams/rsc-tu-20'/>
 			{/* TODO: Put in a section for previous senior design projects */}
 			{createTable(TableInfo)}
+			<PhotoGallery galleryInfo={ GALLERY_INFO }/>
 			<Contact/>
 		</Styles.RocksatContainer>
 	)

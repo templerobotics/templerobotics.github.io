@@ -10,6 +10,7 @@ export interface GalleryImage {
 
 export type PhotoGalleryProps = {
 	id?: string,
+	title?: string,
 	galleryInfo: GalleryImage[]
 }
 
@@ -24,10 +25,17 @@ export default class PhotoGalleryStyles {
 		height: 100%;
 		display: grid;
 		grid-template-columns: auto calc(var(--vh) * 0.7) auto;
-		grid-template-rows: 100%;
+		grid-template-rows: 25% 75%;
 		padding: 5%;
 		justify-items: center;
 		align-items: center;
+	`
+
+	static readonly Title = styled.div`
+		grid-column-start: 1;
+		grid-column-end: 4;
+		${FONT_FAMILY.TITLE}
+		font-size: calc(var(--vh) * .04);
 	`
 
 	static readonly Chevron = styled(BsChevronLeft || BsChevronRight)`
@@ -50,6 +58,7 @@ export default class PhotoGalleryStyles {
 	static readonly ImageContainer = styled.div`
 		display: grid;
 		grid-template-rows: calc(var(--vh) * 0.15) calc(var(--vh) * 0.035) auto;
+		row-gap: 5%;
 		width: 100%;
 
 		& > * {

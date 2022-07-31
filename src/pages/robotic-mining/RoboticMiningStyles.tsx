@@ -1,18 +1,18 @@
 import styled from 'styled-components'
-import { FONT_FAMILY, PHOTO_GALLERY } from '../../tools/Constants'
+import { FONT_FAMILY, RMC_PHOTO_GALLERY } from '../../tools/Constants'
 import { GalleryImage } from '../general/photo-gallery/PhotoGalleryStyles'
-import spaceBackground from '../../assets/pics/outreach/space-background.jpg'
+import spaceBackground from '../../assets/pics/outreach/space-background.jpeg'
 
 export const GALLERY_INFO: GalleryImage[] = [
-	{ image: PHOTO_GALLERY[0], title: '2018', description: 'Our ME\'s filing away to make sure everything fits perfectly.' },
-	{ image: PHOTO_GALLERY[1], title: '2018', description: 'BoxBot, of course we still love you.' },
-	{ image: PHOTO_GALLERY[2], title: '2017', description: `Our team plugged the ethernet cable into the wrong port. 
+	{ image: RMC_PHOTO_GALLERY[0], title: '2018', description: 'Our ME\'s filing away to make sure everything fits perfectly.' },
+	{ image: RMC_PHOTO_GALLERY[1], title: '2018', description: 'BoxBot, of course we still love you.' },
+	{ image: RMC_PHOTO_GALLERY[2], title: '2017', description: `Our team plugged the ethernet cable into the wrong port. 
 		Good thing duct tape fixes everything!` },
-	{ image: PHOTO_GALLERY[3], title: '2017', description: `Our hotel didnt like us working on the robot in our rooms. 
+	{ image: RMC_PHOTO_GALLERY[3], title: '2017', description: `Our hotel didn't like us working on the robot in our rooms. 
 		I guess we'll just use our vans.` },
-	{ image: PHOTO_GALLERY[4], title: '2011', description: 'The year our team autonomus was so good they had to change the rules' },
-	{ image: PHOTO_GALLERY[5], title: '2010', description: 'Scoops was born' },
-	{ image: PHOTO_GALLERY[6], title: '2009', description: 'Our first team at the very first Robotics Mining Competition' }
+	{ image: RMC_PHOTO_GALLERY[4], title: '2011', description: 'The year our team\'s autonomous was so good they had to change the rules' },
+	{ image: RMC_PHOTO_GALLERY[5], title: '2010', description: 'Scoops was born' },
+	{ image: RMC_PHOTO_GALLERY[6], title: '2009', description: 'Our first team at the very first Robotics Mining Competition' }
 ]
 
 export default class RoboticMiningStyles {
@@ -22,7 +22,7 @@ export default class RoboticMiningStyles {
 		grid-template-rows: 
 			calc(var(--vh) * .4)    /* Intro heading */
 			calc(var(--vh) * .4)    /* Robot and competition description */
-			calc(var(--vh) * 1.6)   /* Outreach gallery and photo gallery */
+			calc(var(--vh) * 1.7)   /* Outreach gallery and photo gallery */
 			max(calc(var(--vh) * .15), 200px);  /* Contact info */
 		justify-content: center;
 		align-content: center;
@@ -103,7 +103,7 @@ export default class RoboticMiningStyles {
 		background-size: cover;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.4);
+		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
 		justify-items: center;
 		align-items: center;
 	`

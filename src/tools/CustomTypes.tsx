@@ -8,5 +8,6 @@ export type EventObject = {
 	title: string,
 	date: Date,
 	location: string,
+	time: string,
 	description: string
 }

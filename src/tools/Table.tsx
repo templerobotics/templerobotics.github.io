@@ -13,8 +13,7 @@ const CustomTable = styled.table`
 	}
 
 	& > tr {
-		background-color: ${COLORS.SECONDARY_DARK}7f;
-		backdrop-filter: blur(10px);
+		background-color: ${COLORS.SECONDARY_DARK}9f;
 	}
 `
 

@@ -25,11 +25,11 @@ export default class NavigationStyles {
 	`
 
 	static Logo = styled(Navbar.Brand)`
-		margin-left: 5%; /* TODO: change to relative based on screen width */
+		/* margin-left: 5%; TODO: change to relative based on screen width */
 		margin-right: 5%; /* TODO: change to relative based on screen width */
 		padding-left: 3%;
 		padding-right: 3%;
-		background: linear-gradient(90deg, ${COLORS.PRIMARY}, ${COLORS.PRIMARY}7f, ${COLORS.PRIMARY});
+		background: linear-gradient(90deg, ${COLORS.PRIMARY}, ${COLORS.PRIMARY}7f);
 		height: 100%;
 
 		& > .logo-container {

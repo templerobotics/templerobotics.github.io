@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { COLORS, FONT_FAMILY } from '../../tools/Constants'
 
-export default class EventSectionStyles {
-	static readonly EventSectionContainer = styled.div<{rows: number}>`
+export default class EventListStyles {
+	static readonly EventListContainer = styled.div<{rows: number}>`
 		width: 100%;
 		height: 100%;
 		display: grid;
@@ -16,8 +16,9 @@ export default class EventSectionStyles {
 		width: 80%;
 		height: 100%;
 		display: grid;
-		grid-template-columns: 30% 30% 40%;
+		grid-template-columns: 30% 30% auto;
 		grid-template-rows: 40% 60%;
+		grid-column-gap: 2%;
 		background-color: ${COLORS.PRIMARY};
         border-radius: calc(var(--vh) * .05);
 		justify-items: center;
@@ -36,7 +37,14 @@ export default class EventSectionStyles {
 			${FONT_FAMILY.TITLE}
 		}
 
-		& > .location,
+		& > .location {
+			height: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-rows: 50% 50%;
+			align-content: flex-start;
+		}
+
 		& > .description {
 			align-self: flex-start;
 		}

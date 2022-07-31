@@ -4,13 +4,14 @@ type EventJson = {
 	title: string,
 	date: string,
 	location: string,
+	time: string,
 	description: string
 }
 
-function sortByDate(eventa: EventObject, eventb: EventObject): number {
-	if (eventa.date > eventb.date || isNaN(eventa.date.getMonth())) {
+function sortByDate(eventA: EventObject, eventB: EventObject): number {
+	if (eventA.date > eventB.date || isNaN(eventA.date.getMonth())) {
 		return 1
-	} else if (eventa.date == eventb.date) {
+	} else if (eventA.date == eventB.date) {
 		return 0
 	}
 	return -1

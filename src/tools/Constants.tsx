@@ -28,14 +28,26 @@ export class COLORS {
 	static readonly SECONDARY_SCROLLBAR: Color = '#9d22357f'
 }
 
-export const PHOTO_GALLERY = [
-	require('../assets/pics/photo-gallery/club-filing.jpg'),
-	require('../assets/pics/photo-gallery/boxbot.png'),
-	require('../assets/pics/photo-gallery/ethernet-screwup.jpg'),
-	require('../assets/pics/photo-gallery/botshop.png'),
-	require('../assets/pics/photo-gallery/rmc-2011.jpg'),
-	require('../assets/pics/photo-gallery/rmc-2010.png'),
-	require('../assets/pics/photo-gallery/rmc-2009.png')
+export const RMC_PHOTO_GALLERY = [
+	require('../assets/pics/photo-gallery/rmc/club-filing.jpg'),
+	require('../assets/pics/photo-gallery/rmc/boxbot.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/ethernet-screwup.jpg'),
+	require('../assets/pics/photo-gallery/rmc/botshop.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/rmc-2011.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/rmc-2010.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/rmc-2009.jpeg')
+]
+
+export const ROCKSAT_PHOTO_GALLERY = [
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2020.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2019.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2017.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2016.png'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2015.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2014-3.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2014-2.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2014-1.jpeg'),
+	require('../assets/pics/photo-gallery/rocksat/rocksat-2011.bmp')
 ]
 
 export class CSS_STYLES {

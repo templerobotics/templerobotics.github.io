@@ -7,7 +7,8 @@ export default class EventsStyles {
 		grid-template-columns: 100%;
 		justify-items: center;
 		align-items: center;
-		grid-template-rows: calc(var(--vh) * .3)
+		grid-template-rows: 
+			calc(var(--vh) * .2)
 			calc(var(--vh) * ${props => props.numOfEvents} * .2)
 			calc(var(--vh) * .2);
 
