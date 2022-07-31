@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/website-2.0/static/css/main.9a1f62cf.css",
-    "main.js": "/website-2.0/static/js/main.73c93ceb.js",
+    "main.js": "/website-2.0/static/js/main.8872cf61.js",
     "static/js/787.933ba907.chunk.js": "/website-2.0/static/js/787.933ba907.chunk.js",
     "static/media/nasavid.mp4": "/website-2.0/static/media/nasavid.6f405261f41b88c996cd.mp4",
     "static/media/robot-2019.jpg": "/website-2.0/static/media/robot-2019.addb5a8fadde653bffc4.jpg",
     "static/media/balloon-team.jpeg": "/website-2.0/static/media/balloon-team.d10c78cdaffb0151a08e.jpeg",
+    "static/media/interview.gif": "/website-2.0/static/media/interview.fc648a6aa2da50b6eb03.gif",
     "static/media/rocksat17.jpeg": "/website-2.0/static/media/rocksat17.b210f202407220b10172.jpeg",
     "static/media/rmc-team.jpeg": "/website-2.0/static/media/rmc-team.561f51639b7c19ac8f95.jpeg",
-    "static/media/interview.jpeg": "/website-2.0/static/media/interview.d7dac261b2fab2f15ad7.jpeg",
     "static/media/expo.jpeg": "/website-2.0/static/media/expo.955d476a5f01ae1307ea.jpeg",
     "static/media/vex.jpeg": "/website-2.0/static/media/vex.6d9bad6dedd277ad40a2.jpeg",
     "static/media/space-background.jpeg": "/website-2.0/static/media/space-background.69fbb27cddb9c58e24ad.jpeg",
@@ -30,11 +30,11 @@
     "static/media/arcamajora3-heavy-webfont.woff2": "/website-2.0/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
     "index.html": "/website-2.0/index.html",
     "main.9a1f62cf.css.map": "/website-2.0/static/css/main.9a1f62cf.css.map",
-    "main.73c93ceb.js.map": "/website-2.0/static/js/main.73c93ceb.js.map",
+    "main.8872cf61.js.map": "/website-2.0/static/js/main.8872cf61.js.map",
     "787.933ba907.chunk.js.map": "/website-2.0/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1f62cf.css",
-    "static/js/main.73c93ceb.js"
+    "static/js/main.8872cf61.js"
   ]
 }
