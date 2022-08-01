@@ -31,9 +31,9 @@ export class COLORS {
 
 export const RMC_PHOTO_GALLERY = [
 	require('../assets/pics/photo-gallery/rmc/club-filing.jpg'),
-	require('../assets/pics/photo-gallery/rmc/boxbot.jpeg'),
-	require('../assets/pics/photo-gallery/rmc/ethernet-screwup.jpg'),
-	require('../assets/pics/photo-gallery/rmc/botshop.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/box-bot.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/ethernet-screw-up.jpg'),
+	require('../assets/pics/photo-gallery/rmc/bot-shop.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/rmc-2011.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/rmc-2010.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/rmc-2009.jpeg')

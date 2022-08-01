@@ -13,6 +13,7 @@ import Styles, { GALLERY_INFO, TABLE_INFO } from './RocksatStyles'
 // Images
 import rocksat from '../../assets/pics/carousel/rocksat17.jpeg'
 import PhotoGallery from '../general/photo-gallery/PhotoGallery'
+import rocksatProjectBrief from './rockSat-project-brief.pdf'
 
 const Rocksat = (): React.ReactElement => {
 	return (
@@ -27,7 +28,7 @@ const Rocksat = (): React.ReactElement => {
 				description='The RockSat-C program is a national program, run by the Colorado Space Grant Consortium
 				(CSGC), where students build rocket payloads to complete science missions. The payload is launched in a
 				rocket at Wallops Island and the payload completes its mission as it falls back to earth.'
-				src='https://spacegrant.colorado.edu/rs-c-2020-current-teams/rsc-tu-20'/>
+				src={rocksatProjectBrief}/>
 
 			<Table table={TABLE_INFO} />
 

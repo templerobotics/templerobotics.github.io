@@ -47,7 +47,7 @@ const RoboticMining = (): React.ReactElement => {
 						<h2>Vex State Sectionals</h2>
 						<p>
 							Our team members volunteered at the competition to help judge notebooks ref the playing the
-							feild and interview teams for award selection.
+							field and interview teams for award selection.
 						</p>
 					</div>
 					<div className='outreach-image-container'>
@@ -59,14 +59,14 @@ const RoboticMining = (): React.ReactElement => {
 					<div className='outreach-slide'>
 						<h2>Temple University TV</h2>
 						<p>
-							Our faculty advisor Dr. Helferty, a formor NASA employee, talks about how starting Temple Robotics
+							Our faculty advisor Dr. Helferty, a former NASA employee, talks about how starting Temple Robotics
 							and what it has become today.
 						</p>
 					</div>
 					<div className='outreach-slide'>
 						<h2>Philadelphia Robotics Expo</h2>
 						<p>
-							Our tableing event at the Philadelphia Robotics Expo where about 300 high school student came to see
+							Our tabling event at the Philadelphia Robotics Expo where about 300 high school student came to see
 							what philadelphia had to offer in robotics.
 						</p>
 					</div>

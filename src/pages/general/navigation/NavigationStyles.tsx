@@ -17,7 +17,7 @@ export default class NavigationStyles {
     		background-color: ${props => props.toggle ? `${COLORS.PRIMARY} !important` : 'transparent'};
 		}
 
-		/* The navbar items (navlinks) container */
+		/* The navbar items (nav-links) container */
 		& > .basic-navbar-links {
 			margin-right: 5%;
     		justify-content: flex-end;
