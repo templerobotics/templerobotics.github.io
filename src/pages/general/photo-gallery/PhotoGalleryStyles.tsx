@@ -39,8 +39,7 @@ export default class PhotoGalleryStyles {
 	`
 
 	static readonly Chevron = styled(BsChevronLeft || BsChevronRight)`
-		width: 100%;
-
+		font-size: calc(var(--vh) * .05);
 		:hover {
 			color: ${COLORS.HOVER_TEXT};
 			cursor: pointer;
@@ -99,6 +98,7 @@ export default class PhotoGalleryStyles {
 		grid-column: 2;
 		display: flex;
 		column-gap: 10%;
+		font-size: calc(var(--vh) * .02);
 
 		& > * {
 			-webkit-transition: color ${ANIMATION_TIME} linear;

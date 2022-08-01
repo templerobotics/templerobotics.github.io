@@ -22,7 +22,6 @@ const Home = (): React.ReactElement => {
 					<img src={nasaLogo} alt='NASA'/>
 					<p>Temple Space Exploration</p>
 				</div>
-				{/* TODO: Change motto */}
 				<Styles.LargeText>Shoot for the moon with us!</Styles.LargeText>
 				<Styles.SmallText>Visit us in the</Styles.SmallText>
 				<Styles.Header>
@@ -44,8 +43,13 @@ const Home = (): React.ReactElement => {
 			{/* Id used for linking */}
 			<Styles.SectionHeader id='sponsors'>
 				<h2>Help Temple Space Exploration get to the moon!</h2>
-				<Button source={'/sponsors'} local={true} text={'Become a Sponsor'} size={'large'}/>
+				<div className='button-container'>
+					<Button source={'https://temple-robotics.creator-spring.com/?'} text={'Buy Merchandise'} size={'large'}/>
+					<Button source={'/sponsors'} text={'Become a Sponsor'} size={'large'} local/>
+				</div>
 			</Styles.SectionHeader>
+
+			{/* TODO: Put in a merchandise section */}
 
 			<Contact/>
 		</Styles.HomeContainer>

@@ -45,10 +45,21 @@ type SectionDescriptionProps = {
 	title: string,
 	description: string,
 	src?: string,
-	button?: string
+	button?: string,
+	video?: boolean
 }
 
 export default class SectionDescription extends React.Component<SectionDescriptionProps, never> {
+	renderVisual = (): React.ReactElement => {
+		if (!this.props.video) {
+			return <img alt='logo' src={this.props.img} width='60%' id='web-logo'/>
+		}
+		return <video autoPlay muted loop playsInline>
+			<source src={this.props.img} type='video/mp4'/>
+			Your browser does not support the video tag.
+		</video>
+	}
+
 	render (): React.ReactElement {
 
 		return (
@@ -60,7 +71,8 @@ export default class SectionDescription extends React.Component<SectionDescripti
 						size='large' id='rmc-description-button' source={this.props.src} /> : <></>}
 				</div>
 				<div>
-					<img alt='logo' src={this.props.img} width='60%' id='web-logo'/>
+					{/* <img alt='logo' src={this.props.img} width='60%' id='web-logo'/> */}
+					{this.renderVisual()}
 				</div>
 			</SectionDescriptionStyle>
 		)

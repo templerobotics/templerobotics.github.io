@@ -33,12 +33,12 @@ export default class CarouselStyles {
 	`
 
 	static readonly Chevron = styled(BsChevronLeft || BsChevronRight)<{right?: boolean | string}>`
-		color: ${COLORS.TEXT};
+		grid-column: ${props => props.right ? 3 : 1};
+		font-size: calc(var(--vh) * .05);
 		:hover {
 			color: ${COLORS.HOVER_TEXT};
 			cursor: pointer;
 		}
-		grid-column: ${props => props.right ? 3 : 1};
 	`
 
 	static readonly CarouselSlide = styled.div`
@@ -94,6 +94,7 @@ export default class CarouselStyles {
 		grid-column: 2;
 		display: flex;
 		column-gap: 10%;
+		font-size: calc(var(--vh) * .02);
 
 		& > * {
 			-webkit-transition: color ${ANIMATION_TIME} linear;

@@ -9,7 +9,8 @@ import Contact from '../general/contact/Contact'
 import Styles, { GALLERY_INFO } from './RoboticMiningStyles'
 
 // Images
-import robot from '../../assets/pics/robot-2019.jpg'
+// import robot from '../../assets/pics/robot/robot-2019.jpg'
+import augerBot from '../../assets/pics/robot/augerbot-promotion.mp4'
 import outreachPhoto1 from '../../assets/pics/outreach/vex.jpeg'
 import outreachPhoto2 from '../../assets/pics/outreach/expo.jpeg'
 import outreachPhoto3 from '../../assets/pics/outreach/interview.jpeg'
@@ -32,11 +33,12 @@ const RoboticMining = (): React.ReactElement => {
 			{/* TODO: Put the updated robot in here */}
 			<RmcDescription
 				title='What is it?'
-				img={robot}
+				img={augerBot}
 				description='The NASA Robotics Mining Competition is a competition in which university-level students design
 				and build a mining robot that can traverse the simulated Martian chaotic terrain. See our robot
 				to the right!'
-				src='https://www.nasa.gov/offices/education/centers/kennedy/technology/nasarmc.html'/>
+				src='https://www.nasa.gov/offices/education/centers/kennedy/technology/nasarmc.html'
+				video/>
 
 			<Styles.SpaceBackground>
 				<Styles.OutreachGallery>

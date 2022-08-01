@@ -52,18 +52,16 @@ export default class Carousel extends React.Component<CarouselProps, { currentSl
 	}
 
 	render (): React.ReactElement {
-		const width = document.documentElement.style.getPropertyValue('--vh')
-
 		return (
 			// Id used for jQuery selection
 			<Styles.CarouselContainer id='carousel-container' style={{background: this.props.slideInfo[0].color}}>
-				<Styles.Chevron as={BsChevronLeft} size={parseFloat(width) * 0.05} onClick={this.slideLeft}/>
+				<Styles.Chevron as={BsChevronLeft} onClick={this.slideLeft}/>
 				<Styles.SlideContainer>
 					{this.props.slideInfo.map((slide, i) => <CarouselSlide key={i} id={`slide${i}`} slideInfo={slide}/>)}
 				</Styles.SlideContainer>
-				<Styles.Chevron as={BsChevronRight} size={parseFloat(width) * 0.05} onClick={this.slideRight} right={'true'}/>
+				<Styles.Chevron as={BsChevronRight} onClick={this.slideRight} right={'true'}/>
 				<Styles.SlideCountContainer>
-					{this.props.slideInfo.map((_, i) => <BsDashLg size={parseFloat(width) * 0.02} key={i} id={`counter${i}`}/>)}
+					{this.props.slideInfo.map((_, i) => <BsDashLg key={i} id={`counter${i}`}/>)}
 				</Styles.SlideCountContainer>
 			</Styles.CarouselContainer>
 		)

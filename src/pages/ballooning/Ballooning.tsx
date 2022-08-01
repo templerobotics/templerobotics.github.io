@@ -15,7 +15,6 @@ const Ballooning = (): React.ReactElement => {
 				<h2 className='title'>Nasa Ballooning</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
-
 			<Contact/>
 		</Styles.BallooningContainer>
 	)
