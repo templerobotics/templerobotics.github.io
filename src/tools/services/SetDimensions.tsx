@@ -10,7 +10,7 @@ const SetDimensions = (): React.ReactElement => {
 	// This is a new component because when in <App>, it was reloading if scrolled in too soon and looking bad.
 	document.documentElement.style.setProperty('--vh', `${useWindowDimensions().width}px`)
 	isMobile ? null : setVariableCssVars()
-
+	console.log('Mobile user: ' + isMobile)
 	return (<></>)
 }
 
