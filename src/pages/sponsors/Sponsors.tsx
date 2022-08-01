@@ -16,6 +16,7 @@ const Sponsors = (): React.ReactElement => {
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
 
+			{/* TODO: Add NASA as a sponsor and the anodizing place */}
 			<div className='img-container'>
 				<img src={SponsorImages.arrow}/>
 			</div>

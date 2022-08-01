@@ -23,7 +23,7 @@ export default class RoboticMiningStyles {
 			calc(var(--vh) * .4)    /* Intro heading */
 			calc(var(--vh) * .4)    /* Robot and competition description */
 			calc(var(--vh) * 1.7)   /* Outreach gallery and photo gallery */
-			max(calc(var(--vh) * .15), 200px);  /* Contact info */
+			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
 		align-content: center;
 	`

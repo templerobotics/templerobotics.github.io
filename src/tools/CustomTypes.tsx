@@ -1,6 +1,6 @@
 export type Color = `#${string}`
 
-export interface Table<T = object> {
+export interface TableInfo<T = object> {
 	rows: T[]
 }
 

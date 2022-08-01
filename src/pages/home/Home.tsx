@@ -33,15 +33,13 @@ const Home = (): React.ReactElement => {
 			<Styles.VideoSource source={'https://www.youtube.com/watch?v=zSLdsUXOmlI&ab_channel=MapleFilms'}
 				text={'Video Source'} />
 
-			{/* Id used for linking */}
-			<Styles.SectionHeader id='programs'>
+			<Styles.SectionHeader>
 				<h2>Program</h2>
 			</Styles.SectionHeader>
 
 			<Carousel slideInfo={slideInfo}/>
 
-			{/* Id used for linking */}
-			<Styles.SectionHeader id='sponsors'>
+			<Styles.SectionHeader>
 				<h2>Help Temple Space Exploration get to the moon!</h2>
 				<div className='button-container'>
 					<Button source={'https://temple-robotics.creator-spring.com/?'} text={'Buy Merchandise'} size={'large'}/>

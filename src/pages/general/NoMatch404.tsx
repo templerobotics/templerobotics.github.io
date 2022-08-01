@@ -11,7 +11,7 @@ const RocksatContainer = styled.div`
 	grid-template-columns: 100%;
 	grid-template-rows:
 		calc(var(--vh) * .2)   /* Title container */
-		max(calc(var(--vh) * .15), 200px);   /* Contacts */
+		max(calc(var(--vh) * .15), 100px);   /* Contacts */
 	justify-items: center;
 	align-items: center;
 

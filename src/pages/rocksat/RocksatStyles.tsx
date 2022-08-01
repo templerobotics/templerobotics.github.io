@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FONT_FAMILY, ROCKSAT_PHOTO_GALLERY } from '../../tools/Constants'
-import { Table } from '../../tools/CustomTypes'
+import { TableInfo } from '../../tools/CustomTypes'
 import Button from '../general/button/Button'
 import { GalleryImage } from '../general/photo-gallery/PhotoGalleryStyles'
 
@@ -30,7 +30,7 @@ export const GALLERY_INFO: GalleryImage[] = [
 		active vibration damping system using piezoceramic patch dampers` }
 ]
 
-export const TableInfo: Table<RocksatRow> = {
+export const TABLE_INFO: TableInfo<RocksatRow> = {
 	rows: [
 		{
 			year: '2022', teamConcept: 'Examining Sonoluminescent Bubble with Respect to Gravity Change',
@@ -92,9 +92,9 @@ export default class RocksatStyles {
 		grid-template-rows:
 			calc(var(--vh) * .2)				/* Title container */
 			calc(var(--vh) * .3)   				/* Description container */
-			calc(var(--vh) * .7)   				/* Table container */
+			calc(var(--vh) * .8)   				/* Table container */
 			calc(var(--vh) * .55)   			/* Photo gallery container */
-			max(calc(var(--vh) * .15), 200px);	/* Contacts */
+			max(calc(var(--vh) * .15), 100px);	/* Contacts */
 
 		& > .img-container {
 			display: flex;

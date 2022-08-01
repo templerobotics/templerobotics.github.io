@@ -12,7 +12,7 @@ export default class SponsorsStyles {
 		grid-template-rows:
 			calc(var(--vh) * .2)   /* Title container */
 			calc(var(--vh) * .4)   /* Sponsor container */
-			max(calc(var(--vh) * .15), 200px);   /* Contacts */
+			max(calc(var(--vh) * .15), 100px);   /* Contacts */
 
 		& > .img-container {
 			display: flex;

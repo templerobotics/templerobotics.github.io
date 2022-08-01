@@ -14,16 +14,21 @@ const SectionDescriptionStyle = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 
+	& > .visual-container {
+		height: 80%;
+		width: 80%;
+		overflow: hidden;
+		align-self: center;
+		justify-items: center;
+		justify-self: center;
+	}
+
 	& > div {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-	}
-
-	& > div > div {
-
 	}
 
 	& > div > p {
@@ -52,9 +57,9 @@ type SectionDescriptionProps = {
 export default class SectionDescription extends React.Component<SectionDescriptionProps, never> {
 	renderVisual = (): React.ReactElement => {
 		if (!this.props.video) {
-			return <img alt='logo' src={this.props.img} width='60%' id='web-logo'/>
+			return <img alt='logo' src={this.props.img} width={'100%'} id='web-logo'/>
 		}
-		return <video autoPlay muted loop playsInline>
+		return <video autoPlay muted loop playsInline width={'100%'}>
 			<source src={this.props.img} type='video/mp4'/>
 			Your browser does not support the video tag.
 		</video>
@@ -70,8 +75,7 @@ export default class SectionDescription extends React.Component<SectionDescripti
 					{this.props.src ? <Button text={this.props.button ? this.props.button : 'Learn More'}
 						size='large' id='rmc-description-button' source={this.props.src} /> : <></>}
 				</div>
-				<div>
-					{/* <img alt='logo' src={this.props.img} width='60%' id='web-logo'/> */}
+				<div className='visual-container'>
 					{this.renderVisual()}
 				</div>
 			</SectionDescriptionStyle>

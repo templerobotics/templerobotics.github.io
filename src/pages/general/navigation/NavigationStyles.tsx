@@ -9,7 +9,7 @@ export default class NavigationStyles {
 		padding: 0%;
 		background-color: ${props => props.transparency ? 'transparent' : `${COLORS.PRIMARY}`} !important;
 		transition: background-color 0.5s;
-		height: max(calc(var(--vh) * .04), 50px); /* TODO: change to relative based on screen width */
+		height: max(calc(var(--vh) * .04), 50px);
 
 
 		& > .navbar-collapse {
@@ -25,8 +25,7 @@ export default class NavigationStyles {
 	`
 
 	static Logo = styled(Navbar.Brand)`
-		/* margin-left: 5%; TODO: change to relative based on screen width */
-		margin-right: 5%; /* TODO: change to relative based on screen width */
+		margin-right: 5%;
 		padding-left: 3%;
 		padding-right: 3%;
 		background: linear-gradient(90deg, ${COLORS.PRIMARY}, ${COLORS.PRIMARY}7f);
