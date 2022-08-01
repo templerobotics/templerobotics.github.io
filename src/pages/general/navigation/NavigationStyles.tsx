@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Navbar, Nav } from 'react-bootstrap'
-import { COLORS, FONT_FAMILY } from '../../tools/Constants'
+import { COLORS, FONT_FAMILY } from '../../../tools/Constants'
 
 export default class NavigationStyles {
 

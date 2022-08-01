@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom'
 import Styles from './NavigationStyles'
 
 // General tools
-import * as Constants from '../../tools/Constants'
-import { getScrollY, getWindowWidth, scrollToTop } from '../../tools/HelpfulFunctions'
+import * as Constants from '../../../tools/Constants'
+import { getScrollY, getWindowWidth, scrollToTop } from '../../../tools/HelpfulFunctions'
 
 // Images
 // import roboticsLogo from '../../assets/pics/logos/robotics-white.png'
-import nasaLogo from '../../assets/pics/logos/nasa.png'
+import nasaLogo from '../../../assets/pics/logos/nasa.png'
 
 const Navigation = (): React.ReactElement => {
 	const { scroll } = getScrollY()
@@ -40,15 +40,16 @@ const Navigation = (): React.ReactElement => {
 				<Navbar.Collapse className='basic-navbar-links'>
 					<Styles.NavbarLinks variant='pills' toggle={ width < Constants.MOBILE_SIZE ? 1 : 0 }>
 						{/* Use HashLink when going to an id */}
-						{/* TODO: Maybe put links to other pages in offcanvas or dropdown or soemthing */}
 						<NavLink eventKey='1' as={Link} to={Constants.PATHS.HOME} onClick={scrollToTop}>Home</NavLink>
 						<NavLink eventKey='2' as={Link} to={Constants.PATHS.EVENTS} onClick={scrollToTop}>Events</NavLink>
 						<NavLink eventKey='3' as={Link} to={Constants.PATHS.SPONSORS} onClick={scrollToTop}>Sponsors</NavLink>
-						<NavLink eventKey='7' as={Link} to={Constants.PATHS.ROBOTICS} onClick={scrollToTop}>Robotics</NavLink>
-						<NavLink eventKey='7' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>RockSat</NavLink>
-						{/* <NavLink eventKey='4' as={HashLink} to='/home#programs'>Programs</NavLink> */}
-						{/* <NavLink eventKey='5' as={HashLink} to='/home#sponsors'>Sponsors</NavLink> */}
-						{/* <NavLink eventKey='6' as={HashLink} to='/home#contact'>Contact Us</NavLink> */}
+						<NavLink eventKey='4' as={Link} to={Constants.PATHS.ROBOTICS} onClick={scrollToTop}>Robotics</NavLink>
+						<NavLink eventKey='5' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>RockSat</NavLink>
+						<NavLink eventKey='6' as={Link} to={Constants.PATHS.BALLOONING} onClick={scrollToTop}>NASA Ballooning</NavLink>
+						{/* TODO: Maybe put links to other pages in offcanvas or dropdown or something */}
+						{/* <NavLink eventKey='7' as={HashLink} to='/home#programs'>Programs</NavLink> */}
+						{/* <NavLink eventKey='8' as={HashLink} to='/home#sponsors'>Sponsors</NavLink> */}
+						{/* <NavLink eventKey='9' as={HashLink} to='/home#contact'>Contact Us</NavLink> */}
 					</Styles.NavbarLinks>
 				</Navbar.Collapse>
 			</Styles.NavigationBar>

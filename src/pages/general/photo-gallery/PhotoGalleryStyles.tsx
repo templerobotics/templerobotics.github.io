@@ -1,6 +1,6 @@
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import styled from 'styled-components'
-import { COLORS, CSS_STYLES, FONT_FAMILY } from '../../../tools/Constants'
+import { ANIMATION_TIME, COLORS, CSS_STYLES, FONT_FAMILY } from '../../../tools/Constants'
 
 export interface GalleryImage {
 	image: string
@@ -25,7 +25,7 @@ export default class PhotoGalleryStyles {
 		height: 100%;
 		display: grid;
 		grid-template-columns: auto calc(var(--vh) * 0.7) auto;
-		grid-template-rows: 25% 75%;
+		grid-template-rows: 20% 75% 5%;
 		padding: 5%;
 		justify-items: center;
 		align-items: center;
@@ -93,5 +93,17 @@ export default class PhotoGalleryStyles {
 		column-gap: 2%;
 
 		${CSS_STYLES.showScrollbar(undefined, COLORS.SECONDARY_SCROLLBAR)}
+	`
+
+	static readonly SlideCountContainer = styled.div`
+		grid-column: 2;
+		display: flex;
+		column-gap: 10%;
+
+		& > * {
+			-webkit-transition: color ${ANIMATION_TIME} linear;
+			-ms-transition: color ${ANIMATION_TIME} linear;
+			transition: color ${ANIMATION_TIME} linear;
+		}
 	`
 }

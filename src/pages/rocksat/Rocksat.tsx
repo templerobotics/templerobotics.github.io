@@ -3,7 +3,7 @@ import React from 'react'
 import { AiOutlineDash } from 'react-icons/ai'
 
 // Custom components
-import Contact from '../contact/Contact'
+import Contact from '../general/contact/Contact'
 import SectionDescription from '../robotic-mining/SectionDescription'
 
 // Custom styles

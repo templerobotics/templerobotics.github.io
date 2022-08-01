@@ -6,7 +6,7 @@ import Styles from './HomeStyles'
 
 // Custom components
 import Carousel from '../general/carousel/Carousel'
-import Contact from '../contact/Contact'
+import Contact from '../general/contact/Contact'
 import Button from '../general/button/Button'
 
 // Images

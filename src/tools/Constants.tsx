@@ -10,6 +10,7 @@ export class PATHS {
 	static readonly SPONSORS: string = '/sponsors'
 	static readonly ROCKSAT: string = '/rocksat'
 	static readonly ROBOTICS: string = '/robotics'
+	static readonly BALLOONING: string = '/ballooning'
 }
 
 export class COLORS {

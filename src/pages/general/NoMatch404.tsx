@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { FONT_FAMILY } from '../../tools/Constants'
 
 // Custom components
-import Contact from '../contact/Contact'
+import Contact from './contact/Contact'
 
 const RocksatContainer = styled.div`
 	display: grid;

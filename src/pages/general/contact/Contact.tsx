@@ -3,7 +3,7 @@ import { BsHeartFill } from 'react-icons/bs'
 import { FiFacebook, FiInstagram, FiMail, FiTwitter, FiYoutube } from 'react-icons/fi'
 import { RiSnapchatLine } from 'react-icons/ri'
 
-import IconButton from '../general/button/IconButton'
+import IconButton from '../button/IconButton'
 import Styles from './ContactStyles'
 
 export default class Contact extends React.Component<Record<string, never>, never> {

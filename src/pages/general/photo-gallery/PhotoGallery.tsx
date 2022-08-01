@@ -1,13 +1,13 @@
 // Third party
 import React from 'react'
 import $ from 'jquery'
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
+import { BsChevronLeft, BsChevronRight, BsDashLg } from 'react-icons/bs'
 
 // Custom styles
 import Styles, { PhotoGalleryProps, GallerySlideProps } from './PhotoGalleryStyles'
 
 // General tools
-import { ANIMATION_TIME } from '../../../tools/Constants'
+import { ANIMATION_TIME, COLORS } from '../../../tools/Constants'
 
 export default class PhotoGallery extends React.Component<PhotoGalleryProps, {currentSlide: number}> {
 	constructor(props: PhotoGalleryProps) {
@@ -23,6 +23,14 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 		for (let i = 0; i < Math.ceil(this.props.galleryInfo.length / 3); i++) {
 			const photoArray = this.props.galleryInfo.slice(i * 3, (i + 1) * 3)
 			slideElements.push(<GallerySlide key={i} id={`slide${i}`} galleryInfo={photoArray}/>)
+		}
+		return slideElements
+	}
+
+	renderSlideCounters = (size: number): React.ReactElement[] => {
+		const slideElements: React.ReactElement[] = []
+		for (let i = 0; i < Math.ceil(this.props.galleryInfo.length / 3); i++) {
+			slideElements.push(<BsDashLg size={size} key={i} id={`counter${i}`}/>)
 		}
 		return slideElements
 	}
@@ -45,7 +53,20 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 		$(`#slide${nextSlide}`)
 			.fadeIn(animationSpeed).end()
 
+		$(`#counter${this.state.currentSlide}`)
+			.css('color', COLORS.TEXT)
+		$(`#counter${nextSlide}`)
+			.css('color', COLORS.PRIMARY)
+
 		this.setState({ currentSlide: nextSlide })
+	}
+
+	componentDidMount(): void {
+		// Hide slides after they render
+		for (let i = 1; i < this.props.galleryInfo.length % 3; i++) {
+			$(`#slide${i}`).hide()
+		}
+		$('#counter0').css('color', COLORS.PRIMARY)
 	}
 
 	render(): React.ReactElement {
@@ -60,6 +81,9 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 					{this.renderSlide()}
 				</Styles.SlideContainer>
 				<Styles.Chevron as={BsChevronRight} size={parseFloat(width) * 0.05} onClick={this.slideRight}/>
+				<Styles.SlideCountContainer>
+					{this.renderSlideCounters(parseFloat(width) * 0.02)}
+				</Styles.SlideCountContainer>
 			</Styles.GalleryContainer>
 		)
 	}

@@ -6,23 +6,19 @@ import { AiOutlineDash } from 'react-icons/ai'
 import Contact from '../general/contact/Contact'
 
 // Custom styles
-import Styles, { SponsorImages } from './SponsorsStyles'
+import Styles from './BallooningStyles'
 
-const Sponsors = (): React.ReactElement => {
+const Ballooning = (): React.ReactElement => {
 	return (
-		<Styles.SponsorContainer>
+		<Styles.BallooningContainer>
 			<Styles.TitleContainer className='title-container'>
-				<h2 className='title'>Sponsors</h2>
+				<h2 className='title'>Nasa Ballooning</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
 
-			<div className='img-container'>
-				<img src={SponsorImages.arrow}/>
-			</div>
-
 			<Contact/>
-		</Styles.SponsorContainer>
+		</Styles.BallooningContainer>
 	)
 }
 
-export default Sponsors
+export default Ballooning

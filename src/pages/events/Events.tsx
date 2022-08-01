@@ -5,7 +5,7 @@ import EventSection from './EventList'
 import Styles from './EventsStyles'
 
 import { getEventsFromDatabase } from '../../tools/HelpfulFunctions'
-import Contact from '../contact/Contact'
+import Contact from '../general/contact/Contact'
 
 const Events = (): React.ReactElement => {
 	const events = getEventsFromDatabase()

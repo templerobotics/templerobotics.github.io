@@ -92,6 +92,8 @@ export default class CarouselStyles {
 
 	static readonly SlideCountContainer = styled.div`
 		grid-column: 2;
+		display: flex;
+		column-gap: 10%;
 
 		& > * {
 			-webkit-transition: color ${ANIMATION_TIME} linear;

@@ -8,13 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import GlobalStyles from './tools/OverallStyling'
 
 // Custom Components
-import Navigation from './pages/navigation/Navigation'
+import Navigation from './pages/general/navigation/Navigation'
 import Home from './pages/home/Home'
 import Sponsors from './pages/sponsors/Sponsors'
 import Events from './pages/events/Events'
 import RoboticMining from './pages/robotic-mining/RoboticMining'
-import Copyright from './pages/copyright/Copyright'
+import Copyright from './pages/general/copyright/Copyright'
 import Rocksat from './pages/rocksat/Rocksat'
+import Ballooning from './pages/ballooning/Ballooning'
 import NoMatch404 from './pages/general/NoMatch404'
 
 // Images
@@ -40,6 +41,7 @@ const App = (): React.ReactElement => {
 							<Route path={PATHS.ROBOTICS} element={<RoboticMining/>}/>
 							<Route path={PATHS.SPONSORS} element={<Sponsors/>}/>
 							<Route path={PATHS.ROCKSAT} element={<Rocksat/>}/>
+							<Route path={PATHS.BALLOONING} element={<Ballooning/>}/>
 							{/* If no path was matched, go to 404 page */}
 							<Route path='*' element={<NoMatch404/>}/>
 						</Routes>
