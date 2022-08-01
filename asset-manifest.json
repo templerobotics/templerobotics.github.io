@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/website-2.0/static/css/main.9a1f62cf.css",
-    "main.js": "/website-2.0/static/js/main.de6189ed.js",
+    "main.js": "/website-2.0/static/js/main.a5d4159a.js",
     "static/js/787.933ba907.chunk.js": "/website-2.0/static/js/787.933ba907.chunk.js",
-    "static/media/nasavid.mp4": "/website-2.0/static/media/nasavid.6f405261f41b88c996cd.mp4",
-    "static/media/robot-2019.jpg": "/website-2.0/static/media/robot-2019.addb5a8fadde653bffc4.jpg",
+    "static/media/nasa-vid.mp4": "/website-2.0/static/media/nasa-vid.6f405261f41b88c996cd.mp4",
     "static/media/balloon-team.jpeg": "/website-2.0/static/media/balloon-team.d10c78cdaffb0151a08e.jpeg",
+    "static/media/augerbot-promotion.mp4": "/website-2.0/static/media/augerbot-promotion.40919a8f45b16a1fbf89.mp4",
     "static/media/rocksat17.jpeg": "/website-2.0/static/media/rocksat17.b210f202407220b10172.jpeg",
     "static/media/rocksat-2017.jpeg": "/website-2.0/static/media/rocksat-2017.c9a89dcfe4c960b6bbe2.jpeg",
     "static/media/rmc-team.jpeg": "/website-2.0/static/media/rmc-team.561f51639b7c19ac8f95.jpeg",
@@ -39,11 +39,11 @@
     "static/media/arcamajora3-heavy-webfont.woff2": "/website-2.0/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
     "index.html": "/website-2.0/index.html",
     "main.9a1f62cf.css.map": "/website-2.0/static/css/main.9a1f62cf.css.map",
-    "main.de6189ed.js.map": "/website-2.0/static/js/main.de6189ed.js.map",
+    "main.a5d4159a.js.map": "/website-2.0/static/js/main.a5d4159a.js.map",
     "787.933ba907.chunk.js.map": "/website-2.0/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1f62cf.css",
-    "static/js/main.de6189ed.js"
+    "static/js/main.a5d4159a.js"
   ]
 }
