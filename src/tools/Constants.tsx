@@ -30,6 +30,9 @@ export class COLORS {
 }
 
 export const RMC_PHOTO_GALLERY = [
+	require('../assets/pics/photo-gallery/rmc/rmc-2022.jpg'),
+	require('../assets/pics/photo-gallery/rmc/wire-mess.jpg'),
+	require('../assets/pics/photo-gallery/rmc/jpl-display.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/club-filing.jpg'),
 	require('../assets/pics/photo-gallery/rmc/box-bot.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/ethernet-screw-up.jpg'),

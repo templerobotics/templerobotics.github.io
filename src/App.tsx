@@ -19,14 +19,16 @@ import Ballooning from './pages/ballooning/Ballooning'
 import NoMatch404 from './pages/general/NoMatch404'
 
 // Images
-import backgroundVideo from './assets/vids/nasa-vid.mp4'
+import backgroundVideo1 from './assets/vids/nasa-vid-1.mp4'
+import backgroundVideo2 from './assets/vids/nasa-vid-2.mp4'
 import { PATHS } from './tools/Constants'
 
 const App = (): React.ReactElement => {
 	return (
 		<>
 			<video loop muted autoPlay playsInline id='video-background'>
-				<source src={backgroundVideo} type='video/mp4'/>
+				<source src={backgroundVideo1} type='video/mp4'/>
+				<source src={backgroundVideo2} type='video/mp4'/>
 			</video>
 			<GlobalStyles/>
 			<Router basename='website-2.0'>

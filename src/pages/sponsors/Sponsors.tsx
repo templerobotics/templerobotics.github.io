@@ -17,7 +17,10 @@ const Sponsors = (): React.ReactElement => {
 			</Styles.TitleContainer>
 
 			{/* TODO: Add NASA as a sponsor and the anodizing place */}
-			<div className='img-container'>
+			<div className='img-container' style={{background: '#053a92'}}>
+				<img src={SponsorImages.nasa}/>
+			</div>
+			<div className='img-container' style={{background: 'black'}}>
 				<img src={SponsorImages.arrow}/>
 			</div>
 

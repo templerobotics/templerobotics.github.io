@@ -25,6 +25,7 @@ export default class BallooningStyles {
 		width: 100%;
 		& > .title {
 			${FONT_FAMILY.PAGE_TITLE}
+			font-size: calc(var(--vh) * .08);
 		}
 	`
 }

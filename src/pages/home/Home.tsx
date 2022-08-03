@@ -30,7 +30,7 @@ const Home = (): React.ReactElement => {
 				</Styles.Header>
 			</Styles.TitleContainer>
 
-			<Styles.VideoSource source={'https://www.youtube.com/watch?v=zSLdsUXOmlI&ab_channel=MapleFilms'}
+			<Styles.VideoSource source={'https://www.youtube.com/watch?v=WeA7edXsU40'}
 				text={'Video Source'} />
 
 			<Styles.SectionHeader>
