@@ -3,6 +3,7 @@ import { FONT_FAMILY } from '../../tools/Constants'
 
 export class SponsorImages {
 	static readonly arrow = require('../../assets/pics/sponsors/arrow.png')
+	static readonly nasa = require('../../assets/pics/sponsors/nasa-name.png')
 }
 
 export default class SponsorsStyles {
@@ -11,12 +12,14 @@ export default class SponsorsStyles {
 		grid-template-columns: 100%;
 		grid-template-rows:
 			calc(var(--vh) * .2)   /* Title container */
-			calc(var(--vh) * .4)   /* Sponsor container */
-			max(calc(var(--vh) * .15), 200px);   /* Contacts */
+			calc(var(--vh) * .3)   /* Sponsor container */
+			calc(var(--vh) * .3)   /* Sponsor container */
+			max(calc(var(--vh) * .15), 100px);   /* Contacts */
 
 		& > .img-container {
 			display: flex;
 			background: black;
+			padding: 5%;
 		}
 
 		& > .img-container > img {

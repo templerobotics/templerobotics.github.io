@@ -3,34 +3,34 @@ import styled from 'styled-components'
 
 import Button from '../general/button/Button'
 import { SlideInfo } from '../general/carousel/CarouselStyles'
-import { COLORS, FONT_FAMILY } from '../../tools/Constants'
-import slide1 from '../../assets/pics/carousel/rmc-team.jpg'
-import slide2 from '../../assets/pics/carousel/rocksat17.jpg'
-import slide3 from '../../assets/pics/carousel/ballon-team.jpg'
+import { COLORS, FONT_FAMILY, PATHS } from '../../tools/Constants'
+import slide1 from '../../assets/pics/carousel/rocksat17.jpeg'
+import slide2 from '../../assets/pics/carousel/rmc-team.jpeg'
+import slide3 from '../../assets/pics/carousel/balloon-team.jpeg'
 
 
 export default class HomeStyles {
 	static readonly slideInfo: SlideInfo[] = [
 		{
-			image: slide1, title: 'NASA RMC',
-			description: `The NASA Robotics Mining Competition is a university-level student competion 
-			to design and build a mining robot that can traverse the challenging simulated Martian terrain.
-			The mining robot must then excavate the regolith simulant and/or the ice simulant (gravel) and
-			return the excavated mass for deposit into the collector bin to simulate an offworld, in situ
-			resource mining mission.`,
-			color: COLORS.BLUE,
-			otherContent: <Button source={'/rmc'} local={true} text={'Learn More'} size={'medium'}/>
-		},
-		{
-			image: slide2,
-			title: 'ROCKSAT', description: `The Rockstat Team designed a payload that will be placed inside of a sounding 
+			image: slide1,
+			title: 'ROCKSAT', description: `The RockSat Team designed a payload that will be placed inside of a sounding 
 			rocket which is provided by the Wallops Flight Facility. The rocket will launch at Wallops Island where it will follow a 
 			sub-orbital flight path into the Atlantic Ocean, reaching an estimated maximum height of 72 miles.`,
-			color: COLORS.GREEN, otherContent: <Button source={'https://spacegrant.colorado.edu/rs-c-2020-current-teams/rsc-tu-20'}
-				size={'medium'} text={'Learn More'} />
+			color: COLORS.GREEN, otherContent: <Button source={PATHS.ROCKSAT}
+				size={'medium'} text={'Learn More'} local/>
 		},
 		{
-			image: slide3, title: 'NASA BALOONING',
+			image: slide2, title: 'NASA RMC',
+			description: `The NASA Robotics Mining Competition is a university-level student competition 
+			to design and build a mining robot that can traverse the challenging simulated Martian terrain.
+			The mining robot must then excavate the regolith simulant and/or the ice simulant (gravel) and
+			return the excavated mass for deposit into the collector bin to simulate an off-world, in situ
+			resource mining mission.`,
+			color: COLORS.BLUE,
+			otherContent: <Button source={PATHS.ROBOTICS} text={'Learn More'} size={'medium'} local/>
+		},
+		{
+			image: slide3, title: 'NASA BALLOONING',
 			description: `The Temple NASA Ballooning Team will participate as one of over fifty teams 
 			responsible for the design and production of an HAB that is capable of recording and streaming live video footage to the NASA 
 			website, a task which has never been attempted for a solar eclipse.`,
@@ -48,7 +48,7 @@ export default class HomeStyles {
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: 
-			max(calc(var(--vh) * .4), 250px)   	/* Intro heading */
+			max(calc(var(--vh) * .35), 250px)   	/* Intro heading */
 			calc(var(--vh) * .06)   			/* Intro heading button */
 			calc(var(--vh) * .15)   			/* Program section heading */
 			calc(var(--vh) * .4)    			/* Carousel */
@@ -63,6 +63,20 @@ export default class HomeStyles {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		& > .nasa-title {
+			height: calc(var(--vh) * .1);
+			display: flex;
+			align-items: center;
+		}
+
+		& > .nasa-title > img {
+			height: 100%;
+		}
+
+		& > .nasa-title > p {
+			${FONT_FAMILY.TITLE}
+		}
 	`
 
 	static readonly LargeText = styled.p`
@@ -93,12 +107,19 @@ export default class HomeStyles {
 		justify-content: center;
 		padding-left: 15%;
 		padding-right: 15%;
-		background: linear-gradient(200deg, #9D2235, #996b72, #9D2235);
+		background: linear-gradient(200deg, ${COLORS.PRIMARY}, #996b72, ${COLORS.PRIMARY});
 		row-gap: 10%;
 
 		& > h2 {
 			text-align: center;
-			${FONT_FAMILY.TITLE}
+			${FONT_FAMILY.SECONDARY_TITLE}
+		}
+
+		& > .button-container {
+			width: 100%;
+			display: flex;
+			column-gap: 10%;
+			justify-content: center;
 		}
 	`
 

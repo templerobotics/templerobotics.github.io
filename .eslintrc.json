@@ -31,7 +31,6 @@
         "no-template-curly-in-string": 2,
         "camelcase": 2,
         "consistent-return": 2,
-        "curly": 1,
         "dot-notation": 1,
         "id-length": [ 2, { "max": 25, "exceptions": ["$", "i", "_"], "min": 3 }],
         "max-depth": [ 2, 4 ],

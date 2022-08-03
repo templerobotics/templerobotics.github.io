@@ -1,6 +1,6 @@
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import styled from 'styled-components'
-import { COLORS, CSS_STYLES, FONT_FAMILY } from '../../../tools/Constants'
+import { ANIMATION_TIME, COLORS, CSS_STYLES, FONT_FAMILY } from '../../../tools/Constants'
 
 export interface GalleryImage {
 	image: string
@@ -10,6 +10,7 @@ export interface GalleryImage {
 
 export type PhotoGalleryProps = {
 	id?: string,
+	title?: string,
 	galleryInfo: GalleryImage[]
 }
 
@@ -24,17 +25,23 @@ export default class PhotoGalleryStyles {
 		height: 100%;
 		display: grid;
 		grid-template-columns: auto calc(var(--vh) * 0.7) auto;
-		grid-template-rows: 100%;
+		grid-template-rows: 20% 75% 5%;
 		padding: 5%;
 		justify-items: center;
 		align-items: center;
 	`
 
-	static readonly Chevron = styled(BsChevronLeft || BsChevronRight)`
-		width: 100%;
+	static readonly Title = styled.div`
+		grid-column-start: 1;
+		grid-column-end: 4;
+		${FONT_FAMILY.TITLE}
+		font-size: calc(var(--vh) * .04);
+	`
 
+	static readonly Chevron = styled(BsChevronLeft || BsChevronRight)`
+		font-size: calc(var(--vh) * .05);
 		:hover {
-			color: var(--color-hover-text);
+			color: ${COLORS.HOVER_TEXT};
 			cursor: pointer;
 		}
 	`
@@ -50,6 +57,7 @@ export default class PhotoGalleryStyles {
 	static readonly ImageContainer = styled.div`
 		display: grid;
 		grid-template-rows: calc(var(--vh) * 0.15) calc(var(--vh) * 0.035) auto;
+		row-gap: 5%;
 		width: 100%;
 
 		& > * {
@@ -84,5 +92,18 @@ export default class PhotoGalleryStyles {
 		column-gap: 2%;
 
 		${CSS_STYLES.showScrollbar(undefined, COLORS.SECONDARY_SCROLLBAR)}
+	`
+
+	static readonly SlideCountContainer = styled.div`
+		grid-column: 2;
+		display: flex;
+		column-gap: 10%;
+		font-size: calc(var(--vh) * .02);
+
+		& > * {
+			-webkit-transition: color ${ANIMATION_TIME} linear;
+			-ms-transition: color ${ANIMATION_TIME} linear;
+			transition: color ${ANIMATION_TIME} linear;
+		}
 	`
 }

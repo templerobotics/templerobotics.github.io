@@ -1,7 +1,7 @@
 // Third party
 import React from 'react'
 import $ from 'jquery'
-import { BsChevronLeft, BsChevronRight, BsFillRecordFill } from 'react-icons/bs'
+import { BsChevronLeft, BsChevronRight, BsDashLg } from 'react-icons/bs'
 
 // Custom styles
 import Styles, { CarouselProps, CarouselSlideProps } from './CarouselStyles'
@@ -45,24 +45,23 @@ export default class Carousel extends React.Component<CarouselProps, { currentSl
 
 	componentDidMount(): void {
 		// Hide slides after they render
-		$('#slide1').hide()
-		$('#slide2').hide()
+		this.props.slideInfo.forEach((_, i) => {
+			if (i != 0) $(`#slide${i}`).hide()
+		})
 		$('#counter0').css('color', COLORS.PRIMARY)
 	}
 
 	render (): React.ReactElement {
-		const width = document.documentElement.style.getPropertyValue('--vh')
-
 		return (
 			// Id used for jQuery selection
 			<Styles.CarouselContainer id='carousel-container' style={{background: this.props.slideInfo[0].color}}>
-				<Styles.Chevron as={BsChevronLeft} size={parseFloat(width) * 0.05} onClick={this.slideLeft}/>
+				<Styles.Chevron as={BsChevronLeft} onClick={this.slideLeft}/>
 				<Styles.SlideContainer>
 					{this.props.slideInfo.map((slide, i) => <CarouselSlide key={i} id={`slide${i}`} slideInfo={slide}/>)}
 				</Styles.SlideContainer>
-				<Styles.Chevron as={BsChevronRight} size={parseFloat(width) * 0.05} onClick={this.slideRight} right={'true'}/>
+				<Styles.Chevron as={BsChevronRight} onClick={this.slideRight} right={'true'}/>
 				<Styles.SlideCountContainer>
-					{this.props.slideInfo.map((_, i) => <BsFillRecordFill key={i} id={`counter${i}`}/>)}
+					{this.props.slideInfo.map((_, i) => <BsDashLg key={i} id={`counter${i}`}/>)}
 				</Styles.SlideCountContainer>
 			</Styles.CarouselContainer>
 		)

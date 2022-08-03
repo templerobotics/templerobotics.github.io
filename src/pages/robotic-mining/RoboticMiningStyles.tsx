@@ -1,18 +1,23 @@
 import styled from 'styled-components'
-import { CSS_STYLES, FONT_FAMILY, PHOTO_GALLERY } from '../../tools/Constants'
+import { FONT_FAMILY, RMC_PHOTO_GALLERY } from '../../tools/Constants'
 import { GalleryImage } from '../general/photo-gallery/PhotoGalleryStyles'
-import spaceBackground from '../../assets/pics/outreach/space-background.jpg'
+import spaceBackground from '../../assets/pics/outreach/space-background.jpeg'
 
 export const GALLERY_INFO: GalleryImage[] = [
-	{ image: PHOTO_GALLERY[0], title: '2018', description: 'Our ME\'s filing away to make sure everything fits perfectly.' },
-	{ image: PHOTO_GALLERY[1], title: '2018', description: 'BoxBot, of course we still love you.' },
-	{ image: PHOTO_GALLERY[2], title: '2017', description: `Our team plugged the ethernet cable into the wrong port. 
+	{ image: RMC_PHOTO_GALLERY[0], title: '2022', description: `The 2022 robot is coming together! No belts yet but the
+		chasses is complete` },
+	{ image: RMC_PHOTO_GALLERY[1], title: '2022', description: 'I guess our team has never heard of cable management...' },
+	{ image: RMC_PHOTO_GALLERY[2], title: '2022', description: `Us showing off JPL at the 30th anniversary of the NASA
+		Space Grant.` },
+	{ image: RMC_PHOTO_GALLERY[3], title: '2018', description: 'Our ME\'s filing away to make sure everything fits perfectly.' },
+	{ image: RMC_PHOTO_GALLERY[4], title: '2018', description: 'BoxBot, of course we still love you.' },
+	{ image: RMC_PHOTO_GALLERY[5], title: '2017', description: `Our team plugged the ethernet cable into the wrong port. 
 		Good thing duct tape fixes everything!` },
-	{ image: PHOTO_GALLERY[3], title: '2017', description: `Our hotel didnt like us working on the robot in our rooms. 
+	{ image: RMC_PHOTO_GALLERY[6], title: '2017', description: `Our hotel didn't like us working on the robot in our rooms. 
 		I guess we'll just use our vans.` },
-	{ image: PHOTO_GALLERY[4], title: '2011', description: 'The year our team autonomus was so good they had to change the rules' },
-	{ image: PHOTO_GALLERY[5], title: '2010', description: 'Scoops was born' },
-	{ image: PHOTO_GALLERY[6], title: '2009', description: 'Our first team at the very first Robotics Mining Competition' }
+	{ image: RMC_PHOTO_GALLERY[7], title: '2011', description: 'The year our team\'s autonomous was so good they had to change the rules' },
+	{ image: RMC_PHOTO_GALLERY[8], title: '2010', description: 'Scoops was born' },
+	{ image: RMC_PHOTO_GALLERY[9], title: '2009', description: 'Our first team at the very first Robotics Mining Competition' }
 ]
 
 export default class RoboticMiningStyles {
@@ -22,56 +27,37 @@ export default class RoboticMiningStyles {
 		grid-template-rows: 
 			calc(var(--vh) * .4)    /* Intro heading */
 			calc(var(--vh) * .4)    /* Robot and competition description */
-			calc(var(--vh) * 1.6)   /* Outreach gallery and photo gallery */
-			max(calc(var(--vh) * .15), 200px);  /* Contact info */
+			calc(var(--vh) * 1.7)   /* Outreach gallery and photo gallery */
+			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
 		align-content: center;
 	`
 
 	static readonly TitleContainer = styled.div`
-		& > .title {
-			${FONT_FAMILY.PAGE_TITLE}
-			font-size: calc(var(--vh) * .07);
-		}
-	`
-
-	static readonly RmcDescription = styled.div`
 		height: 100%;
-		background: linear-gradient(200deg, var(--color-primary), #996b72, var(--color-primary));
-		text-align: center;
-		row-gap: 5%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-		// New
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-
-		& > div {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
+		& > .large-text {
+			${FONT_FAMILY.SUBTITLE}
+			letter-spacing: 5px;
+			line-height: 3;
+			text-transform: uppercase;
 		}
 
-		& > div > div {
-			margin-bottom: calc(var(--vh) * .08);
-		}
-
-		& > div > p {
-			margin: auto;
-			padding-left: calc(var(--vh) * .1);
-			padding-right: calc(var(--vh) * .1);
-			overflow-y: auto;
-			height: calc(var(--vh) * .1);
-		}
-
-		& > div > h2 {
-			${FONT_FAMILY.TITLE}
-			margin-top: calc(var(--vh) * .08);
+		& > .small-text {
+			${FONT_FAMILY.BODY}
+			letter-spacing: 9px;
+			text-transform: uppercase;
+			margin-top: 40px;
 			margin-bottom: 0;
 		}
 
-		${CSS_STYLES.showScrollbar('& > div > p')}
+		& > h4 {
+			${FONT_FAMILY.SUBTITLE}
+		}
 	`
 
 	static readonly OutreachGallery = styled.div`
@@ -122,7 +108,7 @@ export default class RoboticMiningStyles {
 		background-size: cover;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.4);
+		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
 		justify-items: center;
 		align-items: center;
 	`

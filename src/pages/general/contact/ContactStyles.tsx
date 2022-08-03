@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { FONT_FAMILY } from '../../tools/Constants'
+import { FONT_FAMILY } from '../../../tools/Constants'
 
 export default class ContactStyles {
 	static readonly ContactContainer = styled.div`
