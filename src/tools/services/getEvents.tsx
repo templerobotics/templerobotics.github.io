@@ -18,7 +18,7 @@ function sortByDate(eventA: EventObject, eventB: EventObject): number {
 }
 
 export async function getEvents(): Promise<EventObject[]> {
-	const data = await fetch('https://templerobotics.github.io/website-2.0/db.json')
+	const data = await fetch('https://templerobotics.github.io/db.json')
 	const eventData: EventJson[] = (await data.json()).events
 	const currentDate = new Date()
 	currentDate.setDate(currentDate.getDate() + 1)

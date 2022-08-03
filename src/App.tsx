@@ -31,7 +31,8 @@ const App = (): React.ReactElement => {
 				<source src={backgroundVideo2} type='video/mp4'/>
 			</video>
 			<GlobalStyles/>
-			<Router basename='website-2.0'>
+			{/* The basename is if this is not a org website <Router basename='website-2.0'> */}
+			<Router>
 				<div className='App'>
 					<Navigation/>
 					<div className='content'>
