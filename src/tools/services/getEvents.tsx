@@ -18,7 +18,8 @@ function sortByDate(eventA: EventObject, eventB: EventObject): number {
 }
 
 export async function getEvents(): Promise<EventObject[]> {
-	const data = await fetch('https://templerobotics.github.io/db.json')
+	// Prefix used because of this thread: https://stackoverflow.com/questions/43262121/trying-to-use-fetch-and-pass-in-mode-no-cors
+	const data = await fetch('https://arcane-inlet-30828.herokuapp.com/https://templerobotics.github.io/db.json')
 	const eventData: EventJson[] = (await data.json()).events
 	const currentDate = new Date()
 	currentDate.setDate(currentDate.getDate() + 1)

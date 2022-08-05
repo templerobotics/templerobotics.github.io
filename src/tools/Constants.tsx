@@ -15,7 +15,7 @@ export class PATHS {
 
 export class COLORS {
 	static readonly PRIMARY: Color = '#9D2235'
-	static readonly SECONDARY: Color = '#343a3f'
+	static readonly SECONDARY: Color = '#8A8D8F'
 	static readonly SECONDARY_DARK: Color = '#272b2f'
 	static readonly THIRD: Color = '#52575b'
 	static readonly SELECTED: Color = '#801c29'
