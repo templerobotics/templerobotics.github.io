@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9a1f62cf.css",
-    "main.js": "/static/js/main.5d921b6f.js",
+    "main.js": "/static/js/main.6c74b07e.js",
     "static/js/787.933ba907.chunk.js": "/static/js/787.933ba907.chunk.js",
     "static/media/nasa-vid-2.mp4": "/static/media/nasa-vid-2.6f405261f41b88c996cd.mp4",
     "static/media/full-balloon-launch.mp4": "/static/media/full-balloon-launch.ca7e3fe43c6b479a5e9f.mp4",
@@ -44,13 +44,14 @@
     "static/media/box-bot.jpeg": "/static/media/box-bot.aa6ac5142cdf3dfb3e95.jpeg",
     "static/media/futura-medium-webfont.woff2": "/static/media/futura-medium-webfont.1a999490288588eb6678.woff2",
     "static/media/arcamajora3-heavy-webfont.woff2": "/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
+    "static/media/hillock-anodizing.png": "/static/media/hillock-anodizing.b14b7f3652e2bd840595.png",
     "index.html": "/index.html",
     "main.9a1f62cf.css.map": "/static/css/main.9a1f62cf.css.map",
-    "main.5d921b6f.js.map": "/static/js/main.5d921b6f.js.map",
+    "main.6c74b07e.js.map": "/static/js/main.6c74b07e.js.map",
     "787.933ba907.chunk.js.map": "/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1f62cf.css",
-    "static/js/main.5d921b6f.js"
+    "static/js/main.6c74b07e.js"
   ]
 }
