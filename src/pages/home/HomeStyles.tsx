@@ -37,8 +37,7 @@ export default class HomeStyles {
 			color: COLORS.PURPLE,
 			otherContent:
 			<div style={{justifyContent: 'center', columnGap: '5%', display: 'flex', flexDirection: 'row'}}>
-				<Button source={'https://sites.google.com/a/temple.edu/eclipseballooningproject/home'}
-					text={'Learn More'} size={'medium'} />
+				<Button source={PATHS.BALLOONING} text={'Learn More'} size={'medium'} local/>
 				<Button source={'https://www.youtube.com/watch?v=rGMibNYSnRg'} text={'Watch Video'} size={'medium'} />
 			</div>
 		}

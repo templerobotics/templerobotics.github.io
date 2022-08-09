@@ -23,6 +23,9 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' style={{background: 'black'}}>
 				<img src={SponsorImages.arrow}/>
 			</div>
+			<div className='img-container' style={{background: 'white'}}>
+				<img src={SponsorImages.hillock}/>
+			</div>
 
 			<Contact/>
 		</Styles.SponsorContainer>

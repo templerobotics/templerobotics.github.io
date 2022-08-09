@@ -4,6 +4,7 @@ import { FONT_FAMILY } from '../../tools/Constants'
 export class SponsorImages {
 	static readonly arrow = require('../../assets/pics/sponsors/arrow.png')
 	static readonly nasa = require('../../assets/pics/sponsors/nasa-name.png')
+	static readonly hillock = require('../../assets/pics/sponsors/hillock-anodizing.png')
 }
 
 export default class SponsorsStyles {
@@ -12,6 +13,7 @@ export default class SponsorsStyles {
 		grid-template-columns: 100%;
 		grid-template-rows:
 			calc(var(--vh) * .2)   /* Title container */
+			calc(var(--vh) * .3)   /* Sponsor container */
 			calc(var(--vh) * .3)   /* Sponsor container */
 			calc(var(--vh) * .3)   /* Sponsor container */
 			max(calc(var(--vh) * .15), 100px);   /* Contacts */
