@@ -69,6 +69,7 @@ export default class PhotoGalleryStyles {
 
 		& > h3 {
 			${FONT_FAMILY.SECONDARY_TITLE}
+			font-size: calc(var(--vh) * 0.03);
 			text-align: center;
 		}
 

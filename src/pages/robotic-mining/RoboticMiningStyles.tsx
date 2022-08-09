@@ -1,7 +1,19 @@
 import styled from 'styled-components'
-import { FONT_FAMILY, RMC_PHOTO_GALLERY } from '../../tools/Constants'
+import { FONT_FAMILY, RMC_PHOTO_GALLERY, RMC_TEAM } from '../../tools/Constants'
 import { GalleryImage } from '../general/photo-gallery/PhotoGalleryStyles'
 import spaceBackground from '../../assets/pics/outreach/space-background.jpeg'
+import PhotoGallery from '../general/photo-gallery/PhotoGallery'
+
+export const MEET_THE_TEAM: GalleryImage[] = [
+	{ image: RMC_TEAM[0], title: 'Dr. Helferty', description: 'The head advisor for the club.' },
+	{ image: RMC_TEAM[1], title: 'Blake Bray', description: 'President. Class of 2023.' },
+	{ image: RMC_TEAM[2], title: 'Ryan Hodge', description: 'Vice President. Class of 2023.' },
+	{ image: RMC_TEAM[3], title: 'David Fiel', description: 'Project Lead. Class of 2023.' },
+	{ image: RMC_TEAM[4], title: 'Thomas Demianovich', description: 'Systems Lead. Class of 2023.' },
+	{ image: RMC_TEAM[5], title: 'Max Johnson', description: 'Treasurer. Class of 2023.' },
+	{ image: RMC_TEAM[6], title: 'Mark Stitch', description: 'Electrical Lead. Class of 2023.' },
+	{ image: RMC_TEAM[7], title: 'Jacob Shin', description: 'Programming. Class of 2022' }
+]
 
 export const GALLERY_INFO: GalleryImage[] = [
 	{ image: RMC_PHOTO_GALLERY[0], title: '2022', description: `The 2022 robot is coming together! No belts yet but the
@@ -27,7 +39,7 @@ export default class RoboticMiningStyles {
 		grid-template-rows: 
 			calc(var(--vh) * .4)    /* Intro heading */
 			calc(var(--vh) * .4)    /* Robot and competition description */
-			calc(var(--vh) * 1.7)   /* Outreach gallery and photo gallery */
+			calc(var(--vh) * 2.15)  /* Outreach gallery and photo gallery */
 			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
 		align-content: center;
@@ -108,8 +120,15 @@ export default class RoboticMiningStyles {
 		background-size: cover;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
+		grid-template-rows: calc(var(--vh) * 0.45) calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
 		justify-items: center;
 		align-items: center;
+	`
+
+	static readonly MeetTheTeam = styled(PhotoGallery)`
+		& h3 {
+			font-size: calc(var(--vh) * .02) !important;
+			color: red;
+		}
 	`
 }
