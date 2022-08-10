@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 
 import debounce from 'lodash.debounce'
-import { getEvents } from './services/getEvents'
-import { EventObject } from './CustomTypes'
 
 export const scrollToTop = (): void =>{
 	window.scrollTo({
@@ -82,22 +80,6 @@ export default function useWindowDimensions(): {width: number, height: number} {
 	}, [])
 
 	return windowDimensions
-}
-
-export function getEventsFromDatabase(): EventObject[] {
-	const [events, setList] = useState<EventObject[]>([])
-
-	useEffect((): () => void  => {
-		let mounted = true
-		getEvents().then((events: EventObject[]) => {
-			if(mounted) {
-				setList(events)
-			}
-		})
-		return () => mounted = false
-	}, [])
-
-	return events
 }
 
 export function convertToTileCase(text: string): string {

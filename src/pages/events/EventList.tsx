@@ -3,7 +3,7 @@ import { EventObject } from '../../tools/CustomTypes'
 
 import Styles from './EventListStyles'
 
-class EventList extends React.Component<{events: EventObject[]}, never> {
+class EventList extends React.Component<{events: EventObject[], loading: boolean}, never> {
 	render (): React.ReactElement {
 		return (
 			<Styles.EventListContainer rows={this.props.events.length}>
