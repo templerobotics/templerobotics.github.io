@@ -9,7 +9,7 @@ export default class EventsStyles {
 		align-items: center;
 		grid-template-rows: 
 			calc(var(--vh) * .2)
-			calc(var(--vh) * ${props => props.numOfEvents} * .2)
+			calc(var(--vh) * ${props => props.numOfEvents === 0 ? 1 : props.numOfEvents} * .2)
 			calc(var(--vh) * .2);
 
 		& > .create-button-container {
