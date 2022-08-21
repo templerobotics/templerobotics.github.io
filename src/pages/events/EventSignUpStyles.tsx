@@ -11,9 +11,9 @@ export default class EventSignUpStyles {
 	static readonly SignUpContainer = styled.div<{hover: boolean}>`
 		width: calc(var(--vh) * .15);
 		height: calc(var(--vh) * .15);
-		background-color: ${props => props.hover ? COLORS.PRIMARY : 'white'};
-		border-radius: calc(var(--vh) * .01);
-		color: ${props => props.hover ? 'white' : COLORS.PRIMARY};
+		background-color: ${props => props.hover ? COLORS.SELECTED : COLORS.PRIMARY};
+		border-radius: calc(var(--vh) * .02);
+		color: 'white';
 		text-align: center;
 		align-items: center;
 		display: flex;
