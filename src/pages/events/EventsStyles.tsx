@@ -9,6 +9,7 @@ export default class EventsStyles {
 		align-items: center;
 		grid-template-rows: 
 			calc(var(--vh) * .2)
+			calc(var(--vh) * .2)
 			calc(var(--vh) * ${props => props.numOfEvents === 0 ? 1 : props.numOfEvents} * .2)
 			calc(var(--vh) * .2);
 
@@ -23,5 +24,10 @@ export default class EventsStyles {
 		& > .title {
 			${FONT_FAMILY.PAGE_TITLE}
 		}
+	`
+
+	static readonly EventSignUps = styled.div`
+		display: flex;
+		column-gap: calc(var(--vh) * .04);
 	`
 }
