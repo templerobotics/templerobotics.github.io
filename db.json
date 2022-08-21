@@ -32,6 +32,22 @@
 			"time": "5:00 PM",
 			"location": "The ideas hub (second floor of the engineering building)",
 			"id": 3
+		},
+		{
+			"title": "Outreach Build Day Week 2",
+			"description": "Learn to build a robot! This series will focus on how to build a small robot from scratch! If you missed a previous build session, no problem!",
+			"date": "09/09/2022",
+			"time": "5:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 4
+		},
+		{
+			"title": "Outreach Build Day Week 3",
+			"description": "Learn to build a robot! This series will focus on how to build a small robot from scratch! If you missed a previous build session, no problem!",
+			"date": "09/23/2022",
+			"time": "5:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 5
 		}
 	]
 }
