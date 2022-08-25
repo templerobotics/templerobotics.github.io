@@ -29,6 +29,17 @@ export class COLORS {
 	static readonly SECONDARY_SCROLLBAR: Color = '#9d22357f'
 }
 
+export const RMC_TEAM = [
+	require('../assets/pics/team/john-helferty.jpg'),
+	require('../assets/pics/team/blake-bray.jpg'),
+	require('../assets/pics/team/ryan-hodge.jpg'),
+	require('../assets/pics/team/david-fiel.jpg'),
+	require('../assets/pics/team/thomas-demianovich.jpg'),
+	require('../assets/pics/team/max-johnson.jpg'),
+	require('../assets/pics/team/mark-stitch.png'),
+	require('../assets/pics/team/jacob-shin.jpg')
+]
+
 export const RMC_PHOTO_GALLERY = [
 	require('../assets/pics/photo-gallery/rmc/rmc-2022.jpg'),
 	require('../assets/pics/photo-gallery/rmc/wire-mess.jpg'),

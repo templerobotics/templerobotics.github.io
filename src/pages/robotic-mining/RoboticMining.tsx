@@ -6,7 +6,7 @@ import PhotoGallery from '../general/photo-gallery/PhotoGallery'
 import Contact from '../general/contact/Contact'
 
 // Custom styles
-import Styles, { GALLERY_INFO } from './RoboticMiningStyles'
+import Styles, { GALLERY_INFO, MEET_THE_TEAM } from './RoboticMiningStyles'
 
 // Images
 // import robot from '../../assets/pics/robot/robot-2019.jpg'
@@ -41,6 +41,8 @@ const RoboticMining = (): React.ReactElement => {
 				video/>
 
 			<Styles.SpaceBackground>
+				<Styles.MeetTheTeam galleryInfo={ MEET_THE_TEAM } title={ 'Meet the Team' }/>
+
 				<Styles.OutreachGallery>
 					<h2>Outreach</h2>
 					<div className='outreach-slide'>
