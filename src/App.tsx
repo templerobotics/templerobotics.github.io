@@ -1,7 +1,9 @@
 
 // Third party
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,7 +13,7 @@ import GlobalStyles from './tools/OverallStyling'
 import Navigation from './pages/general/navigation/Navigation'
 import Home from './pages/home/Home'
 import Sponsors from './pages/sponsors/Sponsors'
-import Events from './pages/events/Events'
+import Events, { getEventToasts } from './pages/events/Events'
 import RoboticMining from './pages/robotic-mining/RoboticMining'
 import Copyright from './pages/general/copyright/Copyright'
 import Rocksat from './pages/rocksat/Rocksat'
@@ -24,8 +26,12 @@ import backgroundVideo2 from './assets/vids/nasa-vid-2.mp4'
 import { PATHS } from './tools/Constants'
 
 const App = (): React.ReactElement => {
+	// Used for Sign-Ups
+	useEffect(() => { getEventToasts() })
+
 	return (
 		<>
+			<ToastContainer/>
 			<video loop muted autoPlay playsInline id='video-background'>
 				<source src={backgroundVideo1} type='video/mp4'/>
 				<source src={backgroundVideo2} type='video/mp4'/>
