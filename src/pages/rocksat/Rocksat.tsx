@@ -8,7 +8,9 @@ import SectionDescription from '../robotic-mining/SectionDescription'
 import Table from '../../tools/Table'
 
 // Custom styles
-import Styles, { GALLERY_INFO, TABLE_INFO } from './RocksatStyles'
+import Styles from './RocksatStyles'
+import GALLERY_INFO from '../../data/RocksatPhotoGalleryInfo'
+import TABLE_INFO from '../../data/RocksatTableInfo'
 
 // Images
 import rocksat from '../../assets/pics/carousel/rocksat17.jpeg'
@@ -17,7 +19,7 @@ import rocksatProjectBrief from './rockSat-project-brief.pdf'
 
 const Rocksat = (): React.ReactElement => {
 	return (
-		<Styles.RocksatContainer>
+		<Styles.RocksatContainer tableRows={TABLE_INFO.rows.length}>
 			<Styles.TitleContainer className='title-container'>
 				<h2 className='title'>Temple RockSat-C</h2>
 				<AiOutlineDash/>

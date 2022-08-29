@@ -6,7 +6,8 @@ import PhotoGallery from '../general/photo-gallery/PhotoGallery'
 import Contact from '../general/contact/Contact'
 
 // Custom styles
-import Styles, { GALLERY_INFO } from './RoboticMiningStyles'
+import Styles from './RoboticMiningStyles'
+import GALLERY_INFO from '../../data/RoboticsPhotoGalleryInfo'
 
 // Images
 // import robot from '../../assets/pics/robot/robot-2019.jpg'
