@@ -13,17 +13,15 @@ import { getEvents } from '../../tools/services/getEvents'
 import EventSignUp from './EventSignUp'
 import EVENT_SIGNUP_INFO from '../../data/EventSignUpInfo'
 
-// Put the event sign ups here
-// TODO: Add icon for toasts
-
 export type EventsState = {
 	loading: boolean,
 	events: EventObject[]
 }
 
+// Add icon
 export function getEventToasts(): void {
 	EVENT_SIGNUP_INFO.forEach(event => {
-		toast(event.title,{
+		toast('🤖 ' + event.title, {
 			theme: 'dark',
 			onClick: () => window.open(event.src)
 		})
