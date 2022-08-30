@@ -31,7 +31,7 @@ const App = (): React.ReactElement => {
 
 	return (
 		<>
-			<ToastContainer/>
+			<ToastContainer style={{fontSize: 'var(--bs-body-font-size)'}}/>
 			<video loop muted autoPlay playsInline id='video-background'>
 				<source src={backgroundVideo1} type='video/mp4'/>
 				<source src={backgroundVideo2} type='video/mp4'/>
