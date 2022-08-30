@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineDash } from 'react-icons/ai'
+import { toast } from 'react-toastify'
 import EventList from './EventList'
 
 import Styles from './EventsStyles'
@@ -10,10 +11,21 @@ import { EventObject } from '../../tools/CustomTypes'
 import { COLORS } from '../../tools/Constants'
 import { getEvents } from '../../tools/services/getEvents'
 import EventSignUp from './EventSignUp'
+import EVENT_SIGNUP_INFO from '../../data/EventSignUpInfo'
 
 export type EventsState = {
 	loading: boolean,
 	events: EventObject[]
+}
+
+// Add icon
+export function getEventToasts(): void {
+	EVENT_SIGNUP_INFO.forEach(event => {
+		toast('🤖 ' + event.title, {
+			theme: 'dark',
+			onClick: () => window.open(event.src)
+		})
+	})
 }
 
 class Events extends React.Component<unknown, EventsState>{
@@ -48,16 +60,7 @@ class Events extends React.Component<unknown, EventsState>{
 					<AiOutlineDash/>
 				</Styles.TitleContainer>
 				<Styles.EventSignUps>
-					<EventSignUp
-						title='Robotics Sign Up'
-						description='Sign up for the club!'
-						src={`https://docs.google.com/forms/d/e/1FAIpQLSea1tnIeueKhYVQjzD
-							B4B3Eu9SW2346thjVDTSs5X0GFM-5vQ/viewform?usp=sf_link`}/>
-					<EventSignUp
-						title='Build Day Sign Up'
-						description='Sign up for the outreach build days!'
-						src={`https://docs.google.com/forms/d/e/1FAIpQLSdOjuVGK6zYMWIRCSSR3L
-							GqVTssxk2A5HxDehjSpYo6C3tGAw/viewform?usp=sf_link`}/>
+					{EVENT_SIGNUP_INFO.map((event, i) => <EventSignUp key={i} events={event}/>)}
 				</Styles.EventSignUps>
 				{this.renderEvents(parseFloat(width) * 0.03)}
 				<Contact/>

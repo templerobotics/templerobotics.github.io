@@ -2,7 +2,7 @@ import React from 'react'
 
 import Styles, { EventSignUpProps } from './EventSignUpStyles'
 
-class EventSignUp extends React.Component<EventSignUpProps, {hover: boolean}>{
+class EventSignUp extends React.Component<{events: EventSignUpProps}, {hover: boolean}>{
 	constructor(props: never) {
 		super(props)
 		this.state = { hover: false }
@@ -16,10 +16,10 @@ class EventSignUp extends React.Component<EventSignUpProps, {hover: boolean}>{
 				onMouseEnter={() => this.setState({hover: true})}
 				onMouseLeave={() => this.setState({hover: false})}
 				hover={this.state.hover}
-				onClick={() => routeChange(this.props.src)}>
-				<h2>{this.props.title}</h2>
+				onClick={() => routeChange(this.props.events.src)}>
+				<h2>{this.props.events.title}</h2>
 				<div>
-					{this.props.description}
+					{this.props.events.description}
 				</div>
 			</Styles.SignUpContainer>
 		)

@@ -11,8 +11,7 @@ import Button from '../general/button/Button'
 
 // Images
 import nasaLogo from '../../assets/pics/logos/nasa.png'
-
-const slideInfo = Styles.slideInfo
+import HOME_CAROUSEL_INFO from '../../data/HomeCarouselInfo'
 
 const Home = (): React.ReactElement => {
 	return (
@@ -37,7 +36,7 @@ const Home = (): React.ReactElement => {
 				<h2>Program</h2>
 			</Styles.SectionHeader>
 
-			<Carousel slideInfo={slideInfo}/>
+			<Carousel slideInfo={HOME_CAROUSEL_INFO}/>
 
 			<Styles.SectionHeader>
 				<h2>Help Temple Space Exploration get to the moon!</h2>
