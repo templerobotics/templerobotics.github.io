@@ -18,12 +18,12 @@ export type EventsState = {
 	events: EventObject[]
 }
 
-// Add icon
 export function getEventToasts(): void {
 	EVENT_SIGNUP_INFO.forEach(event => {
 		toast('🤖 ' + event.title, {
 			theme: 'dark',
-			onClick: () => window.open(event.src)
+			onClick: () => window.open(event.src),
+			autoClose: 4000
 		})
 	})
 }
