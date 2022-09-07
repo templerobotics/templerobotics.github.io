@@ -24,6 +24,94 @@
 			"time": "6:00 PM",
 			"location": "The ideas hub (second floor of the engineering building)",
 			"id": 6
+		},
+		{
+			"title": "Weekly General Body Meeting",
+			"description": "Talk about the weekly progress of the club and future goals.",
+			"date": "09/15/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 7
+		},
+		{
+			"title": "Weekly General Body Meeting",
+			"description": "Talk about the weekly progress of the club and future goals.",
+			"date": "09/22/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 8
+		},
+		{
+			"title": "Weekly Programming Meeting",
+			"description": "Talk about the weekly progress of the club and future goals.",
+			"date": "09/12/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 10
+		},
+		{
+			"title": "Weekly Programming Meeting",
+			"description": "Talk about the weekly progress of the club and future goals.",
+			"date": "09/19/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 10
+		},
+		{
+			"title": "Weekly Programming Meeting",
+			"description": "Talk about the weekly progress of the club and future goals.",
+			"date": "09/26/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 10
+		},
+		{
+			"title": "Weekly Electrical Meeting",
+			"description": "The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!",
+			"date": "09/08/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 9
+		},
+		{
+			"title": "Weekly Electrical Meeting",
+			"description": "The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!",
+			"date": "09/15/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 9
+		},
+		{
+			"title": "Weekly Electrical Meeting",
+			"description": "The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!",
+			"date": "09/22/2022",
+			"time": "6:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 9
+		},
+		{
+			"title": "Weekly Mechanical Meeting",
+			"description": "The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.",
+			"date": "09/13/2022",
+			"time": "5:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 11
+		},
+		{
+			"title": "Weekly Mechanical Meeting",
+			"description": "The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.",
+			"date": "09/20/2022",
+			"time": "5:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 11
+		},
+		{
+			"title": "Weekly Mechanical Meeting",
+			"description": "The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.",
+			"date": "09/27/2022",
+			"time": "5:00 PM",
+			"location": "The ideas hub (second floor of the engineering building)",
+			"id": 11
 		}
 	]
 }
