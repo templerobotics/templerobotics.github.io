@@ -34,9 +34,9 @@ class Events extends React.Component<unknown, EventsState>{
 		this.state = { loading: true, events: [] }
 	}
 
-	async componentDidMount(): Promise<void> {
+	componentDidMount(): void {
 		try {
-			const events = await getEvents()
+			const events = getEvents()
 			this.setState({ loading: false, events: events })
 		} catch (error) {
 			console.log(error)

@@ -9,5 +9,7 @@ export type EventObject = {
 	date: Date,
 	location: string,
 	time: string,
-	description: string
+	description: string,
+	weekly?: boolean,
+	endDate?: Date
 }
