@@ -35,7 +35,7 @@ const EVENT_INFO: EventObject[] = [
 		time: '5:00 PM',
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
-		endDate: new Date('09/07/2022')
+		endDate: new Date(semesterEnd)
 	},
 	{
 		title: 'Weekly Electrical Meeting',
