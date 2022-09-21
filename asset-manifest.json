@@ -1,13 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9fb36e3.css",
-    "main.js": "/static/js/main.f37045cf.js",
+    "main.css": "/static/css/main.6f661b0c.css",
+    "main.js": "/static/js/main.c8d1d42f.js",
     "static/js/787.933ba907.chunk.js": "/static/js/787.933ba907.chunk.js",
-    "static/media/nasa-vid-2.mp4": "/static/media/nasa-vid-2.6f405261f41b88c996cd.mp4",
-    "static/media/full-balloon-launch.mp4": "/static/media/full-balloon-launch.ca7e3fe43c6b479a5e9f.mp4",
-    "static/media/nasa-vid-1.mp4": "/static/media/nasa-vid-1.cd927512f0a7d6810907.mp4",
     "static/media/balloon-team.jpeg": "/static/media/balloon-team.d10c78cdaffb0151a08e.jpeg",
-    "static/media/augerbot-promotion.mp4": "/static/media/augerbot-promotion.40919a8f45b16a1fbf89.mp4",
     "static/media/rocksat17.jpeg": "/static/media/rocksat17.b210f202407220b10172.jpeg",
     "static/media/wire-mess.jpg": "/static/media/wire-mess.9e8de730f9642afa1a0c.jpg",
     "static/media/rocksat-2017.jpeg": "/static/media/rocksat-2017.c9a89dcfe4c960b6bbe2.jpeg",
@@ -46,12 +42,16 @@
     "static/media/arcamajora3-heavy-webfont.woff2": "/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
     "static/media/hillock-anodizing.png": "/static/media/hillock-anodizing.b14b7f3652e2bd840595.png",
     "index.html": "/index.html",
-    "main.f9fb36e3.css.map": "/static/css/main.f9fb36e3.css.map",
-    "main.f37045cf.js.map": "/static/js/main.f37045cf.js.map",
+    "static/media/full-balloon-launch.mp4": "/static/media/full-balloon-launch.8c0bc6116a0523042d13.mp4",
+    "static/media/nasa-vid-1.mp4": "/static/media/nasa-vid-1.d7853af61b969c260ead.mp4",
+    "static/media/nasa-vid-2.mp4": "/static/media/nasa-vid-2.da9db8d5c651709e356c.mp4",
+    "static/media/augerbot-promotion.mp4": "/static/media/augerbot-promotion.80919b616b0dba6b8778.mp4",
+    "main.6f661b0c.css.map": "/static/css/main.6f661b0c.css.map",
+    "main.c8d1d42f.js.map": "/static/js/main.c8d1d42f.js.map",
     "787.933ba907.chunk.js.map": "/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9fb36e3.css",
-    "static/js/main.f37045cf.js"
+    "static/css/main.6f661b0c.css",
+    "static/js/main.c8d1d42f.js"
   ]
 }
