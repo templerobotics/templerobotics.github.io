@@ -10,7 +10,7 @@ import SectionDescription from '../robotic-mining/SectionDescription'
 import Styles from './BallooningStyles'
 
 // Images
-import balloon from '../../assets/pics/ballooning/full-balloon-launch.mp4'
+import balloon from '../../assets/vids/ballooning-vid.mp4'
 
 const Ballooning = (): React.ReactElement => {
 	return (
