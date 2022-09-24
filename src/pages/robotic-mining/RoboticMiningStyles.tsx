@@ -33,7 +33,7 @@ export default class RoboticMiningStyles {
 			${FONT_FAMILY.BODY}
 			letter-spacing: 9px;
 			text-transform: uppercase;
-			margin-top: 40px;
+			margin-top: calc(var(--vh) * .1);
 			margin-bottom: 0;
 		}
 

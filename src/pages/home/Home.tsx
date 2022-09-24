@@ -18,8 +18,7 @@ const Home = (): React.ReactElement => {
 		<Styles.HomeContainer>
 			<Styles.TitleContainer className='title-container'>
 				<div className='nasa-title'>
-					<img src={nasaLogo} alt='NASA'/>
-					<p>Temple Space Exploration</p>
+					<p>Temple Space Exploration and Robotics</p>
 				</div>
 				<Styles.LargeText>Shoot for the moon with us!</Styles.LargeText>
 				<Styles.SmallText>Visit us in the</Styles.SmallText>
@@ -29,8 +28,11 @@ const Home = (): React.ReactElement => {
 				</Styles.Header>
 			</Styles.TitleContainer>
 
-			<Styles.VideoSource source={'https://www.youtube.com/watch?v=WeA7edXsU40'}
-				text={'Video Source'} />
+			<Styles.VideoSource>
+				<Button source={'https://www.youtube.com/watch?v=WeA7edXsU40'}
+					text={'Video Source'} id={'vid-source'}/>
+				<img src={nasaLogo} alt='NASA'/>
+			</Styles.VideoSource>
 
 			<Styles.SectionHeader>
 				<h2>Program</h2>

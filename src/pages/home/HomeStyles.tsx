@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import Button from '../general/button/Button'
 import { COLORS, FONT_FAMILY } from '../../tools/Constants'
 
 export default class HomeStyles {
@@ -9,12 +8,12 @@ export default class HomeStyles {
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: 
-			max(calc(var(--vh) * .35), 250px)   	/* Intro heading */
-			calc(var(--vh) * .06)   			/* Intro heading button */
-			calc(var(--vh) * .15)   			/* Program section heading */
-			calc(var(--vh) * .4)    			/* Carousel */
-			max(calc(var(--vh) * .3), 100px)   	/* Sponsors section heading */
-			max(calc(var(--vh) * .15), 70px);  /* Contacts */
+			max(calc(var(--vh) * .40), 250px)   	/* Intro heading */
+			calc(var(--vh) * .1)   					/* Intro heading button */
+			calc(var(--vh) * .15)   				/* Program section heading */
+			calc(var(--vh) * .4)    				/* Carousel */
+			max(calc(var(--vh) * .3), 100px)   		/* Sponsors section heading */
+			max(calc(var(--vh) * .15), 70px);  		/* Contacts */
 		justify-content: center;
 	`
 
@@ -31,29 +30,24 @@ export default class HomeStyles {
 			align-items: center;
 		}
 
-		& > .nasa-title > img {
-			height: 100%;
-		}
-
 		& > .nasa-title > p {
 			${FONT_FAMILY.TITLE}
 		}
 	`
 
 	static readonly LargeText = styled.p`
-		font-family: 'arca', 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-		font-size: 2vw;
+		${FONT_FAMILY.SUBTITLE}
 		letter-spacing: 5px;
 		line-height: 3;
 		text-transform: uppercase;
 	`
 
 	static readonly SmallText = styled.p`
-		font-family: 'Futura', 'Helvetica', 'Arial', 'sans-serif';
-		font-size: 10px;
 		letter-spacing: 9px;
 		text-transform: uppercase;
-		margin-top: 40px;
+		margin-top: calc(var(--vh) * 0.08);
+		${FONT_FAMILY.BODY}
+		margin-bottom: 0;
 	`
 
 	static readonly Header = styled.h4`
@@ -84,9 +78,21 @@ export default class HomeStyles {
 		}
 	`
 
-	static readonly VideoSource = styled(Button)`
-		margin-left: 5%;
-		margin-bottom: 5%;
-		align-self: flex-start !important;
+	static readonly VideoSource = styled.div`
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100%;
+		align-items: center;
+		margin-bottom: calc(var(--vh) * .02);
+
+		& > * {
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		& > img {
+			height: 100%;
+			justify-self: right;
+		}
 	`
 }
