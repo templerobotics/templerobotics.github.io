@@ -1,6 +1,9 @@
 // Third party
 import React from 'react'
 import { AiOutlineDash } from 'react-icons/ai'
+import { ReactComponent as Lockheed } from '../../assets/pics/sponsors/lockheed-martin-logo.svg'
+import { ReactComponent as Nasa } from '../../assets/pics/sponsors/nasa-logo.svg'
+import { ReactComponent as Arrow } from '../../assets/pics/sponsors/arrow-logo.svg'
 
 // Custom components
 import Contact from '../general/contact/Contact'
@@ -16,15 +19,17 @@ const Sponsors = (): React.ReactElement => {
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
 
-			{/* TODO: Add NASA as a sponsor and the anodizing place */}
 			<div className='img-container' style={{background: '#053a92'}}>
-				<img src={SponsorImages.nasa}/>
-			</div>
-			<div className='img-container' style={{background: 'black'}}>
-				<img src={SponsorImages.arrow}/>
+				<Nasa />
 			</div>
 			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.hillock}/>
+				<Lockheed />
+			</div>
+			<div className='img-container' style={{background: 'black'}}>
+				<Arrow />
+			</div>
+			<div className='img-container' style={{background: 'white'}}>
+				<img src={SponsorImages.hillock} style={{width: '60%'}}/>
 			</div>
 
 			<Contact/>

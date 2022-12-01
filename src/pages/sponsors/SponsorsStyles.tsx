@@ -13,19 +13,23 @@ export default class SponsorsStyles {
 		grid-template-columns: 100%;
 		grid-template-rows:
 			calc(var(--vh) * .2)   /* Title container */
-			calc(var(--vh) * .3)   /* Sponsor container */
-			calc(var(--vh) * .3)   /* Sponsor container */
-			calc(var(--vh) * .3)   /* Sponsor container */
+			calc(var(--vh) * .2)   /* Sponsor container */
+			calc(var(--vh) * .2)   /* Sponsor container */
+			calc(var(--vh) * .2)   /* Sponsor container */
+			calc(var(--vh) * .2)   /* Sponsor container */
 			max(calc(var(--vh) * .15), 100px);   /* Contacts */
 
 		& > .img-container {
 			display: flex;
 			background: black;
 			padding: 5%;
+			justify-content: center;
 		}
 
+		& > .img-container > svg,
 		& > .img-container > img {
 			width: 100%;
+			height: 100%;
 			align-self: center;
 		}
 	`
