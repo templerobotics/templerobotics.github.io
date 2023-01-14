@@ -43,7 +43,7 @@ const RoboticMining = (): React.ReactElement => {
 
 			<Styles.SpaceBackground>
 				<Styles.OutreachGallery>
-					<h2>Outreach</h2>
+					<h2>Outreach and Events</h2>
 					<div className='outreach-slide'>
 						<h2>Vex State Sectionals</h2>
 						<p>
@@ -58,17 +58,17 @@ const RoboticMining = (): React.ReactElement => {
 						<img src={ outreachPhoto2 } />
 					</div>
 					<div className='outreach-slide'>
-						<h2>Temple University TV</h2>
-						<p>
-							Our faculty advisor Dr. Helferty, a former NASA employee, talks about how starting Temple Robotics
-							and what it has become today.
-						</p>
-					</div>
-					<div className='outreach-slide'>
 						<h2>Philadelphia Robotics Expo</h2>
 						<p>
 							Our tabling event at the Philadelphia Robotics Expo where about 300 high school student came to see
 							what philadelphia had to offer in robotics.
+						</p>
+					</div>
+					<div className='outreach-slide'>
+						<h2>Temple University TV</h2>
+						<p>
+							Our faculty advisor Dr. Helferty, a former NASA employee, talks about how starting Temple Robotics
+							and what it has become today.
 						</p>
 					</div>
 					<div className='outreach-image-container'>
