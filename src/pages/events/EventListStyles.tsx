@@ -52,7 +52,7 @@ export default class EventListStyles {
 		& > .description {
 			padding-right: 4%;
 			height: 100%;
-			overflow-y: scroll;
+			/* overflow-y: scroll; */
 		}
 
 		& > .title {

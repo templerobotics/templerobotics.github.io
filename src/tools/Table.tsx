@@ -25,7 +25,7 @@ const TableContainer = styled.div`
 	border-radius: 3%;
 	border-style: solid;
 	border-color: white;
-	overflow-y: scroll;
+	overflow-y: hidden;
 `
 
 function makeRowCells(object: object, i: number): React.ReactElement {
