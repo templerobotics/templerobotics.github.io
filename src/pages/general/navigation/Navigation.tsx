@@ -41,7 +41,7 @@ const Navigation = (): React.ReactElement => {
 						<NavLink eventKey='3' as={Link} to={Constants.PATHS.SPONSORS} onClick={scrollToTop}>Sponsors</NavLink>
 						<NavLink eventKey='4' as={Link} to={Constants.PATHS.ROBOTICS} onClick={scrollToTop}>Robotics</NavLink>
 						<NavLink eventKey='5' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>RockSat</NavLink>
-						<NavLink eventKey='6' as={Link} to={Constants.PATHS.BALLOONING} onClick={scrollToTop}>NASA Ballooning</NavLink>
+						<NavLink eventKey='6' as={Link} to={Constants.PATHS.BALLOONING} onClick={scrollToTop}>Projects</NavLink>
 					</Styles.NavbarLinks>
 				</Navbar.Collapse>
 			</Styles.NavigationBar>
