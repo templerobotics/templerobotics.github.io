@@ -9,12 +9,12 @@ export const scrollToTop = (): void =>{
 	})
 }
 
-export const getWindowWidth = (): {width: number} => {
-	const [dimensions, setWidth] = useState({ width: window.innerWidth })
+export const useWindowSize = (): {width: number, height: number} => {
+	const [dimensions, setWidth] = useState({ width: window.innerWidth, height: window.innerHeight })
 
 	useEffect(() => {
 		const handler = debounce(() => {
-			setWidth({ width: window.innerWidth })
+			setWidth({ width: window.innerWidth, height: window.innerHeight })
 		}, 10)
 
 		window.addEventListener('scroll', handler)
