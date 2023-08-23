@@ -75,6 +75,7 @@ export default class HomeStyles {
 			display: flex;
 			column-gap: 10%;
 			justify-content: center;
+			align-items: center;
 		}
 	`
 
@@ -92,7 +93,7 @@ export default class HomeStyles {
 
 		& > img {
 			height: 100%;
-			justify-self: right;
+			justify-self: right;1
 		}
 	`
 }

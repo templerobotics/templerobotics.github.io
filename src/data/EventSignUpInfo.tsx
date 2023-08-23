@@ -2,7 +2,7 @@ import { EventSignUpProps } from '../pages/events/EventSignUpStyles'
 
 const EVENT_SIGNUP_INFO: EventSignUpProps[] = [
 	{
-		title: 'Robotics Sign Up',
+		title: 'Robotics Sign Up ',
 		description: 'Sign up for the club!',
 		src: 'https://docs.google.com/forms/d/e/1FAIpQLSea1tnIeueKhYVQjzDB4B3Eu9SW2346thjVDTSs5X0GFM-5vQ/viewform?usp=sf_link'
 	}

@@ -11,6 +11,8 @@ export class PATHS {
 	static readonly ROCKSAT: string = '/rocksat'
 	static readonly ROBOTICS: string = '/robotics'
 	static readonly BALLOONING: string = '/ballooning'
+	
+
 }
 
 export class COLORS {
