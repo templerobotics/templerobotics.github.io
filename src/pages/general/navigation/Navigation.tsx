@@ -8,14 +8,14 @@ import Styles from './NavigationStyles'
 
 // General tools
 import * as Constants from '../../../tools/Constants'
-import { getScrollY, getWindowWidth, scrollToTop } from '../../../tools/HelpfulFunctions'
+import { getScrollY, useWindowSize, scrollToTop } from '../../../tools/HelpfulFunctions'
 
 // Images
 import nasaLogo from '../../../assets/pics/logos/nasa.png'
 
 const Navigation = (): React.ReactElement => {
 	const { scroll } = getScrollY()
-	const { width } = getWindowWidth()
+	const { width } = useWindowSize()
 	return (
 		<>
 			{/* The rest of the navigation bar. The className is dependent on whether the navbar is expanded or not */}
