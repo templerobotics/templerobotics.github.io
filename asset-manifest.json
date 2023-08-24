@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f661b0c.css",
-    "main.js": "/static/js/main.cd4e9c99.js",
+    "main.js": "/static/js/main.7f1b4bee.js",
     "static/js/787.933ba907.chunk.js": "/static/js/787.933ba907.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
@@ -20,6 +20,7 @@
     "static/media/rocksat-2020.jpeg": "/static/media/rocksat-2020.ba2f799f3cec9638af11.jpeg",
     "static/media/rockSat-project-brief.pdf": "/static/media/rockSat-project-brief.bd63b55b5fb960dadae0.pdf",
     "static/media/rocksat-2014-3.jpeg": "/static/media/rocksat-2014-3.9e5b17cbc3db2bf42333.jpeg",
+    "static/media/comp-team-2023.jpg": "/static/media/comp-team-2023.2053957322f5425bf26f.jpg",
     "static/media/interview.jpeg": "/static/media/interview.d7dac261b2fab2f15ad7.jpeg",
     "static/media/expo.jpeg": "/static/media/expo.955d476a5f01ae1307ea.jpeg",
     "static/media/vex.jpeg": "/static/media/vex.6d9bad6dedd277ad40a2.jpeg",
@@ -53,11 +54,11 @@
     "static/media/nasa-logo.svg": "/static/media/nasa-logo.8c229ec1f7f451bb9f3ad044f616aa8f.svg",
     "index.html": "/index.html",
     "main.6f661b0c.css.map": "/static/css/main.6f661b0c.css.map",
-    "main.cd4e9c99.js.map": "/static/js/main.cd4e9c99.js.map",
+    "main.7f1b4bee.js.map": "/static/js/main.7f1b4bee.js.map",
     "787.933ba907.chunk.js.map": "/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f661b0c.css",
-    "static/js/main.cd4e9c99.js"
+    "static/js/main.7f1b4bee.js"
   ]
 }
