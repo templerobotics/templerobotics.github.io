@@ -15,7 +15,7 @@ const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Electrical Meeting',
 		description: 'The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!',
-		date: new Date('02/16/23'),
+		date: new Date(''),
 		time: '5:00 PM',
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
@@ -34,32 +34,35 @@ const EVENT_INFO: EventObject[] = [
 		title: 'First GBM of the Fall Semester',
 		description: `Learn more about the club and what we do! If you have any interest at all,
 			we highly recommend you joining us!`,
-		date: new Date('2/12/22'),
-		time: '',
+		date: new Date('09/05/2023'),
+		time: '7:00 PM',
 		location: 'The ideas hub (second floor of the engineering building)'
-	},
+	}
+	//
+	/*
 	{
 		title: 'General Body Meeting',
 		description: `Learn more about the club and what we do! If you have any interest at all,
 		we highly recommend you joining us!`,
-		date: new Date('2/16/23'),
+		date: new Date(''),
 		time: '6:00 PM',
 		location: 'The ideas hub (second floor of the engineering building)'
 	},
 	{
 		title: 'Engineering Week Showcase',
 		description: 'Meet us to see the robot in action and learn about the club!',
-		date: new Date('2/22/23'),
+		date: new Date(''),
 		time: '11:00 AM',
 		location: 'SERC Main Lobbby'
 	},
 	{
 		title: 'Temple Ambler Showcase',
 		description: 'Meet us to see the robot in action and learn about the club!',
-		date: new Date('4/21/23'),
+		date: new Date(''),
 		time: '9:15 AM',
 		location: 'Temple Ambler Widener'
 	}
+	*/
 ]
 
 export default EVENT_INFO

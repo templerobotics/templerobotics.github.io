@@ -4,7 +4,7 @@ const EVENT_SIGNUP_INFO: EventSignUpProps[] = [
 	{
 		title: 'Robotics Sign Up',
 		description: 'Sign up for the club!',
-		src: 'https://docs.google.com/forms/d/e/1FAIpQLSea1tnIeueKhYVQjzDB4B3Eu9SW2346thjVDTSs5X0GFM-5vQ/viewform?usp=sf_link'
+		src: 'https://forms.gle/pPHGRk5EkNQ7nJHd9'
 	}
 	// {
 	// 	title: 'Build Day Sign Up',
