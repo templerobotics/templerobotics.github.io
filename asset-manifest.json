@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6f661b0c.css",
-    "main.js": "/static/js/main.7f1b4bee.js",
+    "main.js": "/static/js/main.488c4a50.js",
     "static/js/787.933ba907.chunk.js": "/static/js/787.933ba907.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
@@ -39,7 +39,6 @@
     "static/media/rocksat-2015.jpeg": "/static/media/rocksat-2015.0f147ea1eb3d076ac57f.jpeg",
     "static/media/rmc-2009.jpeg": "/static/media/rmc-2009.153681afb1f1da6f613e.jpeg",
     "static/media/bot-shop.jpeg": "/static/media/bot-shop.20d19c93c2549db86fce.jpeg",
-    "static/media/TransRoboOwl.svg": "/static/media/TransRoboOwl.294c42ee4a1dc1d9cc25af9c3610089e.svg",
     "static/media/robotics-red.png": "/static/media/robotics-red.afaf182f27c819a001f5.png",
     "static/media/arcamajora3-heavy-webfont.otf": "/static/media/arcamajora3-heavy-webfont.cce5d0b6e07a251539cd.otf",
     "static/media/futura-medium-webfont.woff": "/static/media/futura-medium-webfont.563d38a46111091de160.woff",
@@ -49,16 +48,16 @@
     "static/media/futura-medium-webfont.woff2": "/static/media/futura-medium-webfont.1a999490288588eb6678.woff2",
     "static/media/arcamajora3-heavy-webfont.woff2": "/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
     "static/media/hillock-anodizing.png": "/static/media/hillock-anodizing.b14b7f3652e2bd840595.png",
-    "static/media/lockheed-martin-logo.svg": "/static/media/lockheed-martin-logo.7ba31585e81dca5bf022bb74615225fd.svg",
+    "static/media/lockheed-martin-logo.svg": "/static/media/lockheed-martin-logo.956dc4685daa4a0d2ea404ebd115d894.svg",
     "static/media/arrow-logo.svg": "/static/media/arrow-logo.afa3be2d904dd8b828b51a365f716b44.svg",
     "static/media/nasa-logo.svg": "/static/media/nasa-logo.8c229ec1f7f451bb9f3ad044f616aa8f.svg",
     "index.html": "/index.html",
     "main.6f661b0c.css.map": "/static/css/main.6f661b0c.css.map",
-    "main.7f1b4bee.js.map": "/static/js/main.7f1b4bee.js.map",
+    "main.488c4a50.js.map": "/static/js/main.488c4a50.js.map",
     "787.933ba907.chunk.js.map": "/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f661b0c.css",
-    "static/js/main.7f1b4bee.js"
+    "static/js/main.488c4a50.js"
   ]
 }
