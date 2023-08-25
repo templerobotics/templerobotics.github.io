@@ -10,7 +10,7 @@ export default class HomeStyles {
 		grid-template-rows: 
 			max(calc(var(--vh) * .40), 250px)   	/* Intro heading */
 			calc(var(--vh) * .1)   					/* Intro heading button */
-			calc(var(--vh) * .15)   				/* Program section heading */
+			calc(var(--vh) * .3)   					/* Program section heading */
 			calc(var(--vh) * .4)    				/* Carousel */
 			max(calc(var(--vh) * .3), 100px)   		/* Sponsors section heading */
 			max(calc(var(--vh) * .15), 70px);  		/* Contacts */
@@ -55,7 +55,6 @@ export default class HomeStyles {
 	`
 
 	static readonly SectionHeader = styled.div`
-		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -75,6 +74,13 @@ export default class HomeStyles {
 			display: flex;
 			column-gap: 10%;
 			justify-content: center;
+		}
+
+		& > img {
+			width: 50%;   // Set the width of the image
+			height: 50%; // Set the height of the image
+			float: left;
+			/* margin: 0 0 0 -500px; */
 		}
 	`
 
