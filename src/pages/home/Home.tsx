@@ -39,7 +39,7 @@ const Home = (): React.ReactElement => {
 				<h2>We hope to see you at Temple Fest 2023!</h2>
 				<div className='button-container'>
 					<Button text={'Sign up here!'} size={'large'} source={'https://forms.gle/rp6BY6h4doLkZQ2E8'}/>
-					<Button text='Join Teams Here!' source={`https://teams.microsoft.com/l/team/19%3aeaf903f
+					<Button text='Join Teams Here!' size={'large'} source={`https://teams.microsoft.com/l/team/19%3aeaf903f
 					d81cd48eba95d8e769ed78544%40thread.tacv2/conversations?groupId=8f78ecbb-62f3-4b2c-bda
 					7-7488eca908ee&tenantId=716e81ef-b522-4473-8e31-10bd02ccf6e5`}/>
 				</div>
