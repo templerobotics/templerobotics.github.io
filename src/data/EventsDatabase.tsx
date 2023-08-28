@@ -36,7 +36,7 @@ const EVENT_INFO: EventObject[] = [
 			we highly recommend you joining us!`,
 		date: new Date('09/05/2023'),
 		time: '7:00 PM',
-		location: 'The ideas hub (second floor of the engineering building)'
+		location: 'TBD'
 	}
 	//
 	/*
