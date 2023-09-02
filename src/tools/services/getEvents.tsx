@@ -30,8 +30,10 @@ function handleWeeklyEvents(events: EventObject[]): EventObject[] {
 	// Handle weekly dates
 	events.forEach(event => {
 		const currentDayForWeek = new Date()
-		if (event.weekly) {
-			event.date.setDate(currentDayForWeek.getDate() + (7 + event.date.getDay() - currentDayForWeek.getDay()) % 7)
+		const dayOffset = (7 + event.date.getDay() - currentDayForWeek.getDay()) % 7
+		if (event.weekly && event.date < currentDayForWeek) {
+			const newDate = currentDayForWeek.getTime() + dayOffset * 24 * 60 * 60 * 1000
+			event.date = new Date(newDate)
 		}
 	})
 
