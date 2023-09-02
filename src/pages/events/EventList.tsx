@@ -3,6 +3,8 @@ import { EventObject } from '../../tools/CustomTypes'
 
 import Styles from './EventListStyles'
 
+const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
 class EventList extends React.Component<{events: EventObject[], loading: boolean}, never> {
 	render (): React.ReactElement {
 		if (this.props.events.length === 0) {
@@ -14,8 +16,11 @@ class EventList extends React.Component<{events: EventObject[], loading: boolean
 					return (
 						<Styles.EventItemContainer key={i}>
 							<h2 className='title'>{event.title}</h2>
-							<div className='date'>
+							<div className='date' style={{display: 'flex', flexDirection: 'column', rowGap: '13%'}}>
 								<p>{!isNaN(event.date.getMonth()) ? `${event.date.getMonth() + 1}/${event.date.getDate()}` : 'TBD'}</p>
+								<p className='day-of-week' style={{margin: '0'}}>
+									{event?.weekly ? `Weekly on ${dayOfWeek[event.date.getDay()]}'s` : ''}
+								</p>
 							</div>
 							<div className='location'>
 								<p>Location: {event.location}</p>

@@ -65,5 +65,9 @@ export default class EventListStyles {
 		& > div > p {
 			margin: 0;
 		}
+
+		& > div > .day-of-week {
+			${FONT_FAMILY.BODY}
+		}
 	`
 }
