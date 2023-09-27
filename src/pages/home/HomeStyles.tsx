@@ -99,7 +99,7 @@ export default class HomeStyles {
 
 		& > img {
 			height: 100%;
-			justify-self: right;1
+			justify-self: right;
 		}
 	`
 }
