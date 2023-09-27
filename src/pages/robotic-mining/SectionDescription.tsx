@@ -28,7 +28,7 @@ const SectionDescriptionStyle = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 100%;
+		height: 100%;	
 	}
 
 	& > div > p {
@@ -51,7 +51,8 @@ type SectionDescriptionProps = {
 	description: string,
 	src?: string,
 	button?: string,
-	video?: boolean
+	video?: boolean,
+	background?: string
 }
 
 export default class SectionDescription extends React.Component<SectionDescriptionProps, never> {
@@ -69,13 +70,13 @@ export default class SectionDescription extends React.Component<SectionDescripti
 
 		return (
 			<SectionDescriptionStyle>
-				<div>
+				<div style={{backgroundColor: this.props.background}}>
 					<h2>{this.props.title}</h2>
 					<p>{this.props.description}</p>
 					{this.props.src ? <Button text={this.props.button ? this.props.button : 'Learn More'}
 						size='large' id='rmc-description-button' source={this.props.src} /> : <></>}
 				</div>
-				<div className='visual-container'>
+				<div className='visual-container' style={{backgroundColor: this.props.background}}>
 					{this.renderVisual()}
 				</div>
 			</SectionDescriptionStyle>
