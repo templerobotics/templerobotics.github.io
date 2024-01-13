@@ -7,50 +7,51 @@ export default class MeetTheLeadsStyles {
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: 
-			calc(var(--vh) * .4)    /* Intro heading */
-			calc(var(--vh) * .4)    /* Robot and competition description */
-			calc(var(--vh) * 1.7)   /* Outreach gallery and photo gallery */
+			calc(var(--vh) * .2)    /* Intro heading */  
+			calc(var(--vh) * 2.39)   /* Outreach gallery and photo gallery */
 			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
 		align-content: center;
+
+		@media (max-width: 718px) {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 
+			calc(var(--vh) * .2)    /* Intro heading */  
+			calc(var(--vh) * 2.65)   /* Outreach gallery and photo gallery */
+			max(calc(var(--vh) * .15), 100px);  /* Contact info */
+		justify-content: center;
+		align-content: center;
+
+		}
+
+		
 	`
 
 	static readonly TitleContainer = styled.div`
-		height: 100%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
-		& > .large-text {
-			${FONT_FAMILY.SUBTITLE}
-			letter-spacing: 5px;
-			line-height: 3;
-			text-transform: uppercase;
-		}
-
-		& > .small-text {
-			${FONT_FAMILY.BODY}
-			letter-spacing: 9px;
-			text-transform: uppercase;
-			margin-top: calc(var(--vh) * .1);
-			margin-bottom: 0;
-		}
-
-		& > h4 {
-			${FONT_FAMILY.SUBTITLE}
+		& > .title {
+			${FONT_FAMILY.PAGE_TITLE}
+			font-size: calc(var(--vh) * .08);
 		}
 	`
 
 	static readonly LeadsGallery = styled.div`
+	    //grid of leads text and img squares
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		grid-template-rows: calc(var(--vh) * .1) repeat(3, minmax(0, 1fr));
-		row-gap: 4%;
+		grid-template-columns: repeat(2	, minmax(0, 1fr));
+		grid-template-rows: calc(var(--vh) * .4) repeat(6, minmax(0, 1fr)); 
+		row-gap: 20px;
 		column-gap: 4%;
 		justify-items: center;
 		align-items: center;
 		text-align: center;
+		margin-top: auto;
 
 		& > h2 {
 			${FONT_FAMILY.TITLE}
@@ -60,27 +61,33 @@ export default class MeetTheLeadsStyles {
 			margin: 0;
 		}
 
-		& > .outreach-image-container {
+		& > .Leads-img-container {
 			height: 100%;
 			overflow: hidden;
 		}
 
-		& > .outreach-image-container > img,
-		& > .outreach-image-container > video {
+		& > .Leads-img-container > img,
+		& > .Leads-img-container > video {
 			width:100%;
 			min-height: 100%;
 			object-fit: cover;
+
+			@media (max-width: 718px) {
+				object-fit: cover;
 		}
 
-		& > .outreach-slide > h2 {
+		}
+
+		& > .Leads-slide > h2 {
 			${FONT_FAMILY.SECONDARY_TITLE}
 			margin-bottom: 5%;
 		}
 
-		& > .outreach-slide > p {
+		& > .Leads-slide > p {
 			padding-left: 20%;
 			padding-right: 20%;
 		}
+
 	`
 
 	static readonly SpaceBackground = styled.div`
@@ -90,8 +97,13 @@ export default class MeetTheLeadsStyles {
 		background-size: cover;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
+		grid-template-rows: calc(var(--vh) * 1.4) calc(var(--vh) * 1);
+		height: inherit;
 		justify-items: center;
 		align-items: center;
+
+		
 	`
+
+	
 }

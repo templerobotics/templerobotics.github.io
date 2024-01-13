@@ -1,34 +1,34 @@
 import { EventObject } from '../tools/CustomTypes'
 
-const semesterEnd = '12/11/23'
+// const semesterEnd = '12/11/23'
 
 const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Programming Meeting',
 		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot and ',
 		date: new Date(''),
-		time: '5:30 PM',
+		time: '',
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
-		endDate: new Date(semesterEnd)
+		// endDate: new Date(semesterEnd)
 	},
 	{
 		title: 'Weekly Electrical Meeting',
 		description: 'The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!',
 		date: new Date(''),
-		time: '5:00 PM',
+		time: '',
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
-		endDate: new Date(semesterEnd)
+		// endDate: new Date(semesterEnd)
 	},
 	{
 		title: 'Weekly Mechanical Meeting',
 		description: 'The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.',
 		date: new Date(''),
-		time: '1:00 PM',
+		time: '',
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
-		endDate: new Date(semesterEnd)
+		// endDate: new Date(semesterEnd)
 	},
 	{
 		title: 'First GBM of the Fall Semester',
