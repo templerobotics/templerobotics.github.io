@@ -75,7 +75,6 @@ const RoboticMining = (): React.ReactElement => {
 					<div className='outreach-image-container'>
 						<img src={ outreachPhoto3 }/>
 					</div>
-					
 				</Styles.OutreachGallery>
 
 				<PhotoGallery galleryInfo={ GALLERY_INFO }/>
