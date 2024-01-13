@@ -11,7 +11,7 @@ import Styles from './MeetTheLeadsStyles'
 
 // Images
 import JaredsFace from '../../assets/pics/Leads/jareds_face.jpg'
-import JaysFace from '../../assets/pics/Leads/jays_Face.jpg'
+import JaysFace from '../../assets/pics/Leads/Jays_Face.jpg'
 import StevensFace from '../../assets/pics/Leads/Stevens_Face.jpg'
 import GraysonsFace from '../../assets/pics/Leads/Graysons_face.jpg'
 import TanishkasFace from '../../assets/pics/Leads/Tanishkas_face.jpg'
