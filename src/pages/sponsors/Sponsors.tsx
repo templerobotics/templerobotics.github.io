@@ -31,6 +31,9 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' style={{background: 'white'}}>
 				<img src={SponsorImages.hillock} style={{width: '60%'}}/>
 			</div>
+			<div className='ing-container' style={{background: 'wihte'}}>
+				{/* call amtrak image here, make sure it has been transerred into an svg */}
+			</div>
 
 			<Contact/>
 		</Styles.SponsorContainer>

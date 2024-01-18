@@ -17,6 +17,7 @@ import outreachPhoto2 from '../../assets/pics/outreach/expo.jpeg'
 import outreachPhoto3 from '../../assets/pics/outreach/interview.jpeg'
 import title from '../../assets/pics/logos/robotics-red.png'
 import RmcDescription from './SectionDescription'
+//import JaredsFace from '../../assets/pics/Leads/jareds_face.jpg'
 
 const RoboticMining = (): React.ReactElement => {
 	return (

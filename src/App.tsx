@@ -26,6 +26,7 @@ import spaceBackground from './assets/pics/outreach/space-background.jpeg'
 // Images
 import backgroundVideo1 from './assets/vids/nasa-vid-1.webm'
 import { PATHS } from './tools/Constants'
+import MeetTheLeads from './pages/meet-the-leads/MeetTheLeads'
 
 class Styles {
 	static readonly AppContainer = styled.div<{height: number}>`
@@ -77,6 +78,7 @@ const App = (): React.ReactElement => {
 								<Route path={PATHS.SPONSORS} element={<Sponsors/>}/>
 								<Route path={PATHS.ROCKSAT} element={<Rocksat/>}/>
 								<Route path={PATHS.BALLOONING} element={<Ballooning/>}/>
+								<Route path={PATHS.MEETTHELEADS} element={<MeetTheLeads/>}/>
 								{/* If no path was matched, go to 404 page */}
 								<Route path='*' element={<NoMatch404/>}/>
 							</Routes>
