@@ -34,7 +34,7 @@ const MeetTheLeads = (): React.ReactElement => {
 					<div className='leads-slide'>
 						<h2>Meet our President!</h2>
 						<p>
-							Jared Levin and any info
+							Jared Levin
 						</p>
 					</div>
 					<div className='Leads-img-container'>
@@ -44,7 +44,7 @@ const MeetTheLeads = (): React.ReactElement => {
 						<img src={ JaysFace }/>
 					</div>
 					<div className='leads-slide'>
-						<h2>Meet our vice president!</h2>
+						<h2>Meet our Vice President!</h2>
 						<p>
 							Jay Pande
 						</p>
@@ -80,13 +80,13 @@ const MeetTheLeads = (): React.ReactElement => {
 						<img src={ RoccosFace }/>
 					</div>
 					<div className='leads-slide'>
-						<h2>Meet our Workshop Manager</h2>
+						<h2>Meet our Workshop Manager!</h2>
 						<p>
 							Rocco Guzman
 						</p>
 					</div>
 					<div className='leads-slide'>
-						<h2>Meet our project Manager</h2>
+						<h2>Meet our Project Manager!</h2>
 						<p>
 							Tanishka Shah
 						</p>

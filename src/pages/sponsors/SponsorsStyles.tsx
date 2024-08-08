@@ -5,6 +5,7 @@ export class SponsorImages {
 	static readonly arrow = require('../../assets/pics/sponsors/arrow.png')
 	static readonly nasa = require('../../assets/pics/sponsors/nasa-name.png')
 	static readonly hillock = require('../../assets/pics/sponsors/hillock-anodizing.png')
+	static readonly Amtrack = require('../../assets/pics/sponsors/Amtrack-png.svg')
 }
 
 export default class SponsorsStyles {
@@ -32,7 +33,18 @@ export default class SponsorsStyles {
 			height: 100%;
 			align-self: center;
 		}
+
+		& > .section-container {
+			display: flex;
+			background: black;
+			padding: 5%;
+			justify-content: center;
+			text-align: center;
+		}
+
 	`
+
+
 
 	static readonly TitleContainer = styled.div`
 		width: 100%;
