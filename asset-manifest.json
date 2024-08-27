@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.867b3b87.css",
-    "main.js": "/static/js/main.18988ed9.js",
+    "main.js": "/static/js/main.03dd1b8e.js",
     "static/js/787.933ba907.chunk.js": "/static/js/787.933ba907.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
-    "static/media/Graysons_face.jpg": "/static/media/Graysons_face.9984cc0cb3a5713c2682.jpg",
-    "static/media/Jays_Face.jpg": "/static/media/Jays_Face.2bc6ca48c750beb9f3a1.jpg",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
-    "static/media/Stevens_Face.jpg": "/static/media/Stevens_Face.ba35d142f467a1da9f5a.jpg",
     "static/media/Tanishkas_face.jpg": "/static/media/Tanishkas_face.db370e893b62389ea4e3.jpg",
     "static/media/jareds_face.jpg": "/static/media/jareds_face.b5f5bf471a539e51e421.jpg",
     "static/media/arena-1.jpeg": "/static/media/arena-1.f099b92e9642a234260b.jpeg",
     "static/media/roccos_face.jpg": "/static/media/roccos_face.8be4c7adca1111a23e69.jpg",
     "static/media/Nasiers_face.jpg": "/static/media/Nasiers_face.e00dfb216135817ac00e.jpg",
+    "static/media/Malins_face.jpg": "/static/media/Malins_face.5ecd550b84aea8d2446e.jpg",
     "static/media/nasa-vid-1.webm": "/static/media/nasa-vid-1.0ac6fae6557bb0108c4c.webm",
     "static/media/balloon-team.jpeg": "/static/media/balloon-team.d10c78cdaffb0151a08e.jpeg",
     "static/media/arena-3.jpeg": "/static/media/arena-3.b401d556d7f5a2889c1e.jpeg",
@@ -26,6 +24,7 @@
     "static/media/augerbot-promotion.mp4": "/static/media/augerbot-promotion.4c32a8c9807b0a0d6510.mp4",
     "static/media/rocksat-2020.jpeg": "/static/media/rocksat-2020.ba2f799f3cec9638af11.jpeg",
     "static/media/rockSat-project-brief.pdf": "/static/media/rockSat-project-brief.bd63b55b5fb960dadae0.pdf",
+    "static/media/Alessias_face.png": "/static/media/Alessias_face.b256627cdbbc8d445a37.png",
     "static/media/rocksat-2014-3.jpeg": "/static/media/rocksat-2014-3.9e5b17cbc3db2bf42333.jpeg",
     "static/media/comp-team-2023.jpg": "/static/media/comp-team-2023.2053957322f5425bf26f.jpg",
     "static/media/interview.jpeg": "/static/media/interview.d7dac261b2fab2f15ad7.jpeg",
@@ -38,6 +37,7 @@
     "static/media/club-filing.jpg": "/static/media/club-filing.3b96867d536efd76717d.jpg",
     "static/media/ethernet-screw-up.jpg": "/static/media/ethernet-screw-up.0fc7dff8e79fe4974987.jpg",
     "static/media/nasa.png": "/static/media/nasa.14d078eeb3212dc0108c.png",
+    "static/media/Brians_face.jpg": "/static/media/Brians_face.6837713b17da087db569.jpg",
     "static/media/jpl-display.jpeg": "/static/media/jpl-display.ecc5694f924b8f1b11f8.jpeg",
     "static/media/nasa-name.png": "/static/media/nasa-name.8d5f5ea3adf151450d7c.png",
     "static/media/rocksat-2014-1.jpeg": "/static/media/rocksat-2014-1.4b4bd0c9e2e4603cf65e.jpeg",
@@ -62,11 +62,11 @@
     "static/media/Amtrack-png.svg": "/static/media/Amtrack-png.34fb2a378b6f6251e91135644c0969c3.svg",
     "index.html": "/index.html",
     "main.867b3b87.css.map": "/static/css/main.867b3b87.css.map",
-    "main.18988ed9.js.map": "/static/js/main.18988ed9.js.map",
+    "main.03dd1b8e.js.map": "/static/js/main.03dd1b8e.js.map",
     "787.933ba907.chunk.js.map": "/static/js/787.933ba907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.867b3b87.css",
-    "static/js/main.18988ed9.js"
+    "static/js/main.03dd1b8e.js"
   ]
 }
