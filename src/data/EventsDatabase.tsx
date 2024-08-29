@@ -4,30 +4,38 @@ import { EventObject } from '../tools/CustomTypes'
 
 const EVENT_INFO: EventObject[] = [
 	{
+		title: 'General Body Meeting',
+		description: `Learn more about the club and what we do! If you have any interest at all,
+		we highly recommend you joining us!`,
+		date: new Date('9/4/2024'),
+		time: '5:00pm',
+		location: 'The Fish Bowl (first floor pf the engineering building)'
+	},
+	{
 		title: 'Weekly Programming Meeting',
 		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot and ',
 		date: new Date(''),
-		time: '5:30pm Fridays',
+		time: 'To Be Determined',
 		location: 'The ideas hub (second floor of the engineering building)',
-		weekly: true,
+		weekly: true
 		// endDate: new Date(semesterEnd)
 	},
 	{
 		title: 'Weekly Electrical Meeting',
 		description: 'The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!',
 		date: new Date(''),
-		time: '5:00pm Modays',
+		time: 'To Be Determined',
 		location: 'The ideas hub (second floor of the engineering building)',
-		weekly: true,
+		weekly: true
 		// endDate: new Date(semesterEnd)
 	},
 	{
 		title: 'Weekly Mechanical Meeting',
 		description: 'The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.',
 		date: new Date(''),
-		time: '6:00pm Wednesday',
+		time: 'To Be Determined',
 		location: 'The ideas hub (second floor of the engineering building)',
-		weekly: true,
+		weekly: true
 		// endDate: new Date(semesterEnd)
 	},
 	{
@@ -37,15 +45,7 @@ const EVENT_INFO: EventObject[] = [
 		date: new Date('1/29/24'),
 		time: '',
 		location: 'The Fish Bowl (first floor of the engineering building)'
-	},
-	// {
-	// 	title: 'General Body Meeting',
-	// 	description: `Learn more about the club and what we do! If you have any interest at all,
-	// 	we highly recommend you joining us!`,
-	// 	date: new Date(''),
-	// 	time: '',
-	// 	location: 'The ideas hub (second floor of the engineering building)'
-	// },
+	}
 	// {
 	// 	title: 'Engineering Week Showcase',
 	// 	description: 'Meet us to see the robot in action and learn about the club!',

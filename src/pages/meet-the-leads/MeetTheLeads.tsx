@@ -11,12 +11,13 @@ import Styles from './MeetTheLeadsStyles'
 
 // Images
 import JaredsFace from '../../assets/pics/Leads/jareds_face.jpg'
-import JaysFace from '../../assets/pics/Leads/Jays_Face.jpg'
-import StevensFace from '../../assets/pics/Leads/Stevens_Face.jpg'
-import GraysonsFace from '../../assets/pics/Leads/Graysons_face.jpg'
+//import StevensFace from '../../assets/pics/Leads/Stevens_Face.jpg'
 import TanishkasFace from '../../assets/pics/Leads/Tanishkas_face.jpg'
 import RoccosFace from '../../assets/pics/Leads/roccos_face.jpg'
 import NasiersFace from '../../assets/pics/Leads/Nasiers_face.jpg'
+import MalinsFace from '../../assets/pics/Leads/Malins_face.jpg'
+import BriansFace from '../../assets/pics/Leads/Brians_face.jpg'
+import AlessiasFace from '../../assets/pics/Leads/Alessias_face.png'
 // a separator is needed for some reason, troubleshoot this or create a very small section div or style this like the robotics page
 //use robotics format
 //bakround is implemented but sections are not made to be compatible, change to gallery sections
@@ -34,37 +35,37 @@ const MeetTheLeads = (): React.ReactElement => {
 					<div className='leads-slide'>
 						<h2>Meet our President!</h2>
 						<p>
-							Jared Levin
+							Rocco Guzman
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ JaredsFace } />
+						<img src={ RoccosFace } />
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ JaysFace }/>
+						<img src={ MalinsFace }/>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Vice President!</h2>
 						<p>
-							Jay Pande
+							Malin Kussi
 						</p>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Electrical Lead!</h2>
 						<p>
-							Grayson Cooper
+						Jared Levin
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ GraysonsFace}/>
+						<img src={ JaredsFace }/>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ StevensFace}/>
+						<img src={ AlessiasFace}/>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Mechanical Lead!</h2>
 						<p>
-							Steven Miller
+							Alessia Smith
 						</p>
 					</div>
 					<div className='leads-slide'>
@@ -77,12 +78,12 @@ const MeetTheLeads = (): React.ReactElement => {
 						<img src={ NasiersFace }/>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ RoccosFace }/>
+						<img src={ BriansFace }/>
 					</div>
 					<div className='leads-slide'>
-						<h2>Meet our Workshop Manager!</h2>
+						<h2>Meet our Programming Lead!</h2>
 						<p>
-							Rocco Guzman
+							Brian Ervin
 						</p>
 					</div>
 					<div className='leads-slide'>
