@@ -22,12 +22,9 @@ const Sponsors = (): React.ReactElement => {
 				<h2 className='title'>Sponsors</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
-			
-			<div className='img-container' style={{background: '#000000a0',  display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', 
-				rowGap: '3rem',
-			}}>
+			<div className='img-container centered-img'>
 				<h1 className='title'>Current Sponsors</h1>
-				<Button source={'https://forms.gle/pAfv3VBYJJXooiU38'} 
+				<Button source={'https://forms.gle/pAfv3VBYJJXooiU38'}
 					text='become a sponsor' size='large' className='becomeSponsor'/>
 			</div>
 			<div className='img-container' style={{background: '#053a92'}}>
@@ -36,9 +33,8 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' style={{background: 'white'}}>
 				<Amtrack/>
 			</div>
-			
-			<div className='img-container' style={{background: '#000000b5',  display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', 
-				rowGap: '3rem'}}>
+
+			<div className='img-container centered-img'>
 				<h1 className='title'>Previous Sponsors</h1>
 			</div>
 
@@ -52,9 +48,9 @@ const Sponsors = (): React.ReactElement => {
 				<img src={SponsorImages.hillock} style={{width: '60%'}}/>
 			</div>
 			{/* <div className='img-container' style={{background: 'wihte'}}>
-				 call amtrak image here, make sure it has been transerred into an svg 
+				 call amtrak image here, make sure it has been transerred into an svg
 			</div> */}
-			
+
 
 			<Contact/>
 		</Styles.SponsorContainer>

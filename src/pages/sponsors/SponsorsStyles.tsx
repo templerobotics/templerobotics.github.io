@@ -42,6 +42,14 @@ export default class SponsorsStyles {
 			text-align: center;
 		}
 
+        .centered-img {
+            background: #000000a0;
+            display: 'flex';
+            justify-content: 'center';
+            align-items: 'center';
+            flex-direction: 'column';
+			row-gap: '3rem';
+        }
 	`
 
 

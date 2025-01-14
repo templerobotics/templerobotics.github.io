@@ -79,6 +79,7 @@
     "react-toastify": "^9.0.8",
     "styled-components": "^5.3.5",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.3"
+    "webpack-dev-server": "^4.9.3",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
