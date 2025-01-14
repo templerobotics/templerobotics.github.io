@@ -6,7 +6,7 @@ import PhotoGallery from '../general/photo-gallery/PhotoGallery'
 import Contact from '../general/contact/Contact'
 
 // Custom styles
-import Styles from './RoboticMiningStyles'
+import Styles, { MEET_THE_TEAM } from './RoboticMiningStyles'
 import GALLERY_INFO from '../../data/RoboticsPhotoGalleryInfo'
 
 // Images
@@ -17,7 +17,6 @@ import outreachPhoto2 from '../../assets/pics/outreach/expo.jpeg'
 import outreachPhoto3 from '../../assets/pics/outreach/interview.jpeg'
 import title from '../../assets/pics/logos/robotics-red.png'
 import RmcDescription from './SectionDescription'
-//import JaredsFace from '../../assets/pics/Leads/jareds_face.jpg'
 
 const RoboticMining = (): React.ReactElement => {
 	return (
@@ -43,6 +42,8 @@ const RoboticMining = (): React.ReactElement => {
 				video/>
 
 			<Styles.SpaceBackground>
+				<Styles.MeetTheTeam className='meet-the-team-gallery' galleryInfo={ MEET_THE_TEAM } title={ 'Meet the Team' }/>
+
 				<Styles.OutreachGallery>
 					<h2>Outreach and Events</h2>
 					<div className='outreach-slide'>
