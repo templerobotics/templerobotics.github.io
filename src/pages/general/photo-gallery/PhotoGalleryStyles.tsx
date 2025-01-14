@@ -11,6 +11,7 @@ export interface GalleryImage {
 export type PhotoGalleryProps = {
 	id?: string,
 	title?: string,
+	className?: string,
 	galleryInfo: GalleryImage[]
 }
 
@@ -69,15 +70,17 @@ export default class PhotoGalleryStyles {
 
 		& > h3 {
 			${FONT_FAMILY.SECONDARY_TITLE}
+			font-size: calc(var(--vh) * 0.03);
 			text-align: center;
 		}
 
 		& > .gallery-image-container {
 			overflow: hidden;
+			border-radius: calc(var(--vh) * 0.01);
 		}
 
 		& > .gallery-image-container > img {
-			width:100%;
+			width: 100%;
 			min-height: 100%;
 			object-fit: cover;
 		}

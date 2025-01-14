@@ -22,7 +22,7 @@ const Sponsors = (): React.ReactElement => {
 				<h2 className='title'>Sponsors</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
-			<div className='img-container centered-img'>
+			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Current Sponsors</h1>
 				<Button source={'https://forms.gle/pAfv3VBYJJXooiU38'}
 					text='become a sponsor' size='large' className='becomeSponsor'/>
@@ -34,7 +34,7 @@ const Sponsors = (): React.ReactElement => {
 				<Amtrack/>
 			</div>
 
-			<div className='img-container centered-img'>
+			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Previous Sponsors</h1>
 			</div>
 

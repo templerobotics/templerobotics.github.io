@@ -74,7 +74,7 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 		const width = document.documentElement.style.getPropertyValue('--vh')
 
 		return (
-			<Styles.GalleryContainer id={this.props.id}>
+			<Styles.GalleryContainer className={this.props.className} id={this.props.id}>
 				<Styles.Title>{this.props.title ?? 'Photo Gallery'}</Styles.Title>
 				<Styles.Chevron as={BsChevronLeft} size={parseFloat(width) * 0.05} onClick={this.slideLeft}/>
 				<Styles.SlideContainer gridColumns={gridColumns}>
@@ -101,7 +101,7 @@ class GallerySlide extends React.Component<GallerySlideProps, never> {
 					<div className='gallery-image-container'>
 						<img src={gallery.image}/>
 					</div>
-					<h3>{gallery.title}</h3>
+					<h3 className='gallery-title'>{gallery.title}</h3>
 					<p>{gallery.description}</p>
 				</Styles.ImageContainer>
 			)
