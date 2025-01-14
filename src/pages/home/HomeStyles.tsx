@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { COLORS, FONT_FAMILY } from '../../tools/Constants'
+import TOwl from '../../assets/pics/logos/TransRoboOwl.svg'
 
 export default class HomeStyles {
 
@@ -54,7 +55,38 @@ export default class HomeStyles {
 		${FONT_FAMILY.SUBTITLE}
 	`
 
+	static readonly SectionHeaderGradient = styled.div`
+		display: flex;
+		height: 100%;
+		background: linear-gradient(200deg, ${COLORS.PRIMARY}, #996b72, ${COLORS.PRIMARY});
+	`
+
 	static readonly SectionHeader = styled.div`
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		flex-direction: column;
+		background-image: url(${TOwl});
+		background-repeat: no-repeat no-repeat;
+		background-position: center;
+		row-gap: 10%;
+		height: 80%;
+		align-self: center;
+
+		& > h2 {
+			text-align: center;
+			${FONT_FAMILY.SECONDARY_TITLE}
+		}
+
+		& > .button-container {
+			width: 100%;
+			display: flex;
+			column-gap: 10%;
+			justify-content: center;
+		}
+	`
+
+	static readonly MerchHeader = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -75,13 +107,6 @@ export default class HomeStyles {
 			column-gap: 10%;
 			justify-content: center;
 			align-items: center;
-		}
-
-		& > img {
-			width: 50%;   // Set the width of the image
-			height: 50%; // Set the height of the image
-			float: left;
-			/* margin: 0 0 0 -500px; */
 		}
 	`
 

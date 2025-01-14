@@ -10,7 +10,7 @@ import Contact from '../general/contact/Contact'
 import { EventObject } from '../../tools/CustomTypes'
 import { COLORS } from '../../tools/Constants'
 import { getEvents } from '../../tools/services/getEvents'
-import EventSignUp from './EventSignUp'
+// import EventSignUp from './EventSignUp'
 import EVENT_SIGNUP_INFO from '../../data/EventSignUpInfo'
 
 export type EventsState = {
@@ -59,9 +59,10 @@ class Events extends React.Component<unknown, EventsState>{
 					<h2 className='title'>Events</h2>
 					<AiOutlineDash/>
 				</Styles.TitleContainer>
-				<Styles.EventSignUps>
+				{/* Uncomment for event sign-ups */}
+				{/* <Styles.EventSignUps>
 					{EVENT_SIGNUP_INFO.map((event, i) => <EventSignUp key={i} events={event}/>)}
-				</Styles.EventSignUps>
+				</Styles.EventSignUps> */}
 				{this.renderEvents(parseFloat(width) * 0.03)}
 				<Contact/>
 			</Styles.EventsContainer>
