@@ -17,7 +17,7 @@ export default class Contact extends React.Component<Record<string, never>, neve
 					<IconButton icon={<FiInstagram/>} source={'https://www.instagram.com/templerobotics/'} />
 					<IconButton icon={<RiSnapchatLine/>} source={'https://snapchat.com/add/templerobotics'} />
 					<IconButton icon={<FiYoutube/>} source={'https://www.youtube.com/channel/UCv59XUAVDLtgk0KA9r4RTsA'} />
-					<IconButton icon={<FiMail/>} source={'Mailto:robotics@temple.edu'} />
+					<IconButton icon={<FiMail/>} source={'Mailto:Temple.Robotics@outlook.com'} />
 				</div>
 			</Styles.ContactContainer>
 		)
