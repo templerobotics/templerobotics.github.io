@@ -6,8 +6,8 @@ export default class MeetTheLeadsStyles {
 	static readonly MeetTheLeadsContainer = styled.div`
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 
-			calc(var(--vh) * .2)    /* Intro heading */  
+		grid-template-rows:
+			calc(var(--vh) * .2)    /* Intro heading */
 			calc(var(--vh) * 2.39)   /* Outreach gallery and photo gallery */
 			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
@@ -16,8 +16,8 @@ export default class MeetTheLeadsStyles {
 		@media (max-width: 718px) {
 			display: grid;
 			grid-template-columns: 100%;
-			grid-template-rows: 
-			calc(var(--vh) * .2)    /* Intro heading */  
+			grid-template-rows:
+			calc(var(--vh) * .2)    /* Intro heading */
 			calc(var(--vh) * 2.65)   /* Outreach gallery and photo gallery */
 			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
@@ -25,7 +25,7 @@ export default class MeetTheLeadsStyles {
 
 		}
 
-		
+
 	`
 
 	static readonly TitleContainer = styled.div`
@@ -45,7 +45,7 @@ export default class MeetTheLeadsStyles {
 	    //grid of leads text and img squares
 		display: grid;
 		grid-template-columns: repeat(2	, minmax(0, 1fr));
-		grid-template-rows: calc(var(--vh) * .4) repeat(6, minmax(0, 1fr)); 
+		grid-template-rows: calc(var(--vh) * .4) repeat(6, minmax(0, 1fr));
 		row-gap: 20px;
 		column-gap: 4%;
 		justify-items: center;
@@ -102,8 +102,6 @@ export default class MeetTheLeadsStyles {
 		justify-items: center;
 		align-items: center;
 
-		
-	`
 
-	
+	`
 }
