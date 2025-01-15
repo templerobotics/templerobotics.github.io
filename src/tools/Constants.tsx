@@ -11,6 +11,7 @@ export class PATHS {
 	static readonly ROCKSAT: string = '/rocksat'
 	static readonly ROBOTICS: string = '/robotics'
 	static readonly BALLOONING: string = '/ballooning'
+	static readonly MEETTHELEADS: string = '/MeetTheLeads'
 }
 
 export class COLORS {
@@ -28,6 +29,17 @@ export class COLORS {
 	static readonly PURPLE: Color = '#75518a'
 	static readonly SECONDARY_SCROLLBAR: Color = '#9d22357f'
 }
+
+export const RMC_TEAM = [
+	require('../assets/pics/team/john-helferty.jpg'),
+	require('../assets/pics/Leads/roccos_face.jpg'),
+	require('../assets/pics/Leads/Malins_face.jpg'),
+	require('../assets/pics/Leads/jareds_face.jpg'),
+	require('../assets/pics/Leads/Alessia_headshot.png'),
+	require('../assets/pics/Leads/Nasiers_face.jpg'),
+	require('../assets/pics/Leads/Brians_face.jpg'),
+	require('../assets/pics/Leads/Tanishkas_face.jpg')
+]
 
 export const RMC_PHOTO_GALLERY = [
 	require('../assets/pics/photo-gallery/rmc/comp-team-2023.jpg'),
@@ -101,6 +113,7 @@ export class FONT_FAMILY {
 		font-size: calc(var(--vh) * .05);
 		letter-spacing: 1px;
 		line-height: 1.1;
+		margin: 0;
 	`
 
 	static readonly SECONDARY_TITLE = `

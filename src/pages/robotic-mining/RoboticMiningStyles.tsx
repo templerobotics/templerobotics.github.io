@@ -1,6 +1,19 @@
 import styled from 'styled-components'
-import { FONT_FAMILY } from '../../tools/Constants'
+import { FONT_FAMILY, RMC_TEAM } from '../../tools/Constants'
+import { GalleryImage } from '../general/photo-gallery/PhotoGalleryStyles'
 import spaceBackground from '../../assets/pics/outreach/space-background.jpeg'
+import PhotoGallery from '../general/photo-gallery/PhotoGallery'
+
+export const MEET_THE_TEAM: GalleryImage[] = [
+	{ image: RMC_TEAM[0], title: 'Dr. John Helferty', description: 'Head Advisor' },
+	{ image: RMC_TEAM[1], title: 'Rocco Gruzman', description: 'Robotic\'s President' },
+	{ image: RMC_TEAM[2], title: 'Malin Kussi', description: 'Vice President' },
+	{ image: RMC_TEAM[3], title: 'Jared Levin', description: 'Electrical Lead' },
+	{ image: RMC_TEAM[4], title: 'Alessia Smith', description: 'Mechanical Lead' },
+	{ image: RMC_TEAM[5], title: 'Nasier Fowlkes', description: 'Web Manager' },
+	{ image: RMC_TEAM[6], title: 'Brian Ervin', description: 'Programming Lead' },
+	{ image: RMC_TEAM[7], title: 'Tanishka Shah', description: 'Project Manager' }
+]
 
 export default class RoboticMiningStyles {
 	static readonly RmcContainer = styled.div`
@@ -9,7 +22,7 @@ export default class RoboticMiningStyles {
 		grid-template-rows: 
 			calc(var(--vh) * .4)    /* Intro heading */
 			calc(var(--vh) * .4)    /* Robot and competition description */
-			calc(var(--vh) * 1.7)   /* Outreach gallery and photo gallery */
+			calc(var(--vh) * 2.15)  /* Outreach gallery and photo gallery */
 			max(calc(var(--vh) * .15), 100px);  /* Contact info */
 		justify-content: center;
 		align-content: center;
@@ -90,8 +103,14 @@ export default class RoboticMiningStyles {
 		background-size: cover;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
+		grid-template-rows: calc(var(--vh) * 0.45) calc(var(--vh) * 1.2) calc(var(--vh) * 0.5);
 		justify-items: center;
 		align-items: center;
+	`
+
+	static readonly MeetTheTeam = styled(PhotoGallery)`
+		& .gallery-title {
+			font-size: calc(var(--vh) * .02) !important;
+		}
 	`
 }

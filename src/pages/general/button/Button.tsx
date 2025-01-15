@@ -22,6 +22,7 @@ export default class Button extends React.Component<ButtonProps, never> {
 		}
 
 		if (!local) {
+			// if the button takes you outside of this websiite
 			return (
 				<div>
 					<Styles.ButtonContainer className={this.props.className} id={this.props.id}
