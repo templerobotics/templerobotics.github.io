@@ -11,21 +11,23 @@ The only other accepted format is an empty string, meaning the date has not been
 
 **Important:** Make sure to increment the id
 
-```json
+```ts
 [
  {
-  "title": "Title of the event",
-  "description": "Description of the event",
-  "date": "04/22",
-  "location": "Engineering building",
-  "id": 0
+    title: 'Title of the event',
+    description: 'Description of the event',
+    date: new Date('2025-01-22T17:00:00'),
+    location: 'The ideas hub (second floor of the engineering building)',
+    weekly: true,
+    endDate: new Date(semesterEnd)
  },
  {
-  "title": "Title of the event 2",
-  "description": "Description of the event 2",
-  "date": "04/23",
-  "location": "Engineering building",
-  "id": 1
+    title: 'Title of the event 2',
+    description: 'Description of the event 2',
+    date: new Date('2025-01-22T14:00:00'),
+    location: 'The ideas hub (second floor of the engineering building)',
+    weekly: true,
+    endDate: new Date(semesterEnd)
  }
 ]
 ```
