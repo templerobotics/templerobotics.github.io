@@ -9,6 +9,10 @@ The event database is located [here](public/db.json). Add an event by appending 
 The date format: `mm/dd/yyyy`
 The only other accepted format is an empty string, meaning the date has not been decided yet
 
+
+
+
+
 **Important:** Make sure to increment the id
 
 ```json
