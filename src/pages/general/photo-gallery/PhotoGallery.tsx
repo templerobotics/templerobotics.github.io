@@ -2,6 +2,7 @@
 import React from 'react'
 import $ from 'jquery'
 import { BsChevronLeft, BsChevronRight, BsDashLg } from 'react-icons/bs'
+import {v4 as uuid} from 'uuid'
 
 // Custom styles
 import Styles, { PhotoGalleryProps, GallerySlideProps } from './PhotoGalleryStyles'
@@ -9,11 +10,12 @@ import Styles, { PhotoGalleryProps, GallerySlideProps } from './PhotoGalleryStyl
 // General tools
 import { ANIMATION_TIME, COLORS } from '../../../tools/Constants'
 
-export default class PhotoGallery extends React.Component<PhotoGalleryProps, {currentSlide: number}> {
+export default class PhotoGallery extends React.Component<PhotoGalleryProps, {currentSlide: number, galleryId: string}> {
 	constructor(props: PhotoGalleryProps) {
 		super(props)
 		this.state = {
-			currentSlide: 0
+			currentSlide: 0,
+			galleryId: this.props.id ?? uuid()
 		}
 	}
 
@@ -48,14 +50,14 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 		const slidesLength = Math.ceil(this.props.galleryInfo.length / 3)
 		nextSlide = ((nextSlide % slidesLength) + slidesLength) % slidesLength
 
-		$(`#slide${this.state.currentSlide}`)
+		$(`#${this.state.galleryId} #slide${this.state.currentSlide}`)
 			.fadeOut(animationSpeed).end()
-		$(`#slide${nextSlide}`)
+		$(`#${this.state.galleryId} #slide${nextSlide}`)
 			.fadeIn(animationSpeed).end()
 
-		$(`#counter${this.state.currentSlide}`)
+		$(`#${this.state.galleryId} #counter${this.state.currentSlide}`)
 			.css('color', COLORS.TEXT)
-		$(`#counter${nextSlide}`)
+		$(`#${this.state.galleryId} #counter${nextSlide}`)
 			.css('color', COLORS.PRIMARY)
 
 		this.setState({ currentSlide: nextSlide })
@@ -64,9 +66,9 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 	componentDidMount(): void {
 		// Hide slides after they render
 		for (let i = 1; i < this.props.galleryInfo.length % 3; i++) {
-			$(`#slide${i}`).hide()
+			$(`#${this.state.galleryId} #slide${i}`).hide()
 		}
-		$('#counter0').css('color', COLORS.PRIMARY)
+		$(`#${this.state.galleryId} #counter0`).css('color', COLORS.PRIMARY)
 	}
 
 	render(): React.ReactElement {
@@ -74,7 +76,7 @@ export default class PhotoGallery extends React.Component<PhotoGalleryProps, {cu
 		const width = document.documentElement.style.getPropertyValue('--vh')
 
 		return (
-			<Styles.GalleryContainer className={this.props.className} id={this.props.id}>
+			<Styles.GalleryContainer className={this.props.className} id={this.state.galleryId}>
 				<Styles.Title>{this.props.title ?? 'Photo Gallery'}</Styles.Title>
 				<Styles.Chevron as={BsChevronLeft} size={parseFloat(width) * 0.05} onClick={this.slideLeft}/>
 				<Styles.SlideContainer gridColumns={gridColumns}>

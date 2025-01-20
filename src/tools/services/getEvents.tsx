@@ -2,7 +2,8 @@ import EVENT_INFO from '../../data/EventsDatabase'
 import { EventObject } from '../CustomTypes'
 
 function sortByDate(eventA: EventObject, eventB: EventObject): number {
-	if (eventA.date > eventB.date || isNaN(eventA.date.getMonth())) {
+	const dateComparison = eventA.date.getTime() - eventB.date.getTime()
+	if (dateComparison > 0 || isNaN(eventA.date.getMonth())) {
 		return 1
 	} else if (eventA.date == eventB.date) {
 		return 0
@@ -16,14 +17,15 @@ function sortByDate(eventA: EventObject, eventB: EventObject): number {
  * @returns The events to be posted with the correct weekly dates
  */
 function handleWeeklyEvents(events: EventObject[]): EventObject[] {
-	const currentDate = new Date()
-	currentDate.setDate(currentDate.getDate() - 1)
-	currentDate.setUTCHours(23, 59, 59, 999)
+	// Date used to filter out old events
+	const dateFilter = new Date()
+	dateFilter.setDate(dateFilter.getDate() - 1)
+	dateFilter.setUTCHours(23, 59, 59, 999)
 
 	// Remove events that are in the past and no longer occurring.
 	events = events.filter(event => {
-		if (event.date < currentDate && !event.weekly) return 0
-		if (event.weekly && ((event.endDate ?? new Date()) < currentDate)) return 0
+		if (event.date < dateFilter && !event.weekly) return 0
+		if (event.weekly && ((event.endDate ?? new Date()) < dateFilter)) return 0
 		return 1
 	})
 
@@ -31,7 +33,8 @@ function handleWeeklyEvents(events: EventObject[]): EventObject[] {
 	events.forEach(event => {
 		const currentDayForWeek = new Date()
 		const dayOffset = (7 + event.date.getDay() - currentDayForWeek.getDay()) % 7
-		if (event.weekly && event.date < currentDayForWeek) {
+		const dateComparison = event.date.getTime() - currentDayForWeek.getTime()
+		if (event.weekly && dateComparison < 0) {
 			const newDate = currentDayForWeek.getTime() + dayOffset * 24 * 60 * 60 * 1000
 			event.date = new Date(newDate)
 		}
