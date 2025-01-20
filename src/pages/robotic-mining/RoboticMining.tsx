@@ -78,7 +78,7 @@ const RoboticMining = (): React.ReactElement => {
 					</div>
 				</Styles.OutreachGallery>
 
-				<PhotoGallery galleryInfo={ GALLERY_INFO }/>
+				<PhotoGallery className='testing' galleryInfo={ GALLERY_INFO }/>
 			</Styles.SpaceBackground>
 
 			<Contact/>

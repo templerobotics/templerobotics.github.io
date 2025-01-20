@@ -24,7 +24,7 @@ class EventList extends React.Component<{events: EventObject[], loading: boolean
 							</div>
 							<div className='location'>
 								<p>Location: {event.location}</p>
-								<p>Time: {event.time === '' ? 'TBD' : event.time}</p>
+								<p>Time: {event.tbd ? 'TBD' : toTimeString(event.date)}</p>
 							</div>
 							<p className='description'>Description: {event.description}</p>
 						</Styles.EventItemContainer>
@@ -33,6 +33,13 @@ class EventList extends React.Component<{events: EventObject[], loading: boolean
 			</Styles.EventListContainer>
 		)
 	}
+}
+
+function toTimeString (date: Date): string {
+	const time = date.toTimeString().split(' ')[0].split(':')
+	const hours = parseInt(time[0])
+	const minutes = time[1]
+	return `${hours % 12}:${minutes} ${hours >= 12 ? 'PM' : 'AM'}`
 }
 
 export default EventList
