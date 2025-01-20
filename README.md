@@ -36,6 +36,7 @@ There is information on changing certain data in [this README](./src/data/README
 
 ## Getting the Environment Setup
 Make sure to install git lfs before cloning to properly run videos
+
 https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
 
 
