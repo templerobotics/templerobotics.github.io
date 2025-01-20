@@ -35,6 +35,10 @@ The only other accepted format is an empty string, meaning the date has not been
 There is information on changing certain data in [this README](./src/data/README.md). This includes things such as changing the photo galleries or adding new photos to them, adding to the home carousel, adding to the rocksat table, etc.
 
 ## Getting the Environment Setup
+Make sure to install git lfs before cloning to properly run videos
+
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
+
 
 It should be pretty simple getting the website set up on vscode. First you will need to download [Node.js](https://nodejs.org/en/).
 
@@ -42,6 +46,7 @@ Once the newest version of `Node.js` is installed, you can install the node pack
 
 ```shell
     npm i
+    
 ```
 
 Your environment should now be set up!
