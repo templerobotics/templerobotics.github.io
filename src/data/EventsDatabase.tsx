@@ -1,6 +1,6 @@
 import { EventObject } from '../tools/CustomTypes'
 
-const semesterEnd = '5/30/25'
+const semesterEnd = '5/31/25'
 
 const EVENT_INFO: EventObject[] = [
 	// {
