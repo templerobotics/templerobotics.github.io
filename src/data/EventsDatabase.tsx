@@ -3,14 +3,13 @@ import { EventObject } from '../tools/CustomTypes'
 const semesterEnd = '5/31/25'
 
 const EVENT_INFO: EventObject[] = [
-	// {
-	// 	title: 'General Body Meeting',
-	// 	description: `Learn more about the club and what we do! If you have any interest at all,
-	// 	we highly recommend you joining us!`,
-	// 	date: new Date('1/11/2025'),
-	// 	time: '5:00pm',
-	// 	location: 'The Fish Bowl (first floor pf the engineering building)'
-	// },
+	{
+		title: 'General Body Meeting',
+		description: 'Updates on what happened since the last GBM and the plan for the rest of the semester as well as an activity',
+		date: new Date('2025-02-05T17:00:00'),
+		// location: 'The Fish Bowl (first floor pf the engineering building)'
+		location: '201A classroom (The ideas hub second floor of the engineering building)'
+	},
 	{
 		title: 'Weekly Programming Meeting',
 		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot',
