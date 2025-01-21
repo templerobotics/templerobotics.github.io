@@ -12,7 +12,7 @@ const EVENT_INFO: EventObject[] = [
 	},
 	{
 		title: 'Weekly Programming Meeting',
-		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot',
+		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot on github',
 		date: new Date('2025-01-22T17:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,

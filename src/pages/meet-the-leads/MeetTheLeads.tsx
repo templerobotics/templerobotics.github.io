@@ -18,9 +18,12 @@ import NasiersFace from '../../assets/pics/Leads/Nasiers_face.jpg'
 import MalinsFace from '../../assets/pics/Leads/Malins_face.jpg'
 import BriansFace from '../../assets/pics/Leads/Brians_face.jpg'
 import AlessiasFace from '../../assets/pics/Leads/Alessia_headshot.png'
+// import JadensFace from '../../assets/pics/Leads/Jadens_face.jpg'
+
+
 // a separator is needed for some reason, troubleshoot this or create a very small section div or style this like the robotics page
 //use robotics format
-//bakround is implemented but sections are not made to be compatible, change to gallery sections
+//backround is implemented but sections are not made to be compatible, change to gallery sections
 const MeetTheLeads = (): React.ReactElement => {
 	return (
 
