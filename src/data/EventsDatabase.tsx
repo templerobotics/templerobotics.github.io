@@ -1,8 +1,8 @@
 import { EventObject } from '../tools/CustomTypes'
 
 const semesterEnd = '5/31/25'
-const descriptionForSDW1 = 'The goal of these classes is to equip you with the skills to model and design on a '
-const descriptionForSDW2 = 'professional level, as well as create a common ground for all engineers to work together more efficiently and effectively'
+const descriptionForSDW1 = 'The goal of these classes is to equip you with the skills to model and design on a professional '
+const descriptionForSDW2 = 'level, as well as create a common ground for all engineers to work together more efficiently and effectively'
 const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Solidworks Workshop',
