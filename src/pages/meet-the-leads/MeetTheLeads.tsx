@@ -29,7 +29,6 @@ const MeetTheLeads = (): React.ReactElement => {
 				<h2 className='title'>Meet The Leads</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
-
 			<Styles.SpaceBackground>
 				<Styles.LeadsGallery>
 					<div className='leads-slide'>
@@ -45,7 +44,8 @@ const MeetTheLeads = (): React.ReactElement => {
 						<img src={ MalinsFace }/>
 					</div>
 					<div className='leads-slide'>
-						<h2>Meet our Vice President!</h2>
+						<h2>Meet our Vice President</h2>
+						<h2> and Website Manager!</h2>
 						<p>
 							Malin Kussi
 						</p>
@@ -86,7 +86,7 @@ const MeetTheLeads = (): React.ReactElement => {
 							Tanishka Shah
 						</p>
 					</div>
-					<div className='leads-slide'>
+					{/* <div className='leads-slide'>
 						<h2>Meet our Shop Manager!</h2>
 						<p>
 							Jonah Tesler
@@ -94,7 +94,7 @@ const MeetTheLeads = (): React.ReactElement => {
 					</div>
 					<div className='Leads-img-container'>
 						<img src={ TanishkasFace }/>
-					</div>
+					</div> */}
 
 				</Styles.LeadsGallery>
 			</Styles.SpaceBackground>
