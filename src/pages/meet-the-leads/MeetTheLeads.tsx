@@ -13,11 +13,10 @@ import Styles from './MeetTheLeadsStyles'
 import JaredsFace from '../../assets/pics/Leads/jareds_face.jpg'
 import TanishkasFace from '../../assets/pics/Leads/Tanishkas_face.jpg'
 import RoccosFace from '../../assets/pics/Leads/roccos_face.jpg'
-// import NasiersFace from '../../assets/pics/Leads/Nasiers_face.jpg'
 import MalinsFace from '../../assets/pics/Leads/Malins_face.jpg'
 import BriansFace from '../../assets/pics/Leads/Brians_face.jpg'
 import AlessiasFace from '../../assets/pics/Leads/Alessia_headshot.png'
-// import JonahsFace from '../../assets/pics/Leads/JonahFace.jpeg'
+import JonahsFace from '../../assets/pics/Leads/Jonah_Face.jpeg'
 // a separator is needed for some reason, troubleshoot this or create a very small section div or style this like the robotics page
 //use robotics format
 //bakround is implemented but sections are not made to be compatible, change to gallery sections
@@ -86,16 +85,15 @@ const MeetTheLeads = (): React.ReactElement => {
 							Tanishka Shah
 						</p>
 					</div>
-					{/* <div className='leads-slide'>
+					<div className='leads-slide'>
 						<h2>Meet our Shop Manager!</h2>
 						<p>
 							Jonah Tesler
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ TanishkasFace }/>
-					</div> */}
-
+						<img src={ JonahsFace }/>
+					</div>
 				</Styles.LeadsGallery>
 			</Styles.SpaceBackground>
 			<Contact/>
