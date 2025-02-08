@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.3b02318c.js",
+    "main.js": "/static/js/main.85b29f98.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
@@ -26,6 +26,7 @@
     "static/media/rocksat-2020.jpeg": "/static/media/rocksat-2020.ba2f799f3cec9638af11.jpeg",
     "static/media/rockSat-project-brief.pdf": "/static/media/rockSat-project-brief.bd63b55b5fb960dadae0.pdf",
     "static/media/rocksat-2014-3.jpeg": "/static/media/rocksat-2014-3.9e5b17cbc3db2bf42333.jpeg",
+    "static/media/Jonah_Face.jpeg": "/static/media/Jonah_Face.f405a5b4a775d971b6d8.jpeg",
     "static/media/comp-team-2023.jpg": "/static/media/comp-team-2023.2053957322f5425bf26f.jpg",
     "static/media/interview.jpeg": "/static/media/interview.d7dac261b2fab2f15ad7.jpeg",
     "static/media/expo.jpeg": "/static/media/expo.955d476a5f01ae1307ea.jpeg",
@@ -63,11 +64,11 @@
     "static/media/Amtrack-png.svg": "/static/media/Amtrack-png.34fb2a378b6f6251e91135644c0969c3.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.3b02318c.js.map": "/static/js/main.3b02318c.js.map",
+    "main.85b29f98.js.map": "/static/js/main.85b29f98.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.3b02318c.js"
+    "static/js/main.85b29f98.js"
   ]
 }
