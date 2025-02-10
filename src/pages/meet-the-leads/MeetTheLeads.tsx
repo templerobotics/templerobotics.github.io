@@ -43,8 +43,7 @@ const MeetTheLeads = (): React.ReactElement => {
 						<img src={ MalinsFace }/>
 					</div>
 					<div className='leads-slide'>
-						<h2>Meet our Vice President</h2>
-						<h2> and Website Manager!</h2>
+						<h2>Meet our Vice President!</h2>
 						<p>
 							Malin Kussi
 						</p>
