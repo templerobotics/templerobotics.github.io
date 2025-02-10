@@ -10,9 +10,9 @@ export const MEET_THE_TEAM: GalleryImage[] = [
 	{ image: RMC_TEAM[2], title: 'Malin Kussi', description: 'Vice President' },
 	{ image: RMC_TEAM[3], title: 'Jared Levin', description: 'Electrical Lead' },
 	{ image: RMC_TEAM[4], title: 'Alessia Smith', description: 'Mechanical Lead' },
-	{ image: RMC_TEAM[5], title: 'Nasier Fowlkes', description: 'Web Manager' },
-	{ image: RMC_TEAM[6], title: 'Brian Ervin', description: 'Programming Lead' },
-	{ image: RMC_TEAM[7], title: 'Tanishka Shah', description: 'Project Manager' }
+	{ image: RMC_TEAM[5], title: 'Brian Ervin', description: 'Programming Lead' },
+	{ image: RMC_TEAM[6], title: 'Tanishka Shah', description: 'Project Manager' },
+	{ image: RMC_TEAM[7], title: 'Jonah Tesler', description: 'Shop Manager' }
 ]
 
 export default class RoboticMiningStyles {
