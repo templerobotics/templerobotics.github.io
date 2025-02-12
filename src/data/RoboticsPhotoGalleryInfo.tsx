@@ -1,9 +1,9 @@
 import { RMC_PHOTO_GALLERY } from '../tools/Constants'
 import { GalleryImage } from '../pages/general/photo-gallery/PhotoGalleryStyles'
-
+const Comp2024Description = 'The team before our first competition run at the University of Central Florida.'
 // eslint-disable-next-line id-length
 const ROBOTICS_PHOTO_GALLERY_INFO: GalleryImage[] = [
-	{ image: RMC_PHOTO_GALLERY[0], title: '2024', description: 'The team before our first competition run at the University of Central Florida.' },
+	{ image: RMC_PHOTO_GALLERY[0], title: '2024', description: Comp2024Description},
 	{ image: RMC_PHOTO_GALLERY[1], title: '2023', description: 'The team after our first competition run at the University of Alabama.' },
 	{ image: RMC_PHOTO_GALLERY[2], title: '2023', description: `The leads in front of the project after finishing 
 		the outside construction.` },
