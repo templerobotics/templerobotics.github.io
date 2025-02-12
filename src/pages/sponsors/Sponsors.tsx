@@ -15,7 +15,8 @@ import Contact from '../general/contact/Contact'
 // Custom styles
 import Styles, { SponsorImages } from './SponsorsStyles'
 
-const brochure = 'https://onedrive.live.com/?authkey=%21AHOgLg076B6sBgc&id=35ECBC1F69BC7768%21114&cid=35ECBC1F69BC7768&parId=root&parQt=sharedby&o=OneUp'
+const brochure = `https://onedrive.live.com/?authkey=%21AHOgLg076B6sBgc&id=
+35ECBC1F69BC7768%21114&cid=35ECBC1F69BC7768&parId=root&parQt=sharedby&o=OneUp`
 const Sponsors = (): React.ReactElement => {
 	return (
 		<Styles.SponsorContainer>
