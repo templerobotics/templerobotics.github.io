@@ -15,6 +15,7 @@ import Contact from '../general/contact/Contact'
 // Custom styles
 import Styles, { SponsorImages } from './SponsorsStyles'
 
+
 const Sponsors = (): React.ReactElement => {
 	return (
 		<Styles.SponsorContainer>
