@@ -42,6 +42,7 @@ export const RMC_TEAM = [
 ]
 
 export const RMC_PHOTO_GALLERY = [
+	require('../assets/pics/photo-gallery/rmc/comp-team-2024.jpg'),
 	require('../assets/pics/photo-gallery/rmc/comp-team-2023.jpg'),
 	require('../assets/pics/photo-gallery/rmc/arena-3.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/arena-2.jpeg'),

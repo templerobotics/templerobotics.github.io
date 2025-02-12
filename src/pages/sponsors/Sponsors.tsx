@@ -23,9 +23,11 @@ const Sponsors = (): React.ReactElement => {
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
 			<div className='img-container' id='centered-img'>
-				<h1 className='title'>Current Sponsors</h1>
 				<Button source={'https://forms.gle/pAfv3VBYJJXooiU38'}
-					text='become a sponsor' size='large' className='becomeSponsor'/>
+					text='Become a Sponsor' size='large' className='becomeSponsor'/>
+				<Button source={'https://onedrive.live.com/?authkey=%21AHOgLg076B6sBgc&id=35ECBC1F69BC7768%21114&cid=35ECBC1F69BC7768&parId=root&parQt=sharedby&o=OneUp'}
+					text='Temple Robotics Brochure' size='large' className='becomeSponsor'/>
+				<h1 className='title'>Current Sponsors</h1>
 			</div>
 			<div className='img-container' style={{background: '#053a92'}}>
 				<Nasa />
