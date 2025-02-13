@@ -26,8 +26,8 @@ const Sponsors = (): React.ReactElement => {
 			<Styles.SectionHeader>
 				<div className='button-container'>
 					<Button text='Become a Sponsor' size='large' source={'https://forms.gle/pAfv3VBYJJXooiU38'}/>
-					<Button text='Temple Robotics Brochure' size='large' source={`https://onedrive.live.com/?authkey=%21AHOgLg076B6sBgc&id=
-				35ECBC1F69BC7768%21114&cid=35ECBC1F69BC7768&parId=root&parQt=sharedby&o=OneUp`}/>
+					<Button text='Temple Robotics Brochure' size='large' source={`https://1drv.ms/b/s!Amh3vGk
+					fvOw1c48kx0hFRCY6Hf4?e=OK65qr`}/>
 				</div>
 			</Styles.SectionHeader>
 			<div className='img-container' id='centered-img'>
