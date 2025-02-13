@@ -34,11 +34,11 @@ export const RMC_TEAM = [
 	require('../assets/pics/team/john-helferty.jpg'),
 	require('../assets/pics/Leads/roccos_face.jpg'),
 	require('../assets/pics/Leads/Malins_face.jpg'),
-	require('../assets/pics/Leads/jareds_face.jpg'),
+	require('../assets/pics/Leads/Jadens_face.jpeg'),
 	require('../assets/pics/Leads/Alessia_headshot.png'),
 	require('../assets/pics/Leads/Brians_face.jpg'),
 	require('../assets/pics/Leads/Tanishkas_face.jpg'),
-	require('../assets/pics/Leads/Jonah_Face.jpeg')
+	require('../assets/pics/Leads/Jonah_face.jpeg')
 ]
 
 export const RMC_PHOTO_GALLERY = [
