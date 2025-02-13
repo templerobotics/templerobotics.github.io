@@ -6,7 +6,6 @@ import { RiSnapchatLine } from 'react-icons/ri'
 import IconButton from '../button/IconButton'
 import Styles from './ContactStyles'
 
-const LinkedInSource = 'https://www.linkedin.com/company/temple-robotics/posts/?feedView=all'
 
 export default class Contact extends React.Component<Record<string, never>, never> {
 	render (): React.ReactElement {
@@ -20,7 +19,7 @@ export default class Contact extends React.Component<Record<string, never>, neve
 					<IconButton icon={<RiSnapchatLine/>} source={'https://snapchat.com/add/templerobotics'} />
 					<IconButton icon={<FiYoutube/>} source={'https://www.youtube.com/channel/UCv59XUAVDLtgk0KA9r4RTsA'} />
 					<IconButton icon={<FiMail/>} source={'Mailto:Temple.Robotics@outlook.com'} />
-					<IconButton icon={<FiLinkedin/>} source={ LinkedInSource}/>
+					<IconButton icon={<FiLinkedin/>} source={ 'https://www.linkedin.com/company/temple-robotics/posts/?feedView=all'}/>
 				</div>
 			</Styles.ContactContainer>
 		)
