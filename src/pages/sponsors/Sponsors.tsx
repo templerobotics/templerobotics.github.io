@@ -15,8 +15,7 @@ import Contact from '../general/contact/Contact'
 // Custom styles
 import Styles, { SponsorImages } from './SponsorsStyles'
 
-const brochure = `https://onedrive.live.com/?authkey=%21AHOgLg076B6sBgc&id=
-35ECBC1F69BC7768%21114&cid=35ECBC1F69BC7768&parId=root&parQt=sharedby&o=OneUp`
+
 const Sponsors = (): React.ReactElement => {
 	return (
 		<Styles.SponsorContainer>
@@ -24,11 +23,14 @@ const Sponsors = (): React.ReactElement => {
 				<h2 className='title'>Sponsors</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
+			<Styles.SectionHeader>
+				<div className='button-container'>
+					<Button text='Become a Sponsor' size='large' source={'https://forms.gle/pAfv3VBYJJXooiU38'}/>
+					<Button text='Temple Robotics Brochure' size='large' source={`https://onedrive.live.com/?authkey=%21AHOgLg076B6sBgc&id=
+				35ECBC1F69BC7768%21114&cid=35ECBC1F69BC7768&parId=root&parQt=sharedby&o=OneUp`}/>
+				</div>
+			</Styles.SectionHeader>
 			<div className='img-container' id='centered-img'>
-				<Button source={'https://forms.gle/pAfv3VBYJJXooiU38'}
-					text='Become a Sponsor' size='large' className='becomeSponsor'/>
-				<Button source={ brochure }
-					text='Temple Robotics Brochure' size='large' className='becomeSponsor'/>
 				<h1 className='title'>Current Sponsors</h1>
 			</div>
 			<div className='img-container' style={{background: '#053a92'}}>
