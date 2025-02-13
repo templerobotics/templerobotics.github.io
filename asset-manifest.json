@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.30dd84c5.js",
+    "main.js": "/static/js/main.1f735c4d.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
     "static/media/Tanishkas_face.jpg": "/static/media/Tanishkas_face.db370e893b62389ea4e3.jpg",
-    "static/media/jareds_face.jpg": "/static/media/jareds_face.b5f5bf471a539e51e421.jpg",
     "static/media/comp-team-2024.jpg": "/static/media/comp-team-2024.145ee25423a8c74547c4.jpg",
     "static/media/arena-1.jpeg": "/static/media/arena-1.f099b92e9642a234260b.jpeg",
     "static/media/roccos_face.jpg": "/static/media/roccos_face.8be4c7adca1111a23e69.jpg",
@@ -26,6 +25,7 @@
     "static/media/rocksat-2020.jpeg": "/static/media/rocksat-2020.ba2f799f3cec9638af11.jpeg",
     "static/media/rockSat-project-brief.pdf": "/static/media/rockSat-project-brief.bd63b55b5fb960dadae0.pdf",
     "static/media/rocksat-2014-3.jpeg": "/static/media/rocksat-2014-3.9e5b17cbc3db2bf42333.jpeg",
+    "static/media/Jadens_face.jpg": "/static/media/Jadens_face.2bcb14b3d1dabffeba43.jpg",
     "static/media/comp-team-2023.jpg": "/static/media/comp-team-2023.2053957322f5425bf26f.jpg",
     "static/media/interview.jpeg": "/static/media/interview.d7dac261b2fab2f15ad7.jpeg",
     "static/media/expo.jpeg": "/static/media/expo.955d476a5f01ae1307ea.jpeg",
@@ -33,7 +33,7 @@
     "static/media/space-background.jpeg": "/static/media/space-background.69fbb27cddb9c58e24ad.jpeg",
     "static/media/rmc-2011.jpeg": "/static/media/rmc-2011.660760b7e53d0cfdf1e4.jpeg",
     "static/media/arrow.png": "/static/media/arrow.da4a98c25205e6b2105a.png",
-    "static/media/Jonah_Face.jpeg": "/static/media/Jonah_Face.c295cae21680cb4a0a82.jpeg",
+    "static/media/Jonah_Face.jpg": "/static/media/Jonah_Face.c295cae21680cb4a0a82.jpg",
     "static/media/rocksat-2014-2.jpeg": "/static/media/rocksat-2014-2.bfe5545c3f1c206b0396.jpeg",
     "static/media/club-filing.jpg": "/static/media/club-filing.3b96867d536efd76717d.jpg",
     "static/media/ethernet-screw-up.jpg": "/static/media/ethernet-screw-up.0fc7dff8e79fe4974987.jpg",
@@ -64,11 +64,11 @@
     "static/media/Amtrack-png.svg": "/static/media/Amtrack-png.34fb2a378b6f6251e91135644c0969c3.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.30dd84c5.js.map": "/static/js/main.30dd84c5.js.map",
+    "main.1f735c4d.js.map": "/static/js/main.1f735c4d.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.30dd84c5.js"
+    "static/js/main.1f735c4d.js"
   ]
 }
