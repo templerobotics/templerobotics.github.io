@@ -40,7 +40,6 @@ export const RMC_TEAM = [
 	require('../assets/pics/Leads/Brian_face.png'),
 	require('../assets/pics/Leads/Tanishkas_face.jpg'),
 	require('../assets/pics/Leads/Jonah_Face.jpg')
-	
 ]
 
 export const RMC_PHOTO_GALLERY = [
