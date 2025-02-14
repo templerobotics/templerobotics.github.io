@@ -60,4 +60,21 @@ export default class SponsorsStyles {
 			${FONT_FAMILY.PAGE_TITLE}
 		}
 	`
+
+	static readonly SectionHeader = styled.div`
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		flex-direction: column;
+		row-gap: 10%;
+		height: 80%;
+		align-self: center;
+
+		& > .button-container {
+			width: 100%;
+			display: flex;
+			column-gap: 10%;
+			justify-content: center;
+		}
+	`
 }

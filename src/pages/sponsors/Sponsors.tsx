@@ -15,6 +15,7 @@ import Contact from '../general/contact/Contact'
 // Custom styles
 import Styles, { SponsorImages } from './SponsorsStyles'
 
+
 const Sponsors = (): React.ReactElement => {
 	return (
 		<Styles.SponsorContainer>
@@ -22,10 +23,15 @@ const Sponsors = (): React.ReactElement => {
 				<h2 className='title'>Sponsors</h2>
 				<AiOutlineDash/>
 			</Styles.TitleContainer>
+			<Styles.SectionHeader>
+				<div className='button-container'>
+					<Button text='Become a Sponsor' size='large' source={'https://forms.gle/pAfv3VBYJJXooiU38'}/>
+					<Button text='Temple Robotics Brochure' size='large' source={`https://1drv.ms/b/s!Amh3vGk
+					fvOw1c48kx0hFRCY6Hf4?e=OK65qr`}/>
+				</div>
+			</Styles.SectionHeader>
 			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Current Sponsors</h1>
-				<Button source={'https://forms.gle/pAfv3VBYJJXooiU38'}
-					text='become a sponsor' size='large' className='becomeSponsor'/>
 			</div>
 			<div className='img-container' style={{background: '#053a92'}}>
 				<Nasa />

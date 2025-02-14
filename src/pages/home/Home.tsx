@@ -40,7 +40,7 @@ const Home = (): React.ReactElement => {
 				<Styles.SectionHeader>
 					<h2>Sign up for volunteering and contact us on teams!</h2>
 					<div className='button-container'>
-						<Button text={'Sign up for volunteering here!'} size={'large'} source={'https://forms.gle/1RcJw5DNXHVX2YzD8'}/>
+						<Button text={'Sign up to Volunteer'} size={'large'} source={'https://forms.gle/1RcJw5DNXHVX2YzD8'}/>
 						<Button text='Join Teams Here!' source={TEAMS}/>
 					</div>
 				</Styles.SectionHeader>
