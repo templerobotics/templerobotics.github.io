@@ -22,7 +22,7 @@ const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Programming Meeting',
 		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot',
-		date: new Date('2025-01-22T17:00:00'),
+		date: new Date('2025-02-19T17:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
 		endDate: new Date(semesterEnd)
@@ -30,7 +30,7 @@ const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Electrical Meeting',
 		description: 'The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!',
-		date: new Date('2025-01-22T18:00:00'),
+		date: new Date('2025-02-19T18:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
 		endDate: new Date(semesterEnd)
@@ -38,7 +38,7 @@ const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Mechanical Meeting',
 		description: 'The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.',
-		date: new Date('2025-01-22T16:00:00'),
+		date: new Date('2025-02-19T16:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
 		endDate: new Date(semesterEnd)
