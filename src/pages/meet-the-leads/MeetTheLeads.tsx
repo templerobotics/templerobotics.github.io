@@ -10,7 +10,7 @@ import Contact from '../general/contact/Contact'
 import Styles from './MeetTheLeadsStyles'
 
 // Images
-import TanishkasFace from '../../assets/pics/Leads/Tanishkas_face.jpg'
+import TanishkasFace from '../../assets/pics/Leads/Tanishkas_face.jpeg'
 import RoccosFace from '../../assets/pics/Leads/roccos_face.jpg'
 import MalinsFace from '../../assets/pics/Leads/Malins_face.jpg'
 import BriansFace from '../../assets/pics/Leads/Brian_face.png'
