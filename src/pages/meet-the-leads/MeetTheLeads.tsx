@@ -13,10 +13,11 @@ import Styles from './MeetTheLeadsStyles'
 import TanishkasFace from '../../assets/pics/Leads/Tanishkas_face.jpg'
 import RoccosFace from '../../assets/pics/Leads/roccos_face.jpg'
 import MalinsFace from '../../assets/pics/Leads/Malins_face.jpg'
-import BriansFace from '../../assets/pics/Leads/Brians_face.jpg'
+import BriansFace from '../../assets/pics/Leads/Brian_face.png'
 import AlessiasFace from '../../assets/pics/Leads/Alessia_headshot.png'
 import JonahsFace from '../../assets/pics/Leads/Jonah_Face.jpg'
 import JadensFace from '../../assets/pics/Leads/Jadens_face.jpg'
+import JavisFace from '../../assets/pics/Leads/Javi_face.png'
 // a separator is needed for some reason, troubleshoot this or create a very small section div or style this like the robotics page
 //use robotics format
 //bakround is implemented but sections are not made to be compatible, change to gallery sections
@@ -92,6 +93,15 @@ const MeetTheLeads = (): React.ReactElement => {
 					</div>
 					<div className='Leads-img-container'>
 						<img src={ JonahsFace }/>
+					</div>
+					<div className='Leads-img-container'>
+						<img src={ JavisFace }/>
+					</div>
+					<div className='leads-slide'>
+						<h2>Meet our Chief of Marketing & Development!</h2>
+						<p>
+							Javier Price-Butler
+						</p>
 					</div>
 				</Styles.LeadsGallery>
 			</Styles.SpaceBackground>
