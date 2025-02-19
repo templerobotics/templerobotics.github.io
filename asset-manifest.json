@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.ac0ab428.js",
+    "main.js": "/static/js/main.34d731c9.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/Brian_face.png": "/static/media/Brian_face.8ffeb737f16a074e4e09.png",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
+    "static/media/Tanishkas_face.jpg": "/static/media/Tanishkas_face.db370e893b62389ea4e3.jpg",
     "static/media/comp-team-2024.jpg": "/static/media/comp-team-2024.145ee25423a8c74547c4.jpg",
     "static/media/arena-1.jpeg": "/static/media/arena-1.f099b92e9642a234260b.jpeg",
-    "static/media/Tanishkas_face.jpeg": "/static/media/Tanishkas_face.de8635190cc9f54bfe3e.jpeg",
     "static/media/roccos_face.jpg": "/static/media/roccos_face.8be4c7adca1111a23e69.jpg",
     "static/media/Malins_face.jpg": "/static/media/Malins_face.5ecd550b84aea8d2446e.jpg",
     "static/media/Javi_face.png": "/static/media/Javi_face.abc87e5da69b4238b352.png",
@@ -65,11 +65,11 @@
     "static/media/Amtrack-png.svg": "/static/media/Amtrack-png.34fb2a378b6f6251e91135644c0969c3.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.ac0ab428.js.map": "/static/js/main.ac0ab428.js.map",
+    "main.34d731c9.js.map": "/static/js/main.34d731c9.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.ac0ab428.js"
+    "static/js/main.34d731c9.js"
   ]
 }
