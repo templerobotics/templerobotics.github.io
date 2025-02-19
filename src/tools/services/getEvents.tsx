@@ -29,14 +29,15 @@ function handleWeeklyEvents(events: EventObject[]): EventObject[] {
 		return 1
 	})
 
-	// Handle weekly dates
+	// Handle weekly dates. Set them to be the next occurrence if they are in the past.
 	events.forEach(event => {
-		const currentDayForWeek = new Date()
-		const dayOffset = (7 + event.date.getDay() - currentDayForWeek.getDay()) % 7
-		const dateComparison = event.date.getTime() - currentDayForWeek.getTime()
-		if (event.weekly && dateComparison < 0) {
-			const newDate = currentDayForWeek.getTime() + dayOffset * 24 * 60 * 60 * 1000
-			event.date = new Date(newDate)
+		if (event.weekly) {
+			const currentDate = new Date()
+			const dayOffset = (7 + event.date.getDay() - currentDate.getDay()) % 7
+			const nextOccurrence = new Date(currentDate.getTime() + dayOffset * 24 * 60 * 60 * 1000)
+			if (nextOccurrence < currentDate) {
+				nextOccurrence.setDate(nextOccurrence.getDate() + 7)
+			}
 		}
 	})
 
