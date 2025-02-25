@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Robotics = (): React.ReactElement => {
+export default function Robotics (): React.ReactElement {
 	return (
 		<div>
 			Robotics page
 		</div>
 	)
 }
-
-export default Robotics

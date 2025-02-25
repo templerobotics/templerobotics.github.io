@@ -5,12 +5,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --foreground-hover: #4e4e4e;
+  --primary: #9D2235;
 }
 
+/* Dark theme colors */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --foreground-hover: #cccccc;
+    --primary: #9D2235;
   }
 }
 
@@ -18,4 +23,26 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+
+  & * {
+    height: 100%;
+  }
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-horizontal > * {
+  align-content: center;
 }

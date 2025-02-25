@@ -1,5 +1,11 @@
+// Third party imports
+import Title from '@components/home/Title'
 import React from 'react'
 
-export default function Home() {
-	return <h1>Hello Next.js!</h1>
+export default function Home (): React.ReactElement {
+	return (
+		<>
+			<Title/>
+		</>
+	)
 }
