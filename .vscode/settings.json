@@ -3,5 +3,8 @@
         "browserslist",
         "camelcase",
         "linebreak"
-    ]
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
 }
