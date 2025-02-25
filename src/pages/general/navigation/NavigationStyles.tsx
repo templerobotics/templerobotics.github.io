@@ -73,5 +73,41 @@ export default class NavigationStyles {
 			padding-left: 5%;
 			font-size: 18px;
 		}
+		
+		/* Dropdown Styling */
+		.nav-item {
+			position: relative;
+			padding: 4px 8px 8px 8px;
+		}
+
+		a.dropdown-toggle {
+			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
+			color: ${COLORS.TEXT} !important;
+			font-size: 16px;
+		}
+
+		/* Show dropdown on hover */
+		.nav-item:hover .dropdown-menu {
+			display: block !important;
+		}
+
+		.dropdown-menu {
+			display: none;
+			position: absolute;
+			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
+			padding: 0px 8px 8px 13px;
+			border: none;
+		}
+
+		.dropdown-item {
+			color: ${COLORS.TEXT} !important;
+			font-size: 15px;
+			border: none;
+		}
+
+		.dropdown-item:hover {
+			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
+			color: ${COLORS.HOVER_TEXT} !important;
+		}
 	`
 }
