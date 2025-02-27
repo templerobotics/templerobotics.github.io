@@ -80,29 +80,31 @@ export default class NavigationStyles {
 			padding: 4px 8px 8px 8px;
 		}
 
+		div.nav-item{
+			position: relative;
+			padding: 2px 0px 0px 0px;
+		}
+
 		a.dropdown-toggle {
 			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
 			color: ${COLORS.TEXT} !important;
-			font-size: 16px;
-		}
-
-		/* Show dropdown on hover */
-		.nav-item:hover .dropdown-menu {
-			display: block !important;
+			font-size: 17px;
+			padding: 6px 8px 8px 8px;
 		}
 
 		.dropdown-menu {
-			display: none;
 			position: absolute;
 			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
-			padding: 0px 8px 8px 13px;
+			padding: 0px 8px 8px 16px;
 			border: none;
 		}
 
 		.dropdown-item {
 			color: ${COLORS.TEXT} !important;
+			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
 			font-size: 15px;
 			border: none;
+			padding: 0px
 		}
 
 		.dropdown-item:hover {

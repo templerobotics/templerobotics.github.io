@@ -11,5 +11,6 @@ export type EventObject = {
 	description: string,
 	weekly?: boolean,
 	endDate?: Date,
-	tbd?: boolean
+	tbd?: boolean,
+	duration?: number
 }

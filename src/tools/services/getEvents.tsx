@@ -16,33 +16,48 @@ function sortByDate(eventA: EventObject, eventB: EventObject): number {
  * @param events The events to be posted
  * @returns The events to be posted with the correct weekly dates
  */
+
 function handleWeeklyEvents(events: EventObject[]): EventObject[] {
-	// Date used to filter out old events
+	const currentDateTime = new Date().getTime() // Get current time in milliseconds
 	const dateFilter = new Date()
 	dateFilter.setDate(dateFilter.getDate() - 1)
 	dateFilter.setUTCHours(23, 59, 59, 999)
-
-	// Remove events that are in the past and no longer occurring.
 	events = events.filter(event => {
 		if (event.date < dateFilter && !event.weekly) return 0
 		if (event.weekly && ((event.endDate ?? new Date()) < dateFilter)) return 0
 		return 1
 	})
+	return events
+		.map(event => {
+			const eventDate = new Date(event.date) // Copy event date
+			const eventEndDate = event.endDate ? new Date(event.endDate) : null
+			const eventDuration = (event.duration ?? 60) * 60 * 1000 // Convert minutes to milliseconds (default 1hr)
 
-	// Handle weekly dates. Set them to be the next occurrence if they are in the past.
-	events.forEach(event => {
-		if (event.weekly) {
-			const currentDate = new Date()
-			const dayOffset = (7 + event.date.getDay() - currentDate.getDay()) % 7
-			const nextOccurrence = new Date(currentDate.getTime() + dayOffset * 24 * 60 * 60 * 1000)
-			if (nextOccurrence < currentDate) {
-				nextOccurrence.setDate(nextOccurrence.getDate() + 7)
+			// Compute the actual end time of the event
+			let eventEndTime = eventDate.getTime() + eventDuration
+
+			// If it's a weekly event and has passed, move it forward to the next valid week
+			if (event.weekly) {
+				while (eventEndTime < currentDateTime) {
+					eventDate.setDate(eventDate.getDate() + 7) // Move event forward by one week
+					eventEndTime = eventDate.getTime() + eventDuration // Update end time
+				}
+
+				// Stop repeating events if the new date exceeds `endDate`
+				if (eventEndDate && eventDate.getTime() > eventEndDate.getTime()) {
+					return null // Exclude this event
+				}
+
+				return { ...event, date: eventDate } // Return updated weekly event
 			}
-		}
-	})
 
-	return events.sort(sortByDate)
+			// Non-weekly events should stay as they are
+			return event
+		})
+		.filter((event): event is EventObject => event !== null)
+		.sort(sortByDate)
 }
+
 
 export function getEvents(): EventObject[] {
 	const data = EVENT_INFO
