@@ -50,7 +50,6 @@ const Navigation = (): React.ReactElement => {
 				transparency={scroll <= 10 && width > Constants.MOBILE_SIZE ? 1 : 0}
 				toggle={width < Constants.MOBILE_SIZE ? 1 : 0}
 				sticky='top' bg='dark' variant='dark' expand='md' collapseOnSelect>
-				
 				{/* Top left of the navigation bar */}
 				<Styles.Logo className='logo-and-title'>
 					<Link className='logo-container' to='/home'>
