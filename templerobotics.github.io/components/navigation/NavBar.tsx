@@ -10,7 +10,7 @@ import DropDownMenu from './DropdownMenu'
 
 const dropDownItems = [
 	{ text: 'Events', path: PATHS.EVENTS },
-	{ text: 'Sponsors', path: PATHS.SPONSORS }
+	{ text: 'ewfwfwfwewefwefwefew', path: PATHS.SPONSORS }
 ]
 
 export default function NavBar (): React.ReactElement {

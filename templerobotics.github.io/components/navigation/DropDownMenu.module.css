@@ -1,21 +1,38 @@
-.menuItem {
-    height: 25%;
-    color: black;
-    text-align: center;
-    text-decoration: none;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: unset;
+}
+
+.dropdown:hover .dropdownMenu {
     display: block;
-    border-bottom: 1px solid black;
 }
 
 .dropdownLink {
-    cursor: pointer;
     gap: 0;
 }
 
-.title:hover {
+.menuItem {
+    background-color: var(--primary);
     cursor: pointer;
+    display: block;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
 }
 
-.popOverRoot {
-    pointer-events: none;
+.menuItem:hover {
+    background-color: var(--primary-hover);
+}
+
+.menuItem:last-child {
+    border-bottom-left-radius: 8;
+    border-bottom-right-radius: 8;
 }
