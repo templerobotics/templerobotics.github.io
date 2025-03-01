@@ -1,15 +1,24 @@
 'use client'
 import styles from './DropdownMenu.module.css'
 
-import { Link, Menu, MenuItem } from '@mui/material'
-
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
-export default function DropdownMenu ({ title, items }: { title: string, items: string[] }): React.ReactElement {
+import { Link, Menu, MenuItem } from '@mui/material'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+
+type DropDownMenuProps = {
+    title: { text: string, path: string }
+    items: { text: string, path: string }[]
+}
+
+export default function DropdownMenu ({ title, items }: DropDownMenuProps): React.ReactElement {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     let currentlyHovering = false;
+    const router = useRouter()
 
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    const handleMouseOver = (event: React.MouseEvent<HTMLElement>) => {
+        handleHover();
         if (anchorEl !== event.currentTarget) {
             setAnchorEl(event.currentTarget);
         }
@@ -32,16 +41,20 @@ export default function DropdownMenu ({ title, items }: { title: string, items: 
         }, 50);
     }
 
+    const handleClick = (path: string) => {
+        handleClose();
+        router.push(path);
+    }
+
 	return (
         <div>
             <Link
-                className='flex-horizontal cursor-pointer'
-                aria-owns={anchorEl ? "simple-menu" : undefined}
-                aria-haspopup="true"
-                onClick={handleClick}
-                onMouseOver={handleClick}
+                className={`flex-horizontal ${styles.dropdownLink}`}
+                onClick={() => handleClick(title.path)}
+                onMouseOver={handleMouseOver}
                 onMouseLeave={handleCloseHover}>
-                {title}
+                {title.text}
+                <KeyboardArrowDownIcon fontSize='small' />
             </Link>
 
             <Menu
@@ -49,16 +62,27 @@ export default function DropdownMenu ({ title, items }: { title: string, items: 
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
-                MenuListProps={{
-                    onMouseLeave: handleCloseHover,
-                    onMouseEnter: handleHover,
-                    style: { pointerEvents: 'auto' }
+                autoFocus={false}
+                slotProps={{
+                    paper: {
+                        style: {
+                            borderTopLeftRadius: 0,
+                            borderTopRightRadius: 0
+                        }
+                    },
+                    list: {
+                        onMouseLeave: handleCloseHover,
+                        onMouseEnter: handleHover,
+                        style: {
+                            pointerEvents: 'auto',
+                            backgroundColor: 'var(--primary)'
+                        }
+                    }
                 }}
-                hideBackdrop
                 PopoverClasses={{
                     root: styles.popOverRoot
                 }}>
-                {items.map((item, i) => <MenuItem key={i} className={styles.menuItem} onClick={handleClose}>{item}</MenuItem>)}
+                {items.map((item, i) => <MenuItem key={i} className={styles.menuItem} onClick={() => handleClick(item.path)}>{item.text}</MenuItem>)}
             </Menu>
         </div>
 	)

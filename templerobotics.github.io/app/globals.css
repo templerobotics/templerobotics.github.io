@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Futura';
+  src: url('../assets/fonts/futura-medium-webfont.woff') format('woff'),
+      url('../assets/fonts/futura-medium-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arca';
+  src: url('../assets/fonts/arcamajora3-heavy-webfont.otf') format('otf'),
+      url('../assets/fonts/arcamajora3-heavy-webfont.eot') format('eot'),
+      url('../assets/fonts/arcamajora3-heavy-webfont.woff2') format('woff2'),
+      url('../assets/fonts/arcamajora3-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,13 +40,22 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  
+  & * {
+    font-family: 'Futura', 'Helvetica', 'Arial', 'sans-serif';
+  }
+}
+
+.header-text {
+  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
 }
 
 .flex-vertical {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -36,6 +63,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 

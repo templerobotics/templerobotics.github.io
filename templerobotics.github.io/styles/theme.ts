@@ -16,8 +16,18 @@ const theme = createTheme({
           color: 'var(--foreground)',
           transition: 'color 500ms',
           '&:hover': {
-            color: 'var(--foreground-hover)'
+            color: 'var(--foreground-hover)',
+            cursor: 'pointer'
           }
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: 'var(--foreground)',
+          borderColor: 'var(--foreground)',
+          borderRadius: 8,
         }
       }
     }

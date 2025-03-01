@@ -26,6 +26,7 @@ export default function RootLayout({
       <body className={`${roboto.variable} antialiased`} >
         <ThemeProvider theme={theme}>
           <NavBar/>
+          <div style={{height: '3rem'}}/>
           {children}
         </ThemeProvider>
       </body>

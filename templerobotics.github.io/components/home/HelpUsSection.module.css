@@ -1,0 +1,19 @@
+.container {
+    height: 100%;
+    background: linear-gradient(200deg, var(--primary), #996b72, var(--primary));
+    gap: 2rem;
+
+    & * {
+        text-align: center;
+    }
+}
+
+.header {
+    /* TODO: Make variable sized font */
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.buttonContainer {
+    gap: 6rem;
+}

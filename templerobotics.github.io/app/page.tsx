@@ -1,11 +1,6 @@
-// Third party imports
-import Title from '@components/home/Title'
+import HomePage from '@components/home/HomePage'
 import React from 'react'
 
 export default function Home (): React.ReactElement {
-	return (
-		<>
-			<Title/>
-		</>
-	)
+	return (<HomePage/>)
 }

@@ -1,12 +1,17 @@
 import styles from './NavBar.module.css'
 
-import clubLogo from '@assets/club-logo.png'
+import clubLogo from '@assets/images/logos/club-logo.png'
 
 import React from 'react'
 import { Link } from '@mui/material'
 import Image from 'next/image'
 import { PATHS } from '@utils/Constants'
 import DropDownMenu from './DropdownMenu'
+
+const dropDownItems = [
+	{ text: 'Events', path: PATHS.EVENTS },
+	{ text: 'Sponsors', path: PATHS.SPONSORS }
+]
 
 export default function NavBar (): React.ReactElement {
 	return (
@@ -20,8 +25,9 @@ export default function NavBar (): React.ReactElement {
 
 			<div className={'flex-horizontal'}>
 				<Link href={PATHS.HOME}>Home</Link>
-				<DropDownMenu title={'Robotics'} items={['Option 1', 'Option 2']}/>
-				<Link href={PATHS.ROBOTICS}>Robotics</Link>
+				<DropDownMenu title={{ text: 'Robotics', path: PATHS.ROBOTICS }} items={dropDownItems}/>
+				<Link href={PATHS.ROCKSAT}>Rocksat</Link>
+				<Link href={PATHS.BALLOONING}>NASA Ballooning</Link>
 			</div>
 		</div>
 	)

@@ -1,0 +1,18 @@
+.container {
+    height: 100%;
+
+    & * {
+        text-align: center;
+    }
+}
+
+.header {
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.icons {
+    & > *:hover {
+        color: var(--primary) !important;
+    }
+}
