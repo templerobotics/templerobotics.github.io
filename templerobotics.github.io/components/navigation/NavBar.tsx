@@ -6,7 +6,7 @@ import React from 'react'
 import { Link } from '@mui/material'
 import Image from 'next/image'
 import { PATHS } from '@utils/Constants'
-import DropDownMenu from './DropDownMenu'
+import DropDownMenu from './DropdownMenu'
 
 export default function NavBar (): React.ReactElement {
 	return (
@@ -20,8 +20,8 @@ export default function NavBar (): React.ReactElement {
 
 			<div className={'flex-horizontal'}>
 				<Link href={PATHS.HOME}>Home</Link>
+				<DropDownMenu title={'Robotics'} items={['Option 1', 'Option 2']}/>
 				<Link href={PATHS.ROBOTICS}>Robotics</Link>
-				<DropDownMenu/>
 			</div>
 		</div>
 	)

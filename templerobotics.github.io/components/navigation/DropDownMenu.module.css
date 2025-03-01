@@ -1,1 +1,16 @@
+.menuItem {
+    height: 25%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
+}
 
+.title:hover {
+    cursor: pointer;
+}
+
+.popOverRoot {
+    pointer-events: none;
+}

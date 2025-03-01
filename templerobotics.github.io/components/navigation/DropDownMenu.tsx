@@ -1,46 +1,65 @@
 'use client'
+import styles from './DropdownMenu.module.css'
 
 import { Link, Menu, MenuItem } from '@mui/material'
 
 import React, { useState } from 'react'
-// import { PATHS } from '@utils/Constants'
 
-export default function DropDownMenu (): React.ReactElement {
-    const [anchorEl, setAnchorEl] = useState<Element | null>(null)
-    const open = Boolean(anchorEl);
+export default function DropdownMenu ({ title, items }: { title: string, items: string[] }): React.ReactElement {
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+    let currentlyHovering = false;
 
-    const handleMouseOver = (event: React.MouseEvent) => {
-        setAnchorEl(event.currentTarget)
+    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+        if (anchorEl !== event.currentTarget) {
+            setAnchorEl(event.currentTarget);
+        }
     };
 
-    const handleMouseOut = () => {
-        setAnchorEl(null)
+    const handleClose = () => {
+        setAnchorEl(null);
     };
+
+    const handleHover = () => {
+        currentlyHovering = true;
+    }
+
+    const handleCloseHover = () => {
+        currentlyHovering = false;
+        setTimeout(() => {
+            if (!currentlyHovering) {
+                handleClose();
+            }
+        }, 50);
+    }
 
 	return (
-        <>
-            <div
-                onMouseEnter={handleMouseOver}
-                aria-controls={open ? 'basic-menu' : undefined}
+        <div>
+            <Link
+                className='flex-horizontal cursor-pointer'
+                aria-owns={anchorEl ? "simple-menu" : undefined}
                 aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                className={'flex-horizontal'}>
-                <Link>Robotics</Link>
-            </div>
+                onClick={handleClick}
+                onMouseOver={handleClick}
+                onMouseLeave={handleCloseHover}>
+                {title}
+            </Link>
+
             <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
-                open={open}
-                onClose={handleMouseOut}
-                transformOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'right',
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                MenuListProps={{
+                    onMouseLeave: handleCloseHover,
+                    onMouseEnter: handleHover,
+                    style: { pointerEvents: 'auto' }
                 }}
-                MenuListProps={{ 'aria-labelledby': 'basic-button' }}>
-                <MenuItem onClick={handleMouseOut}>Profile</MenuItem>
-                <MenuItem onClick={handleMouseOut}>My account</MenuItem>
-                <MenuItem onClick={handleMouseOut}>Logout</MenuItem>
+                hideBackdrop
+                PopoverClasses={{
+                    root: styles.popOverRoot
+                }}>
+                {items.map((item, i) => <MenuItem key={i} className={styles.menuItem} onClick={handleClose}>{item}</MenuItem>)}
             </Menu>
-        </>
+        </div>
 	)
 }
