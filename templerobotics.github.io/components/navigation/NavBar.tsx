@@ -6,7 +6,7 @@ import React from 'react'
 import { Link } from '@mui/material'
 import Image from 'next/image'
 import { PATHS } from '@utils/Constants'
-import DropDownMenu from './DropdownMenu'
+import DropDownMenu from './DropDownMenu'
 
 const dropDownItems = [
 	{ text: 'Events', path: PATHS.EVENTS },
