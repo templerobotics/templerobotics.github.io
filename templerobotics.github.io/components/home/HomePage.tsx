@@ -1,22 +1,23 @@
-import ContactUs from '@components/shared/ContactUs'
+import Carousel from '../shared/Carousel'
+import ContactUs from '../shared/ContactUs'
 import ButtonSection from './ButtonSection'
-import Carousel from './Carousel'
 import HelpUsSection from './HelpUsSection'
+import { carouselSlides } from './HomeData'
 import HomeHeader from './HomeHeader'
 import styles from './HomePage.module.css'
 
 import React from 'react'
 
-const HomePage = (): React.ReactElement => {
+const Page = (): React.ReactElement => {
 	return (
 		<div className={styles.container}>
 			<HomeHeader/>
 			<ButtonSection/>
-			<Carousel/>
+			<Carousel slides={carouselSlides}/>
 			<HelpUsSection/>
 			<ContactUs/>
 		</div>
 	)
 }
 
-export default HomePage
+export default Page

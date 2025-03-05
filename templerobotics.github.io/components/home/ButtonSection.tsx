@@ -5,8 +5,8 @@ import { Button } from '@mui/material'
 const ButtonSection = (): React.ReactElement => {
     return (
         <div className={`flex-vertical ${styles.container}`}>
-            <div className={`flex-vertical ${styles.textContainer}`}>
-                <div className={styles.text}>Contact us on Teams!</div>
+            <div className={`flex-vertical-space-around ${styles.textContainer}`}>
+                <div className='sub-section-header-text'>Contact us on Teams!</div>
                 <Button variant='outlined'>Join Teams</Button>
             </div>
         </div>

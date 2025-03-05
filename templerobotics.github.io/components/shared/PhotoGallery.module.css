@@ -1,0 +1,44 @@
+.container {
+    & * {
+        text-align: center;
+    }
+}
+
+.slideContainer {
+    width: 80%;
+    height: 80%;
+}
+
+.photosContainer {
+    height: 100%;
+    width: 100%;
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.activeSlideCounter {
+    color: var(--primary);
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    & img {
+        object-fit: cover;
+    }
+}
+
+.slide {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 100%;
+    overflow: hidden;
+}

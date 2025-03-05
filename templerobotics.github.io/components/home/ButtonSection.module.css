@@ -9,8 +9,3 @@
     background-repeat: no-repeat no-repeat;
     background-position: center;
 }
-
-.text {
-    /* TODO: Make variable sized font */
-    font-size: 34px;
-}

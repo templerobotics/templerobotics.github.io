@@ -21,7 +21,7 @@ export default function DropdownMenu ({ title, items }: DropDownMenuProps): Reac
 
 	return (
         <div className={styles.dropdown}>
-            <Link className={`flex-horizontal ${styles.dropdownLink}`}>
+            <Link onClick={() => handleClick(title.path)} className={`flex-horizontal ${styles.dropdownLink}`}>
                 {title.text} <KeyboardArrowDownIcon fontSize='small'/>
             </Link>
 

@@ -8,12 +8,6 @@
     }
 }
 
-.header {
-    /* TODO: Make variable sized font */
-    font-size: 34px;
-    letter-spacing: 1px;
-}
-
 .buttonContainer {
     gap: 6rem;
 }

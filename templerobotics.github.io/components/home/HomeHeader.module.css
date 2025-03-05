@@ -1,16 +1,10 @@
 .container {
     height: 100%;
     justify-content: space-between;
+    padding: 2rem 0;
 
     & * {
         text-align: center;
-    }
-
-    & > *:first-child {
-        padding-top: 2rem;
-    }
-    & > *:last-child {
-        padding-bottom: 2rem;
     }
 }
 

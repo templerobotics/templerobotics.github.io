@@ -12,8 +12,8 @@ import { Link } from '@mui/material'
 
 const ContactUs = (): React.ReactElement => {
 	return (
-		<div className={`flex-vertical ${styles.container}`}>
-			<div className={`header-text ${styles.header}`}>We <Favorite fontSize='inherit'/> new friends!</div>
+		<div className={`flex-vertical-space-around ${styles.container}`}>
+			<div className='sub-section-header-text'>We <Favorite fontSize='inherit'/> new friends!</div>
 			<div className={`flex-horizontal ${styles.icons}`}>
 				<Link target='_blank' rel='noreferrer' href={'https://www.instagram.com/templerobotics/'}><Instagram fontSize='large'/></Link>
 				<Link target='_blank' rel='noreferrer' href={'https://twitter.com/templerobotics'}><Twitter fontSize='large'/></Link>

@@ -33,7 +33,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --foreground-hover: #cccccc;
+    --foreground-hover: #b7b7b7;
     --primary: #9D2235;
   }
 }
@@ -52,6 +52,7 @@ body {
   font-weight: 200;
 }
 
+.flex-vertical-space-around,
 .flex-vertical {
   display: flex;
   flex-direction: column;
@@ -60,6 +61,8 @@ body {
   gap: 1rem;
 }
 
+.flex-horizontal-end,
+.flex-horizontal-start,
 .flex-horizontal {
   display: flex;
   flex-direction: row;
@@ -68,6 +71,27 @@ body {
   gap: 1rem;
 }
 
+.flex-horizontal-end {
+  justify-content: end;
+}
+
+.flex-horizontal-start {
+  justify-content: start;
+}
+
+.flex-vertical-space-around {
+  justify-content: space-around;
+  gap: 0;
+}
+
 .flex-horizontal > * {
   align-content: center;
+}
+
+.sub-section-header-text {
+  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 1;
 }

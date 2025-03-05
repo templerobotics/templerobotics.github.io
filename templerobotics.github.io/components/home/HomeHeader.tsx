@@ -2,7 +2,7 @@ import styles from './HomeHeader.module.css'
 
 import React from 'react'
 
-const HomeHeader = (): React.ReactElement => {
+const Header = (): React.ReactElement => {
 	return (
 		<div className={`flex-vertical ${styles.container}`}>
 			<div>
@@ -18,4 +18,4 @@ const HomeHeader = (): React.ReactElement => {
 	)
 }
 
-export default HomeHeader
+export default Header

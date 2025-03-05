@@ -5,8 +5,8 @@ import React from 'react'
 
 const HelpUsSection = (): React.ReactElement => {
 	return (
-		<div className={`flex-vertical ${styles.container}`}>
-			<div className={`header-text ${styles.header}`}>Help Temple get to the moon!</div>
+		<div className={`flex-vertical-space-around ${styles.container}`}>
+			<div className='sub-section-header-text'>Help Temple get to the moon!</div>
 			<div className={`flex-horizontal ${styles.buttonContainer}`}>
 				<Button variant="outlined">Buy Merchandise</Button>
 				<Button variant="outlined">Become a Sponsor</Button>
