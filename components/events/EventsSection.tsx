@@ -1,29 +1,39 @@
+'use client'
 import { EventProps, events } from './EventsData'
 import styles from './EventsSection.module.css'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 const EventsSection = (): React.ReactElement => {
-	const removePastEvents = (): EventProps[] => {
+	const [futureEvents, setFutureEvents] = useState<EventProps[]>([])
+
+	useEffect(() => {
 		const currentDate = new Date();
 		currentDate.setHours(23, 59, 0, 0)
 		const updatedEventsWithDates = events.map(event => {
-			if (event.endDate && event.endDate.getTime() > currentDate.getTime()) {
-				// Set date to be the next event occurrence if weekly
-				const dayOffset = (7 + event.date.getDay() - currentDate.getDay()) % 7
-				const nextOccurrence = new Date(currentDate.getTime() + dayOffset * 24 * 60 * 60 * 1000)
-				nextOccurrence.setHours(event.date.getHours(), event.date.getMinutes())
-				event.date = nextOccurrence
+			const newEvent: EventProps = JSON.parse(JSON.stringify(event))
+			newEvent.date = new Date(newEvent.date)
+			if (newEvent.endDate) {
+				newEvent.endDate = new Date(newEvent.endDate)
 			}
-			return event
+			if (newEvent.endDate && newEvent.endDate.getTime() > currentDate.getTime()) {
+				// Set date to be the next event occurrence if weekly
+				const dayOffset = (7 + newEvent.date.getDay() - currentDate.getDay()) % 7
+				const nextOccurrence = new Date(currentDate.getTime() + dayOffset * 24 * 60 * 60 * 1000)
+				nextOccurrence.setHours(newEvent.date.getHours(), newEvent.date.getMinutes())
+				newEvent.date = nextOccurrence
+			}
+			return newEvent
 		});
 		const filteredEvents = updatedEventsWithDates.filter(event => event.date.getTime() > currentDate.getTime())
-		return filteredEvents
-	}
+		setFutureEvents(filteredEvents)
+	}, [])
 
 	return (
 		<div className={`flex-vertical ${styles.container}`}>
-			{removePastEvents().map((event, i) => <EventRow key={i} event={event}/>)}
+			{futureEvents.map((event, i) => <EventRow key={i} event={event}/>)}
 		</div>
 	)
 }
@@ -33,7 +43,7 @@ const EventRow = ({ event }: { event: EventProps }): React.ReactElement => {
 		<div className={styles.eventRow}>
 			<div className={`flex-vertical ${styles.eventRowLeft}`}>
 				<div className={`sub-section-header-text`}>{event.date.getMonth() + 1}/{event.date.getDate()}</div>
-				{event.endDate && <div>Weekly on Monday&apos;s</div>}
+				{event.endDate && <div>Weekly on {dayOfWeek[event.date.getDay()]}&apos;s</div>}
 			</div>
 			<div className={styles.eventRowRight}>
 				<div className={`flex-horizontal sub-section-header-text`}>{event.title}</div>

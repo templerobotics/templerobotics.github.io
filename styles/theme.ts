@@ -28,7 +28,7 @@ const theme = createTheme({
           color: 'var(--foreground)',
           backgroundColor: 'transparent',
           borderColor: 'var(--foreground)',
-          borderRadius: 8,
+          borderRadius: '8px',
           transition: 'color 500ms, background-color 500ms',
           '&:hover': {
             color: 'var(--primary)',

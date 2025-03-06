@@ -9,7 +9,7 @@ import img5 from '@assets/images/rocksat-photo-gallery/rocksat-2015.jpg'
 import img6 from '@assets/images/rocksat-photo-gallery/rocksat-2014-3.jpg'
 import img7 from '@assets/images/rocksat-photo-gallery/rocksat-2014-2.jpg'
 import img8 from '@assets/images/rocksat-photo-gallery/rocksat-2014-1.jpg'
-import img9 from '@assets/images/rocksat-photo-gallery/rocksat-2011.jpg'
+import img9 from '@assets/images/rocksat-photo-gallery/rocksat-2011.bmp'
 
 export const rocksatPhotoGallery: PhotoComponentProps[] = [
 	{ image: img1, title: '2020', content: 'This group developed a payload to collect air samples via atmospheric port at varying altitudes to evaluate ozone and CFC levels' },
