@@ -1,0 +1,15 @@
+.container {
+    height: 100%;
+    position: relative;
+    border: 2px solid var(--background);
+}
+
+.imageContainer {
+    height: 80%;
+    width: 80%;
+    position: relative;
+
+    & img {
+        object-fit: contain;
+    }
+}

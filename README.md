@@ -1,81 +1,36 @@
-# Temple Robotics Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This is the github pages repository used for hosting the Temple Robotics website. This website uses react for a single page static website, using the database located at `public/db.json` to fetch events.
+## Getting Started
 
-## Adding Events
+First, run the development server:
 
-The event database is located [here](public/db.json). Add an event by appending to the array. Events will need to be removed manually, as gh-pages cannot host a dynamic webpage. An example `json` can be seen below.
-
-The date format: `mm/dd/yyyy`
-The only other accepted format is an empty string, meaning the date has not been decided yet
-
-**Important:** Make sure to increment the id
-
-```ts
-[
- {
-    title: 'Title of the event',
-    description: 'Description of the event',
-    date: new Date('2025-01-22T17:00:00'),
-    location: 'The ideas hub (second floor of the engineering building)',
-    weekly: true,
-    endDate: new Date(semesterEnd)
- },
- {
-    title: 'Title of the event 2',
-    description: 'Description of the event 2',
-    date: new Date('2025-01-22T14:00:00'),
-    location: 'The ideas hub (second floor of the engineering building)',
-    weekly: true,
-    endDate: new Date(semesterEnd)
- }
-]
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Changing Data
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-There is information on changing certain data in [this README](./src/data/README.md). This includes things such as changing the photo galleries or adding new photos to them, adding to the home carousel, adding to the rocksat table, etc.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Getting the Environment Setup
-Make sure to install git lfs before cloning to properly run videos
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-It should be pretty simple getting the website set up on vscode. First you will need to download [Node.js](https://nodejs.org/en/).
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Once the newest version of `Node.js` is installed, you can install the node packages with npm as follows
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```shell
-    npm i
-    
-```
+## Deploy on Vercel
 
-Your environment should now be set up!
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Using the Environment
-
-Once the environment is set up, there are a few commands once should know for deploying locally and to the gh-pages branch.
-
-```sh
-    npm start # Start the website locally at http://localhost:3000/website-2.0
-    npm run deploy # Deploy the website to gh-pages. This should do all the work for you!
-```
-
-## VScode Extensions Being Used
-
-I use the following extensions in my environment:
-
-- [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [CSS Formatter](https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
-- [CSS Modules](https://marketplace.visualstudio.com/items?itemName=clinyong.vscode-css-modules)
-- [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
-- [CSS-in-JS](https://marketplace.visualstudio.com/items?itemName=paulmolluzzo.convert-css-in-js)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-- [Open In Browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)
-- [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
-- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-- [React Native Tools](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native)
-- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

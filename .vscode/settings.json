@@ -2,6 +2,10 @@
     "cSpell.words": [
         "browserslist",
         "camelcase",
-        "linebreak"
-    ]
+        "linebreak",
+        "rocksat"
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
 }

@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../assets/fonts/futura-medium-webfont.woff') format('woff'),
+      url('../assets/fonts/futura-medium-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arca';
+  src: url('../assets/fonts/arcamajora3-heavy-webfont.otf') format('otf'),
+      url('../assets/fonts/arcamajora3-heavy-webfont.eot') format('eot'),
+      url('../assets/fonts/arcamajora3-heavy-webfont.woff2') format('woff2'),
+      url('../assets/fonts/arcamajora3-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --foreground-hover: #4e4e4e;
+  --primary: #9D2235;
+  --primary-hover: #8D2235;
+}
+
+/* Dark theme colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --foreground-hover: #b7b7b7;
+    --primary: #9D2235;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  
+  & * {
+    font-family: 'Futura', 'Helvetica', 'Arial', 'sans-serif';
+  }
+}
+
+.header-text {
+  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+}
+
+.flex-vertical-space-around,
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flex-horizontal-end,
+.flex-horizontal-start,
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flex-horizontal-end {
+  justify-content: end;
+}
+
+.flex-horizontal-start {
+  justify-content: start;
+}
+
+.flex-vertical-space-around {
+  justify-content: space-around;
+  gap: 0;
+}
+
+.flex-horizontal > * {
+  align-content: center;
+}
+
+.sub-section-header-text {
+  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.section-header-text {
+  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  font-size: 100px;
+  letter-spacing: 1px;
+}
+
+

@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 60%;
+    border: 1px solid var(--foreground);
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 100%;
+    text-align: center;
+    gap: 1rem;
+}
+
+.slideContainer {
+    width: 60%;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    & img {
+        object-fit: cover;
+    }
+}
+
+.textBox {
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.slideContent {
+    overflow: auto;
+}

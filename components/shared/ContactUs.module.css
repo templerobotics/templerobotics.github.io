@@ -1,0 +1,13 @@
+.container {
+    height: 10vw;
+
+    & * {
+        text-align: center;
+    }
+}
+
+.icons {
+    & > *:hover {
+        color: var(--primary) !important;
+    }
+}

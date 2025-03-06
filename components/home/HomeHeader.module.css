@@ -1,0 +1,38 @@
+.container {
+    height: 100%;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    & * {
+        text-align: center;
+    }
+}
+
+.mainTitle {
+    /* TODO: Make variable sized font */
+    font-size: 40px;
+    letter-spacing: 1;
+    line-height: 1.1;
+}
+
+.mainTitleCaption {
+    /* TODO: Make variable sized font */
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 3;
+}
+
+.preHeader {
+    /* TODO: Make variable sized font */
+    font-size: 10px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.location {
+    /* TODO: Make variable sized font */
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}

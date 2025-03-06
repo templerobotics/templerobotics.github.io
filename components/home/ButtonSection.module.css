@@ -1,0 +1,11 @@
+.container {
+    height: 100%;
+    background: linear-gradient(200deg, var(--primary), #996b72, var(--primary));
+}
+
+.textContainer {
+    height: 80%;
+    background-image: url('../../assets/images/logos/TransparentRoboOwl.svg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+}
