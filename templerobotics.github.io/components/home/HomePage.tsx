@@ -8,7 +8,7 @@ import styles from './HomePage.module.css'
 
 import React from 'react'
 
-const Page = (): React.ReactElement => {
+const HomePage = (): React.ReactElement => {
 	return (
 		<div className={styles.container}>
 			<HomeHeader/>
@@ -20,4 +20,4 @@ const Page = (): React.ReactElement => {
 	)
 }
 
-export default Page
+export default HomePage

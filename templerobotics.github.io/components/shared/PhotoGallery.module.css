@@ -1,7 +1,15 @@
 .container {
+    height: 100%;
+    width: 100%;
+    
     & * {
         text-align: center;
     }
+}
+
+.galleryContainer {
+    height: 100%;
+    width: 100%;
 }
 
 .slideContainer {

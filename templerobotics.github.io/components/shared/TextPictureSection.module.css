@@ -1,0 +1,29 @@
+.container {
+    height: 100%;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(200deg, var(--primary), #996b72, var(--primary));
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    & * {
+        text-align: center;
+    }
+}
+
+.textSection {
+    width: 70%;
+    height: 100%;
+}
+
+.imageContainer {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+
+    & img {
+        object-fit: cover;
+    }
+}

@@ -95,3 +95,12 @@ body {
   letter-spacing: 1px;
   line-height: 1;
 }
+
+.section-header-text {
+  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  font-size: 100px;
+  letter-spacing: 1px;
+}
+
+

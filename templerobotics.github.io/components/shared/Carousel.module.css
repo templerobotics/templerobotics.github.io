@@ -3,7 +3,7 @@
 }
 
 .slide {
-    width: 60%;
+    width: 100%;
     height: 60%;
     border: 1px solid var(--foreground);
     display: grid;
@@ -13,10 +13,18 @@
     gap: 1rem;
 }
 
+.slideContainer {
+    width: 60%;
+}
+
 .imageContainer {
     width: 100%;
     height: 100%;
     position: relative;
+
+    & img {
+        object-fit: cover;
+    }
 }
 
 .textBox {

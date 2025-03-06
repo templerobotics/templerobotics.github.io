@@ -1,9 +1,6 @@
+import RocksatPage from '@components/rocksat/RocksatPage'
 import React from 'react'
 
 export default function Robotics (): React.ReactElement {
-	return (
-		<div>
-			Rocksat page
-		</div>
-	)
+	return (<RocksatPage/>)
 }

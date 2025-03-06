@@ -1,0 +1,29 @@
+.container {
+    height: 100%;
+    gap: 2rem;
+
+    & * {
+        text-align: center;
+    }
+}
+
+.imageContainer {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+    & img {
+        object-fit: cover;
+    }
+}
+
+.row {
+    width: 100%;
+    min-height: 25%;
+    justify-content: space-between;
+}
+
+.textContainer {
+    padding: 0 4rem;
+    width: 50%;
+}

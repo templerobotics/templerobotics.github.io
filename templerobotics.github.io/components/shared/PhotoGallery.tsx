@@ -3,7 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import styles from './PhotoGallery.module.css'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
-import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule'
 
 import React from 'react'
 import { Link } from '@mui/material'
@@ -14,7 +14,7 @@ export type PhotoComponentProps = {
 	image: StaticImageData
 }
 
-const PhotoGallery = ({ photos }: { photos: PhotoComponentProps[] }): React.ReactElement => {
+const PhotoGallery = ({ photos, title }: { photos: PhotoComponentProps[], title: string }): React.ReactElement => {
 	const [currentSlideIndex, setCurrentSlideIndex] = React.useState(0);
 
 	const goToSlide = (prev?: boolean) => {
@@ -40,28 +40,31 @@ const PhotoGallery = ({ photos }: { photos: PhotoComponentProps[] }): React.Reac
 	}
 
 	return (
-		<div className={`flex-horizontal ${styles.container}`}>
-			<div className={`flex-horizontal-end ${styles.arrowContainer}`}>
-				<Link onClick={() => goToSlide(true)}>
-					<ArrowBackIosNewIcon fontSize='large' />
-				</Link>
-			</div>
-
-			<div className={`flex-vertical ${styles.slideContainer}`}>
-				<div className={`flex-horizontal ${styles.photosContainer}`}>
-					<PhotoComponent photo={photos[currentSlideIndex]}/>
-					{photos[currentSlideIndex + 1] && <PhotoComponent photo={photos[currentSlideIndex + 1]}/>}
-					{photos[currentSlideIndex + 2] && <PhotoComponent photo={photos[currentSlideIndex + 2]}/>}
+		<div className={`flex-vertical ${styles.galleryContainer}`}>
+			<div className='sub-section-header-text'>{title}</div>
+			<div className={`flex-horizontal ${styles.container}`}>
+				<div className={`flex-horizontal-end ${styles.arrowContainer}`}>
+					<Link onClick={() => goToSlide(true)}>
+						<ArrowBackIosNewIcon fontSize='large' />
+					</Link>
 				</div>
-				<div className='flex-horizontal'>
-					{renderSlideCounters()}
-				</div>
-			</div>
 
-			<div className={`flex-horizontal-start ${styles.arrowContainer}`}>
-				<Link onClick={() => goToSlide()}>
-					<ArrowForwardIosIcon fontSize='large' />
-				</Link>
+				<div className={`flex-vertical ${styles.slideContainer}`}>
+					<div className={`flex-horizontal ${styles.photosContainer}`}>
+						<PhotoComponent photo={photos[currentSlideIndex]}/>
+						{photos[currentSlideIndex + 1] && <PhotoComponent photo={photos[currentSlideIndex + 1]}/>}
+						{photos[currentSlideIndex + 2] && <PhotoComponent photo={photos[currentSlideIndex + 2]}/>}
+					</div>
+					<div className='flex-horizontal'>
+						{renderSlideCounters()}
+					</div>
+				</div>
+
+				<div className={`flex-horizontal-start ${styles.arrowContainer}`}>
+					<Link onClick={() => goToSlide()}>
+						<ArrowForwardIosIcon fontSize='large' />
+					</Link>
+				</div>
 			</div>
 		</div>
 	)

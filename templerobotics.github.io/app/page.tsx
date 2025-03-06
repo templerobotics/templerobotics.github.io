@@ -1,6 +1,6 @@
-import Page from '@components/home/HomePage'
+import HomePage from '@components/home/HomePage'
 import React from 'react'
 
 export default function Home (): React.ReactElement {
-	return (<Page/>)
+	return (<HomePage/>)
 }

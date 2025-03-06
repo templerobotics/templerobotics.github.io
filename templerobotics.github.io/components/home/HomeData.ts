@@ -16,7 +16,7 @@ export const carouselSlides: SlideProps[] = [
 		`,
 		image: slide4,
 		buttons: [
-			{ text: 'Learn more', path: '/button1' }
+			{ text: 'Learn more', path: '/robotics', internal: true }
 		]
 	},
 	{
@@ -30,7 +30,7 @@ export const carouselSlides: SlideProps[] = [
 		`,
 		image: slide3,
 		buttons: [
-			{ text: 'Learn more', path: '/button1' }
+			{ text: 'Learn more', path: '/rocksat', internal: true }
 		]
 	},
 	{
@@ -45,7 +45,7 @@ export const carouselSlides: SlideProps[] = [
 		`,
 		image: slide2,
 		buttons: [
-			{ text: 'Learn more', path: '/button1' }
+			{ text: 'Learn more', path: '/robotics', internal: true }
 		]
 	},
 	{
@@ -58,7 +58,8 @@ export const carouselSlides: SlideProps[] = [
 		`,
 		image: slide1,
 		buttons: [
-			{ text: 'Learn more', path: '/button1' }
+			{ text: 'Learn more', path: '/ballooning', internal: true },
+			{ text: 'Watch video', path: 'https://www.youtube.com/watch?v=rGMibNYSnRg' }
 		]
 	}
 ]

@@ -3,9 +3,23 @@
     grid-template-rows: 
         30vw
         25vw
-        5vw
-        35vw
-        5vw
-        35vw
+        170vw
         15vw;
+}
+
+.spaceBackground {
+    background-image: url('../../assets/images/outreach/space-background.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
+
+.gridContent {
+    height: 95%;
+    display: grid;
+    grid-template-rows:
+        20%
+        60%
+        20%;
 }
