@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 
+        15vw
+        10vw
+        10vw
+        10vw
+        10vw
+        10vw
+        10vw
+        10vw;
+}
