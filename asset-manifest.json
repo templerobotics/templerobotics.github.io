@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.559d38ae.js",
+    "main.js": "/static/js/main.459b007f.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/Brian_face.png": "/static/media/Brian_face.8ffeb737f16a074e4e09.png",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
-    "static/media/comp-team-2024.jpg": "/static/media/comp-team-2024.145ee25423a8c74547c4.jpg",
     "static/media/arena-1.jpeg": "/static/media/arena-1.f099b92e9642a234260b.jpeg",
     "static/media/Tanishkas_face.jpeg": "/static/media/Tanishkas_face.de8635190cc9f54bfe3e.jpeg",
     "static/media/roccos_face.jpg": "/static/media/roccos_face.8be4c7adca1111a23e69.jpg",
     "static/media/Malins_face.jpg": "/static/media/Malins_face.5ecd550b84aea8d2446e.jpg",
     "static/media/Javi_face.png": "/static/media/Javi_face.abc87e5da69b4238b352.png",
+    "static/media/comp-team-2024.jpg": "/static/media/comp-team-2024.1c5a30175e6005a08c92.jpg",
     "static/media/nasa-vid-1.webm": "/static/media/nasa-vid-1.0ac6fae6557bb0108c4c.webm",
     "static/media/balloon-team.jpeg": "/static/media/balloon-team.d10c78cdaffb0151a08e.jpeg",
     "static/media/arena-3.jpeg": "/static/media/arena-3.b401d556d7f5a2889c1e.jpeg",
@@ -48,7 +48,7 @@
     "static/media/rocksat-2015.jpeg": "/static/media/rocksat-2015.0f147ea1eb3d076ac57f.jpeg",
     "static/media/rmc-2009.jpeg": "/static/media/rmc-2009.153681afb1f1da6f613e.jpeg",
     "static/media/bot-shop.jpeg": "/static/media/bot-shop.20d19c93c2549db86fce.jpeg",
-    "static/media/TransRoboOwl.svg": "/static/media/TransRoboOwl.3c0c99fe3175979f50c9ffa4d6f60853.svg",
+    "static/media/TransRoboOwl.svg": "/static/media/TransRoboOwl.17c2e992df20c323ae3f308c03fc0547.svg",
     "static/media/robotics-red.png": "/static/media/robotics-red.afaf182f27c819a001f5.png",
     "static/media/arcamajora3-heavy-webfont.otf": "/static/media/arcamajora3-heavy-webfont.cce5d0b6e07a251539cd.otf",
     "static/media/futura-medium-webfont.woff": "/static/media/futura-medium-webfont.563d38a46111091de160.woff",
@@ -58,18 +58,18 @@
     "static/media/futura-medium-webfont.woff2": "/static/media/futura-medium-webfont.1a999490288588eb6678.woff2",
     "static/media/arcamajora3-heavy-webfont.woff2": "/static/media/arcamajora3-heavy-webfont.19f6aea3e09f7e4881cc.woff2",
     "static/media/hillock-anodizing.png": "/static/media/hillock-anodizing.b14b7f3652e2bd840595.png",
-    "static/media/lockheed-martin-logo.svg": "/static/media/lockheed-martin-logo.7ba31585e81dca5bf022bb74615225fd.svg",
+    "static/media/lockheed-martin-logo.svg": "/static/media/lockheed-martin-logo.956dc4685daa4a0d2ea404ebd115d894.svg",
     "static/media/arrow-logo.svg": "/static/media/arrow-logo.afa3be2d904dd8b828b51a365f716b44.svg",
-    "static/media/Amtrak.svg": "/static/media/Amtrak.18acf6c71754360005e63ab654502630.svg",
+    "static/media/Amtrak.svg": "/static/media/Amtrak.8a7d143f6961044b51233029ed3d61d7.svg",
     "static/media/nasa-logo.svg": "/static/media/nasa-logo.8c229ec1f7f451bb9f3ad044f616aa8f.svg",
-    "static/media/Amtrack-png.svg": "/static/media/Amtrack-png.6dc96699f2b6a7a1b2addc64c335af28.svg",
+    "static/media/Amtrack-png.svg": "/static/media/Amtrack-png.34fb2a378b6f6251e91135644c0969c3.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.559d38ae.js.map": "/static/js/main.559d38ae.js.map",
+    "main.459b007f.js.map": "/static/js/main.459b007f.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.559d38ae.js"
+    "static/js/main.459b007f.js"
   ]
 }
