@@ -26,7 +26,7 @@ const Sponsors = (): React.ReactElement => {
 			<Styles.SectionHeader>
 				<div className='button-container'>
 					<Button text='Become a Sponsor' size='large' source={'https://forms.gle/pAfv3VBYJJXooiU38'}/>
-					<Button text='Temple Robotics Brochure' size='large' source={`https://1drv.ms/b/s!Amh3vGk
+					<Button text='Sponsorship Opportunities' size='large' source={`https://1drv.ms/b/s!Amh3vGk
 					fvOw1c48kx0hFRCY6Hf4?e=OK65qr`}/>
 				</div>
 			</Styles.SectionHeader>

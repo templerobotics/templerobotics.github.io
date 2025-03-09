@@ -19,7 +19,7 @@ class EventList extends React.Component<{events: EventObject[], loading: boolean
 							<div className='date' style={{display: 'flex', flexDirection: 'column', rowGap: '13%'}}>
 								<p>{!isNaN(event.date.getMonth()) ? `${event.date.getMonth() + 1}/${event.date.getDate()}` : 'TBD'}</p>
 								<p className='day-of-week' style={{margin: '0'}}>
-									{event?.weekly ? `Weekly on ${dayOfWeek[event.date.getDay()]}'s` : ''}
+									{event?.weekly ? `Weekly on ${dayOfWeek[event.date.getDay()]}s` : ''}
 								</p>
 							</div>
 							<div className='location'>

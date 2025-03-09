@@ -10,6 +10,16 @@ export default class EventListStyles {
 		grid-template-rows: repeat(${props => props.rows}, minmax(0, 1fr));
 		grid-row-gap: 5%;
 		justify-items: center;
+
+		@media (max-width: 718px) {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows:
+				calc(var(--vh) * .2)    /* Intro heading */
+				max(calc(var(--vh) * .15), 100px);  /* Contact info */
+			justify-content: center;
+			align-content: center;
+		}
 	`
 
 	static readonly EventItemContainer = styled.div`
