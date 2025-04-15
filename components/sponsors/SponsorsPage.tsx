@@ -14,7 +14,7 @@ import ContactUs from '@components/shared/ContactUs'
 const SponsorsPage = (): React.ReactElement => {
 	return (
 		<div className={styles.container}>
-			<div className='flex-horizontal section-header-text'>Sponsors</div>
+			<div className='flex-horizontal page-title'>Sponsors</div>
 			<SponsorsButtons/>
 			<SponsorLogoSection image={nasaLogo} color='#053a92'/>
 			<SponsorLogoSection image={amtrakLogo} color='white'/>

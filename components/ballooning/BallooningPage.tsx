@@ -9,7 +9,7 @@ import TextPictureSection from '@components/shared/TextPictureSection'
 const BallooningPage = (): React.ReactElement => {
 	return (
 		<div className={styles.container}>
-			<div className='flex-horizontal section-header-text'>NASA Ballooning</div>
+			<div className='flex-horizontal page-title'>NASA Ballooning</div>
 			<TextPictureSection props={ballooningTextPictureData} />
 			<ContactUs/>
 		</div>

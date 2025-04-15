@@ -6,19 +6,18 @@
     background: linear-gradient(200deg, var(--primary), #996b72, var(--primary));
     display: grid;
     grid-template-columns: 40% 60%;
+    grid-template-rows: 15% 60% 25%;
+    padding: 1rem 0;
 
     & * {
         text-align: center;
     }
 }
 
-.textSection {
-    width: 70%;
-    height: 100%;
-}
-
 .imageContainer {
-    height: 80%;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    height: 100%;
     width: 80%;
     position: relative;
     overflow: hidden;
@@ -26,4 +25,10 @@
     & img {
         object-fit: cover;
     }
+}
+
+.userText {
+    align-content: center;
+    height: 100%;
+    overflow: auto;
 }

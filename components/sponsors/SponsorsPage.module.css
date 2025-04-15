@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 
         15vw
-        5vwcomponents
+        5vw
         repeat(5, 15vw)
         10vw;
 }

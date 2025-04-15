@@ -8,7 +8,7 @@ import EventsSection from './EventsSection'
 const EventsPage = (): React.ReactElement => {
 	return (
 		<div className={styles.container}>
-			<div className='flex-horizontal section-header-text'>Upcoming Events</div>
+			<div className='flex-horizontal page-title'>Upcoming Events</div>
 			<EventsSection />
 			<ContactUs/>
 		</div>

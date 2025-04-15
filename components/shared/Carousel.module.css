@@ -14,6 +14,7 @@
 }
 
 .slideContainer {
+    height: 100%;
     width: 60%;
 }
 
@@ -34,4 +35,5 @@
 
 .slideContent {
     overflow: auto;
+    padding-right: 1rem;
 }

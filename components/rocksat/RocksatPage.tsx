@@ -10,7 +10,7 @@ import TextPictureSection from '@components/shared/TextPictureSection'
 const RocksatPage = (): React.ReactElement => {
 	return (
 		<div className={styles.container}>
-			<div className='flex-horizontal section-header-text'>Temple RockSat-C</div>
+			<div className='flex-horizontal page-title'>Temple RockSat-C</div>
 			<TextPictureSection props={rocksatTextPictureData} />
 			<PhotoGallery photos={rocksatPhotoGallery} title='Photo Gallery'/>
 			<ContactUs/>

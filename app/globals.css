@@ -41,6 +41,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  font-size: max(10px, 1.4vw);
   
   & * {
     font-family: 'Futura', 'Helvetica', 'Arial', 'sans-serif';
@@ -88,19 +89,28 @@ body {
   align-content: center;
 }
 
+.page-title,
+.section-header-text,
+.sub-section-title,
 .sub-section-header-text {
   font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
-  font-size: 34px;
+  font-size: max(12px, 1.8vw);
   letter-spacing: 1px;
-  line-height: 1;
+}
+
+.page-title {
+  font-size: max(24px, 5vw);
 }
 
 .section-header-text {
-  font-family: 'Arca', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  font-size: 100px;
-  letter-spacing: 1px;
+  font-size: max(16px, 2vw);
 }
 
+.sub-section-title {
+  font-size: max(16px, 4vw);
+}
 
+.sub-section-text {
+  font-size: max(10px, 1.4vw);
+}
