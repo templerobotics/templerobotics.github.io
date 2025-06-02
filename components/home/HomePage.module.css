@@ -1,20 +1,9 @@
 .container {
-    display: flex;
-    flex-direction: column;
-
-    & > *:first-child {
-        height: 30vw;
-    }
-    & > *:nth-child(2) {
-        height: 20vw;
-    }
-    & > *:nth-child(3) {
-        height: 30vw;
-    }
-    & > *:nth-child(4) {
-        height: 15vw;
-    }
-    & > *:last-child {
-        height: 15vw;
-    }
+    display: grid;
+    grid-template-rows: 
+        max(250px, 30vw)
+        max(200px, 20vw)
+        max(250px, 30vw)
+        max(200px, 15vw)
+        max(200px, 15vw);
 }

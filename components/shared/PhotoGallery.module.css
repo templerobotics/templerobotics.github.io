@@ -3,11 +3,13 @@
     grid-template-rows: 15% 85%;
     gap: 1rem; 
     text-align: center;
+    width: 100%;
 }
 
 .container {
     height: 100%;
-    width: 100%;
+    width: 90%;
+    justify-self: center;
     
     & * {
         text-align: center;

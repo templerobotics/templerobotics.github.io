@@ -1,4 +1,8 @@
 'use client'
+
+import {v4 as uuid} from 'uuid'
+import { AnimatePresence, motion } from 'framer-motion'
+
 import Image, { StaticImageData } from 'next/image'
 import styles from './PhotoGallery.module.css'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
@@ -16,6 +20,7 @@ export type PhotoComponentProps = {
 
 const PhotoGallery = ({ photos, title }: { photos: PhotoComponentProps[], title: string }): React.ReactElement => {
   const [currentSlideIndex, setCurrentSlideIndex] = React.useState(0);
+  const galleryId = uuid();
 
   const goToSlide = (prev?: boolean) => {
     const photosOnSlide = 3;
@@ -40,7 +45,7 @@ const PhotoGallery = ({ photos, title }: { photos: PhotoComponentProps[], title:
   }
 
   return (
-    <div className={`${styles.galleryContainer}`}>
+    <div className={`${styles.galleryContainer}`} id={galleryId}>
       <div className='sub-section-title'>{title}</div>
       <div className={`flex-horizontal ${styles.container}`}>
         <div className={`flex-horizontal-end ${styles.arrowContainer}`}>
@@ -50,11 +55,20 @@ const PhotoGallery = ({ photos, title }: { photos: PhotoComponentProps[], title:
         </div>
 
         <div className={`${styles.slideContainer}`}>
-          <div className={`flex-horizontal ${styles.photosContainer}`}>
-            <PhotoComponent photo={photos[currentSlideIndex]} />
-            {photos[currentSlideIndex + 1] && <PhotoComponent photo={photos[currentSlideIndex + 1]} />}
-            {photos[currentSlideIndex + 2] && <PhotoComponent photo={photos[currentSlideIndex + 2]} />}
-          </div>
+          <AnimatePresence mode='wait'>
+            <motion.div className={`flex-horizontal ${styles.photosContainer} ${styles.fadeId}`}
+              key={currentSlideIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                  duration: 0.5
+              }}>
+              <PhotoComponent photo={photos[currentSlideIndex]} />
+              {photos[currentSlideIndex + 1] && <PhotoComponent photo={photos[currentSlideIndex + 1]} />}
+              {photos[currentSlideIndex + 2] && <PhotoComponent photo={photos[currentSlideIndex + 2]} />}
+            </motion.div>
+          </AnimatePresence>
           <div className='flex-horizontal'>
             {renderSlideCounters()}
           </div>
