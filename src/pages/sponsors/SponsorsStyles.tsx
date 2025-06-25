@@ -5,7 +5,7 @@ export class SponsorImages {
 	static readonly arrow = require('../../assets/pics/sponsors/arrow.png')
 	static readonly nasa = require('../../assets/pics/sponsors/nasa-name.png')
 	static readonly hillock = require('../../assets/pics/sponsors/hillock-anodizing.png')
-	static readonly Amtrack = require('../../assets/pics/sponsors/Amtrak.svg')
+	static readonly Amtrack = require('../../assets/pics/sponsors/Amtrak.png')
 }
 
 export default class SponsorsStyles {

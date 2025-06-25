@@ -1,21 +1,21 @@
 import { EventObject } from '../tools/CustomTypes'
 
-const semesterEnd = '5/08/25'
+const semesterEnd = '4/24/25'
 const EVENT_INFO: EventObject[] = [
-	{
-		title: 'Weekly SolidWorks Workshop',
-		description: `The goal of these classes is to equip you with the skills to model and design on a professional
-			level, as well as create a common ground for all engineers to work together more efficiently and effectively`,
-		date: new Date('2025-03-10T17:30:00'),
-		location: 'The ideas hub (second floor of the engineering building)',
-		weekly: true,
-		endDate: new Date(semesterEnd),
-		duration: 90 // 1 hour 30 minutes
-	},
+	// {
+	// 	title: 'Weekly SolidWorks Workshop',
+	// 	description: `The goal of these classes is to equip you with the skills to model and design on a professional
+	// 		level, as well as create a common ground for all engineers to work together more efficiently and effectively`,
+	// 	date: new Date('2025-03-10T17:30:00'),
+	// 	location: 'The ideas hub (second floor of the engineering building)',
+	// 	weekly: true,
+	// 	endDate: new Date(semesterEnd),
+	// 	duration: 90 // 1 hour 30 minutes
+	// },
 	{
 		title: 'General Body Meeting',
 		description: 'Updates on what happened since the last GBM and the plan for the rest of the semester as well as an activity',
-		date: new Date('2025-02-05T17:00:00'),
+		date: new Date('2025-04-05T17:00:00'),
 		location: '201A classroom (The ideas hub second floor of the engineering building)'
 	},
 	{
