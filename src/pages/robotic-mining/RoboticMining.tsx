@@ -43,7 +43,7 @@ const RoboticMining = (): React.ReactElement => {
 
 			<Styles.SpaceBackground>
 				<Styles.MeetTheTeam className='meet-the-team-gallery' galleryInfo={ MEET_THE_TEAM } title={ 'Meet the Team' }/>
-
+	
 				<Styles.OutreachGallery>
 					<h2>Outreach and Events</h2>
 					<div className='outreach-slide'>
