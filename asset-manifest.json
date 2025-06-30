@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.09dacad5.js",
+    "main.js": "/static/js/main.8258a84f.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/Damien_face.png": "/static/media/Damien_face.bf18098d4a7c5d4644e6.png",
     "static/media/Guy_face.png": "/static/media/Guy_face.ee3b52948f2a1a11d845.png",
     "static/media/Penelope_face.png": "/static/media/Penelope_face.ca69cd4b50dbbe916e50.png",
+    "static/media/volunteering-FRC-2025.jpeg": "/static/media/volunteering-FRC-2025.e546378caadea7433945.jpeg",
     "static/media/arena-2.jpeg": "/static/media/arena-2.d2c01e2dca5d7bcdb40a.jpeg",
     "static/media/arena-1.jpeg": "/static/media/arena-1.f099b92e9642a234260b.jpeg",
     "static/media/Malin_face.jpg": "/static/media/Malin_face.5ecd550b84aea8d2446e.jpg",
@@ -65,11 +66,11 @@
     "static/media/nasa-logo.svg": "/static/media/nasa-logo.8c229ec1f7f451bb9f3ad044f616aa8f.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.09dacad5.js.map": "/static/js/main.09dacad5.js.map",
+    "main.8258a84f.js.map": "/static/js/main.8258a84f.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.09dacad5.js"
+    "static/js/main.8258a84f.js"
   ]
 }
