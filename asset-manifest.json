@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.8258a84f.js",
+    "main.js": "/static/js/main.1cd14568.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/Damien_face.png": "/static/media/Damien_face.bf18098d4a7c5d4644e6.png",
@@ -44,10 +44,12 @@
     "static/media/nasa-name.png": "/static/media/nasa-name.8d5f5ea3adf151450d7c.png",
     "static/media/rocksat-2014-1.jpeg": "/static/media/rocksat-2014-1.4b4bd0c9e2e4603cf65e.jpeg",
     "static/media/rocksat-2019.jpeg": "/static/media/rocksat-2019.cdf9c3f2d1d424b48c79.jpeg",
+    "static/media/EastPennManufacturer.jpg": "/static/media/EastPennManufacturer.6a5cf42f3c66393f35d0.jpg",
     "static/media/rmc-2010.jpeg": "/static/media/rmc-2010.6f5df0c919d52bc67a7e.jpeg",
     "static/media/rocksat-2015.jpeg": "/static/media/rocksat-2015.0f147ea1eb3d076ac57f.jpeg",
     "static/media/rmc-2009.jpeg": "/static/media/rmc-2009.153681afb1f1da6f613e.jpeg",
     "static/media/bot-shop.jpeg": "/static/media/bot-shop.20d19c93c2549db86fce.jpeg",
+    "static/media/Stratasys.jpg": "/static/media/Stratasys.de3ac4064368be5c9ef4.jpg",
     "static/media/TransRoboOwl.svg": "/static/media/TransRoboOwl.17c2e992df20c323ae3f308c03fc0547.svg",
     "static/media/Jaden_face.jpeg": "/static/media/Jaden_face.721ecb8854505fdfab35.jpeg",
     "static/media/robotics-red.png": "/static/media/robotics-red.afaf182f27c819a001f5.png",
@@ -66,11 +68,11 @@
     "static/media/nasa-logo.svg": "/static/media/nasa-logo.8c229ec1f7f451bb9f3ad044f616aa8f.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.8258a84f.js.map": "/static/js/main.8258a84f.js.map",
+    "main.1cd14568.js.map": "/static/js/main.1cd14568.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.8258a84f.js"
+    "static/js/main.1cd14568.js"
   ]
 }
