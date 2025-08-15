@@ -44,7 +44,7 @@ const Sponsors = (): React.ReactElement => {
 				<img src={SponsorImages.EastPenn} style={{width: '60%', height: '140%'}}/>
 			</div>
 			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.Stratasys} style={{width: '70%', height: '60%'}}/>
+				<img src={SponsorImages.Stratasys} style={{width: '70%'}}/>
 			</div>
 			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Previous Sponsors</h1>
