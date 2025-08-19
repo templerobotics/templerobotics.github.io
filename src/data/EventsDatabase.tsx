@@ -19,6 +19,12 @@ const EVENT_INFO: EventObject[] = [
 		location: 'Fishbowl (College of Engineering EN 102)'
 	},
 	{
+		title: 'Lockheed Martin Recruitment event',
+		description: 'Lockheed Martin is coming out to talk to the members about recruitment opportunities and food will be available as well',
+		date: new Date('2025-09-22T17:00:00'),
+		location: 'Fishbowl (College of Engineering EN 102)'
+	},
+	{
 		title: 'Weekly Programming Meeting',
 		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot',
 		date: new Date(''),
