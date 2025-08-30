@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.9aa78c3b.js",
+    "main.js": "/static/js/main.02a1bf2b.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/Damien_face.png": "/static/media/Damien_face.bf18098d4a7c5d4644e6.png",
@@ -37,6 +37,7 @@
     "static/media/space-background.jpeg": "/static/media/space-background.69fbb27cddb9c58e24ad.jpeg",
     "static/media/rmc-2011.jpeg": "/static/media/rmc-2011.660760b7e53d0cfdf1e4.jpeg",
     "static/media/arrow.png": "/static/media/arrow.da4a98c25205e6b2105a.png",
+    "static/media/GHF_Logo_DarkBackground.png": "/static/media/GHF_Logo_DarkBackground.569a06398c9df99fdefa.png",
     "static/media/rocksat-2014-2.jpeg": "/static/media/rocksat-2014-2.bfe5545c3f1c206b0396.jpeg",
     "static/media/club-filing.jpg": "/static/media/club-filing.3b96867d536efd76717d.jpg",
     "static/media/ethernet-screw-up.jpg": "/static/media/ethernet-screw-up.0fc7dff8e79fe4974987.jpg",
@@ -68,11 +69,11 @@
     "static/media/nasa-logo.svg": "/static/media/nasa-logo.8c229ec1f7f451bb9f3ad044f616aa8f.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.9aa78c3b.js.map": "/static/js/main.9aa78c3b.js.map",
+    "main.02a1bf2b.js.map": "/static/js/main.02a1bf2b.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.9aa78c3b.js"
+    "static/js/main.02a1bf2b.js"
   ]
 }
