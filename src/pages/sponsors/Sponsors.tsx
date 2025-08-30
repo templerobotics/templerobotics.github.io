@@ -37,14 +37,17 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' style={{background: '#053a92'}}>
 				<Nasa />
 			</div>
-			<div className='img-container' style={{background: 'white', paddingLeft: '150px'}}>
+			<div className='img-container' style={{background: 'white'}}>
+				<img src={SponsorImages.HAAS} style={{width: '25%', height: '165%'}}/>
+			</div>
+			<div className='img-container' style={{background: 'white', paddingLeft: '80px'}}>
 				<Lockheed />
 			</div>
 			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.EastPenn} style={{width: '60%', height: '140%'}}/>
+				<img src={SponsorImages.EastPenn} style={{width: '40%', height: '90%'}}/>
 			</div>
 			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.Stratasys} style={{width: '70%'}}/>
+				<img src={SponsorImages.Stratasys} style={{width: '40%', height: '70%'}}/>
 			</div>
 			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Previous Sponsors</h1>
