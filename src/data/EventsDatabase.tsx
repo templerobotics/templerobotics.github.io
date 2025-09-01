@@ -27,8 +27,9 @@ const EVENT_INFO: EventObject[] = [
 	},
 	{
 		title: 'Weekly Programming Meeting',
-		description: 'The weekly meeting for the programming sub-team. Take a look at the code for the robot',
-		date: new Date(''),
+		description: `The weekly meeting for the programming sub-team. Learn how to program the robot in ROS (Robot Operating System)
+		 and more!`,
+		date: new Date('2025-09-05T14:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
 		endDate: new Date(semesterEnd),
@@ -36,8 +37,9 @@ const EVENT_INFO: EventObject[] = [
 	},
 	{
 		title: 'Weekly Electrical Meeting',
-		description: 'The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, and more!',
-		date: new Date(''),
+		description: `The weekly meeting for the electrical sub-team. Talk about improved batteries, wiring, custom motor controllers
+		 and more!`,
+		date: new Date('2025-09-08T17:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
 		endDate: new Date(semesterEnd),
@@ -46,7 +48,7 @@ const EVENT_INFO: EventObject[] = [
 	{
 		title: 'Weekly Mechanical Meeting',
 		description: 'The weekly meeting for the mechanical sub-team. Learn about the design aspects of robot and 3D model parts.',
-		date: new Date(''),
+		date: new Date('2025-09-02T17:00:00'),
 		location: 'The ideas hub (second floor of the engineering building)',
 		weekly: true,
 		endDate: new Date(semesterEnd),
