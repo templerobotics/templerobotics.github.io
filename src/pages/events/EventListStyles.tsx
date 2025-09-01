@@ -14,9 +14,9 @@ export default class EventListStyles {
 		@media (max-width: 718px) {
 			display: grid;
 			grid-template-columns: 100%;
-			grid-template-rows:
-				calc(var(--vh) * .2)    /* Intro heading */
-				max(calc(var(--vh) * .15), 100px);  /* Contact info */
+			// grid-template-rows:
+			// 	calc(var(--vh) * .2)    /* Intro heading */
+			// 	max(calc(var(--vh) * .15), 100px);  /* Contact info */
 			justify-content: center;
 			align-content: center;
 		}
