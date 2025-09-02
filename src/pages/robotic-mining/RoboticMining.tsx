@@ -52,7 +52,7 @@ const RoboticMining = (): React.ReactElement => {
 					<div className='outreach-slide'>
 						<h2>Centennial FIRST Robotics Competition</h2>
 						<p>
-							Our team members volunteered at the competition by helping to judge matches, track scores, 
+							Our team members volunteered at the competition by helping to judge matches, track scores,
 							and provide support wherever it was needed.
 						</p>
 					</div>
