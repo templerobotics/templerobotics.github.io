@@ -94,14 +94,14 @@ export default class NavigationStyles {
 
 		.dropdown-menu {
 			position: absolute;
-			background-color: ${COLORS.PRIMARY} !important;
+			background-color: ${props => props.transparency ? 'transparent' : `${COLORS.PRIMARY}`} !important; //fix background later
+			transition: background-color 0.5s;
 			padding: 0px 8px 8px 16px;
 			border: none;
 		}
 
 		.dropdown-item {
 			color: ${COLORS.TEXT} !important;
-			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
 			font-size: 15px;
 			border: none;
 			padding: 0px
