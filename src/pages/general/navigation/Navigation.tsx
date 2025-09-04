@@ -63,7 +63,7 @@ const Navigation = (): React.ReactElement => {
 
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse className='basic-navbar-links'>
-					<Styles.NavbarLinks variant='pills' 
+					<Styles.NavbarLinks variant='pills'
 						toggle={width < Constants.MOBILE_SIZE ? 1 : 0}
 						transparency={scroll <= 10 && width > Constants.MOBILE_SIZE ? 1 : 0}>
 						<NavLink eventKey='1' as={Link} to={Constants.PATHS.HOME} onClick={scrollToTop}>Home</NavLink>
