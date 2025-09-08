@@ -94,7 +94,7 @@ export default class NavigationStyles {
 
 		.dropdown-menu {
 			position: absolute;
-			background-color: ${props => props.transparency ? 'transparent' : `${COLORS.PRIMARY}`} !important; //fix background later
+			background-color: ${props => props.transparency ? 'transparent' : `${COLORS.PRIMARY}`} !important;
 			transition: background-color 0.5s;
 			padding: 0px 8px 8px 16px;
 			border: none;
