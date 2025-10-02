@@ -125,9 +125,11 @@ export default class HomeStyles {
 	}
 
 	& > img {
-		justify-self: end;
-		max-width: 100%;              /* never exceed its column */
-		height: auto;                 /* keep aspect ratio on mobile */
+		justify-self: right;
+		max-width: 40%;              /* never exceed its column */
+		height: 40%;                 /* keep aspect ratio on mobile */
+		padding-bottom: 20px;              /* remove overflow-causing margins */
+
 	}
 
 	/* Stack on very small screens to avoid squish */

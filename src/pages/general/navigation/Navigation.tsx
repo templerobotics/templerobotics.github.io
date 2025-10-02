@@ -83,7 +83,7 @@ const Navigation = (): React.ReactElement => {
 							onMouseEnter={handleMouseEnter}
 							onMouseLeave={handleMouseLeave}>
 							<NavDropdown
-								title='Projects'
+								title='Groups'
 								id='projects-dropdown'
 								show={showDropdown}
 								className='nav-link'
