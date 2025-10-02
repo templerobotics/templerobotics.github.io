@@ -2,9 +2,8 @@
 import React from 'react'
 import { AiOutlineDash } from 'react-icons/ai'
 import { ReactComponent as Lockheed } from '../../assets/pics/sponsors/lockheed-martin-logo.svg'
-import { ReactComponent as Nasa } from '../../assets/pics/sponsors/nasa-logo.svg'
+// import { ReactComponent as Nasa } from '../../assets/pics/sponsors/nasa-logo.svg'
 // import { ReactComponent as Arrow } from '../../assets/pics/sponsors/arrow-logo.svg'
-// import { ReactComponent as Amtrack } from '../../assets/pics/sponsors/Amtrack-png.svg'
 import Button from '../general/button/Button'
 //import HStyles from '../home/HomeStyles'
 
@@ -34,9 +33,9 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Current Sponsors</h1>
 			</div>
-			<div className='img-container' style={{background: '#053a92'}}>
+			{/* <div className='img-container' style={{background: '#053a92'}}>
 				<Nasa />
-			</div>
+			</div> */}
 			<div className='img-container' style={{background: 'white'}}>
 				<img src={SponsorImages.HAAS} style={{width: '25%', height: '165%'}}/>
 			</div>
@@ -49,21 +48,6 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' style={{background: 'white'}}>
 				<img src={SponsorImages.Stratasys} style={{width: '40%', height: '70%'}}/>
 			</div>
-			{/* <div className='img-container' id='centered-img'>
-				<h1 className='title'>Previous Sponsors</h1>
-			</div>
-			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.Amtrack} style={{width: '60%'}}/>
-			</div>
-			<div className='img-container' style={{background: 'black'}}>
-				<Arrow />
-			</div>
-			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.hillock} style={{width: '60%'}}/>
-			</div>
-			<div className='img-container' style={{background: 'wihte'}}>
-				 call amtrak image here, make sure it has been transerred into an svg
-			</div> */}
 
 
 			<Contact/>

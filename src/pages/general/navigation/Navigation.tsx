@@ -1,5 +1,5 @@
 // Third party
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Navbar, NavLink, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -21,28 +21,30 @@ const Navigation = (): React.ReactElement => {
 
 	// State for handling dropdown visibility
 	const [showDropdown, setShowDropdown] = useState(false)
-
+	const isDesktop = useMemo(() => {
+		if (typeof window === 'undefined') return false
+		return window.matchMedia('(hover: hover) and (pointer: fine)').matches
+	}, [])
 	// Timeout variable to prevent flickering
 	let hideDropdownTimeout: NodeJS.Timeout
 
 	// Open dropdown when hovering over "Projects"
 	const handleMouseEnter = (): void => {
-		clearTimeout(hideDropdownTimeout) // Cancel hide if mouse enters again
-		setShowDropdown(true)
+		if(isDesktop){
+			clearTimeout(hideDropdownTimeout) // Cancel hide if mouse enters again
+			setShowDropdown(true)
+		}
 	}
 
 	// Close dropdown when mouse leaves (with small delay)
 	const handleMouseLeave = (): void => {
-		hideDropdownTimeout = setTimeout(() => {
-			setShowDropdown(false)
-		}, 400) // Small delay before closing
+		if(isDesktop){
+			hideDropdownTimeout = setTimeout(() => {
+				setShowDropdown(false)
+			}, 400) // Small delay before closing
+		}
 	}
 
-	// Close dropdown when clicking a project
-	const handleItemClick = (): void => {
-		setShowDropdown(false) // Close dropdown when a project is clicked
-		scrollToTop()
-	}
 
 	return (
 		<>
@@ -78,15 +80,20 @@ const Navigation = (): React.ReactElement => {
 								title='Projects'
 								id='projects-dropdown'
 								show={showDropdown}
-								className='nav-link'>
+								className='nav-link'
+								onToggle={(nextShow /* boolean */) => {
+									if (!isDesktop) setShowDropdown(nextShow)
+								}}
+								// Close on any item selection
+								onSelect={() => setShowDropdown(false)}>
 								<div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-									<NavDropdown.Item as={Link} to={Constants.PATHS.ROBOTICS} onClick={handleItemClick}>
+									<NavDropdown.Item eventKey='4' as={Link} to={Constants.PATHS.ROBOTICS} onClick={scrollToTop}>
 										Robotics
 									</NavDropdown.Item>
-									<NavDropdown.Item as={Link} to={Constants.PATHS.ROCKSAT} onClick={handleItemClick}>
+									<NavDropdown.Item eventKey='5' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>
 										RockSat
 									</NavDropdown.Item>
-									<NavDropdown.Item as={Link} to={Constants.PATHS.BALLOONING} onClick={handleItemClick}>
+									<NavDropdown.Item eventKey='6' as={Link} to={Constants.PATHS.BALLOONING} onClick={scrollToTop}>
 										NASA Ballooning
 									</NavDropdown.Item>
 								</div>

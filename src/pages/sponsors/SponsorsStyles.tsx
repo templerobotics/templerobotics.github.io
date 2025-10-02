@@ -5,7 +5,6 @@ export class SponsorImages {
 	static readonly arrow = require('../../assets/pics/sponsors/arrow.png')
 	static readonly nasa = require('../../assets/pics/sponsors/nasa-name.png')
 	static readonly hillock = require('../../assets/pics/sponsors/hillock-anodizing.png')
-	static readonly Amtrack = require('../../assets/pics/sponsors/Amtrak.png')
 	static readonly EastPenn = require('../../assets/pics/sponsors/EastPennManufacturer.jpg')
 	static readonly Stratasys = require('../../assets/pics/sponsors/Stratasys_logo.jpg')
 	static readonly HAAS = require('../../assets/pics/sponsors/GHF_Logo_DarkBackground.png')
