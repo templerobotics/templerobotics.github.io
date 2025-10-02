@@ -16,6 +16,7 @@ export default class HomeStyles {
 			max(calc(var(--vh) * .3), 100px)   		/* Sponsors section heading */
 			max(calc(var(--vh) * .15), 70px);  		/* Contacts */
 		justify-content: center;
+		width: 100%;
 	`
 
 	static readonly TitleContainer = styled.div`
