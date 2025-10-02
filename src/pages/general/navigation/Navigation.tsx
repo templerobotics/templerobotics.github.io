@@ -1,5 +1,5 @@
 // Third party
-import React, { useMemo, useState } from 'react'
+import React, { useState } from 'react'
 import { Navbar, NavLink, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -21,16 +21,22 @@ const Navigation = (): React.ReactElement => {
 
 	// State for handling dropdown visibility
 	const [showDropdown, setShowDropdown] = useState(false)
-	const isDesktop = useMemo(() => {
-		if (typeof window === 'undefined') return false
-		return window.matchMedia('(hover: hover) and (pointer: fine)').matches
-	}, [])
+	// const isDesktop = useMemo(() => {
+	// 	if (typeof window === 'undefined') return false
+	// 	return window.matchMedia('(hover: hover) and (pointer: fine)').matches
+	// }, [])
+
+	const isDesktop = (): boolean => {
+		if(width < Constants.MOBILE_SIZE)
+			return false
+		return true
+	}
 	// Timeout variable to prevent flickering
 	let hideDropdownTimeout: NodeJS.Timeout
 
 	// Open dropdown when hovering over "Projects"
 	const handleMouseEnter = (): void => {
-		if(isDesktop){
+		if(isDesktop()){
 			clearTimeout(hideDropdownTimeout) // Cancel hide if mouse enters again
 			setShowDropdown(true)
 		}
@@ -38,7 +44,7 @@ const Navigation = (): React.ReactElement => {
 
 	// Close dropdown when mouse leaves (with small delay)
 	const handleMouseLeave = (): void => {
-		if(isDesktop){
+		if(isDesktop()){
 			hideDropdownTimeout = setTimeout(() => {
 				setShowDropdown(false)
 			}, 400) // Small delay before closing
@@ -82,7 +88,7 @@ const Navigation = (): React.ReactElement => {
 								show={showDropdown}
 								className='nav-link'
 								onToggle={(nextShow /* boolean */) => {
-									if (!isDesktop) setShowDropdown(nextShow)
+									if (!isDesktop()) setShowDropdown(nextShow)
 								}}
 								// Close on any item selection
 								onSelect={() => setShowDropdown(false)}>
