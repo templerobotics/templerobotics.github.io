@@ -2,9 +2,6 @@ import { render } from '@testing-library/react'
 import React from 'react'
 import App from './App'
 
-test('renders learn react link', () => {
-	render(<App />)
-})
 // Add this before your tests run
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
@@ -19,3 +16,7 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: jest.fn(),
   })),
 });
+
+test('renders learn react link', () => {
+	render(<App />)
+})
