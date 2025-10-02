@@ -17,6 +17,7 @@ export default class HomeStyles {
 			max(calc(var(--vh) * .15), 70px);  		/* Contacts */
 		justify-content: center;
 		width: 100%;
+		overflow-x: hidden; /* guard against any stray overflow */
 	`
 
 	static readonly TitleContainer = styled.div`
@@ -112,20 +113,28 @@ export default class HomeStyles {
 	`
 
 	static readonly VideoSource = styled.div`
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 100%;
-		align-items: center;
-		margin-bottom: calc(var(--vh) * .02);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 0 5%;                 /* replaces child margins */
+	gap: 1rem;                      /* spacing between grid items */
+	margin-bottom: calc(var(--vh) * .02);
 
-		& > * {
-			margin-left: 5%;
-			margin-right: 5%;
-		}
+	& > * {
+		margin: 0;                    /* remove overflow-causing margins */
+	}
 
-		& > img {
-			height: 100%;
-			justify-self: right;
-		}
+	& > img {
+		justify-self: end;
+		max-width: 100%;              /* never exceed its column */
+		height: auto;                 /* keep aspect ratio on mobile */
+	}
+
+	/* Stack on very small screens to avoid squish */
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+	}
 	`
 }
