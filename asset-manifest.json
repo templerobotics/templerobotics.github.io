@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec724494.css",
-    "main.js": "/static/js/main.4d8982d1.js",
+    "main.js": "/static/js/main.448fd885.js",
     "static/js/787.d53c3053.chunk.js": "/static/js/787.d53c3053.chunk.js",
     "static/media/ballooning-vid.mp4": "/static/media/ballooning-vid.30dc5d1ac531f47c8b77.mp4",
     "static/media/Damien_face.png": "/static/media/Damien_face.bf18098d4a7c5d4644e6.png",
@@ -39,6 +39,7 @@
     "static/media/arrow.png": "/static/media/arrow.da4a98c25205e6b2105a.png",
     "static/media/GHF_Logo_DarkBackground.png": "/static/media/GHF_Logo_DarkBackground.569a06398c9df99fdefa.png",
     "static/media/rocksat-2014-2.jpeg": "/static/media/rocksat-2014-2.bfe5545c3f1c206b0396.jpeg",
+    "static/media/ALRO_Logo.png": "/static/media/ALRO_Logo.421e4270d76af5f26e59.png",
     "static/media/club-filing.jpg": "/static/media/club-filing.3b96867d536efd76717d.jpg",
     "static/media/ethernet-screw-up.jpg": "/static/media/ethernet-screw-up.0fc7dff8e79fe4974987.jpg",
     "static/media/nasa.png": "/static/media/nasa.14d078eeb3212dc0108c.png",
@@ -66,11 +67,11 @@
     "static/media/lockheed-martin-logo.svg": "/static/media/lockheed-martin-logo.956dc4685daa4a0d2ea404ebd115d894.svg",
     "index.html": "/index.html",
     "main.ec724494.css.map": "/static/css/main.ec724494.css.map",
-    "main.4d8982d1.js.map": "/static/js/main.4d8982d1.js.map",
+    "main.448fd885.js.map": "/static/js/main.448fd885.js.map",
     "787.d53c3053.chunk.js.map": "/static/js/787.d53c3053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec724494.css",
-    "static/js/main.4d8982d1.js"
+    "static/js/main.448fd885.js"
   ]
 }
