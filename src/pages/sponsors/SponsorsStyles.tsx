@@ -8,6 +8,7 @@ export class SponsorImages {
 	static readonly EastPenn = require('../../assets/pics/sponsors/EastPennManufacturer.jpg')
 	static readonly Stratasys = require('../../assets/pics/sponsors/Stratasys_logo.jpg')
 	static readonly HAAS = require('../../assets/pics/sponsors/GHF_Logo_DarkBackground.png')
+	static readonly ALRO = require('../../assets/pics/sponsors/ALRO_Logo.png')
 }
 
 export default class SponsorsStyles {

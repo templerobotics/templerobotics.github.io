@@ -48,6 +48,9 @@ const Sponsors = (): React.ReactElement => {
 			<div className='img-container' style={{background: 'white'}}>
 				<img src={SponsorImages.Stratasys} style={{width: '40%', height: '70%'}}/>
 			</div>
+			<div className='img-container' style={{background: 'white', height: '50%'}}>
+				<img src={SponsorImages.ALRO} style={{width: '35%', height: '200%'}}/>
+			</div>
 
 
 			<Contact/>
