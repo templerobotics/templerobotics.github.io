@@ -62,6 +62,7 @@ export default class NavigationStyles {
 		& > a.nav-link.active {
 			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
 		}
+		
 
 		& > a.nav-link:hover {
 			color: ${COLORS.HOVER_TEXT} !important;
@@ -86,22 +87,26 @@ export default class NavigationStyles {
 		}
 
 		a.dropdown-toggle {
-			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
+			background-color: ${props => props.toggle ? `${COLORS.BACKGROUND}` : 'transparent'} !important;
 			color: ${COLORS.TEXT} !important;
 			font-size: 17px;
-			padding: 6px 8px 8px 8px;
+			padding-left: 5%;
 		}
 
+		a.dropdown-item.active {
+			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
+		}
+		
 		.dropdown-menu {
 			position: absolute;
-			background-color: ${COLORS.PRIMARY} !important;
+			background-color: ${props => props.transparency ? 'transparent' : `${COLORS.PRIMARY}`} !important;
+			transition: background-color 0.5s;
 			padding: 0px 8px 8px 16px;
 			border: none;
 		}
 
 		.dropdown-item {
 			color: ${COLORS.TEXT} !important;
-			background-color: ${props => props.toggle ? `${COLORS.SELECTED}` : 'transparent'} !important;
 			font-size: 15px;
 			border: none;
 			padding: 0px

@@ -6,14 +6,14 @@ import PhotoGallery from '../general/photo-gallery/PhotoGallery'
 
 export const MEET_THE_TEAM: GalleryImage[] = [
 	{ image: RMC_TEAM[0], title: 'Dr. John Helferty', description: 'Head Advisor' },
-	{ image: RMC_TEAM[1], title: 'Rocco Gruzman', description: 'Robotic\'s President' },
-	{ image: RMC_TEAM[2], title: 'Malin Kussi', description: 'Vice President' },
-	{ image: RMC_TEAM[3], title: 'Jaden Howard', description: 'Electrical Lead' },
+	{ image: RMC_TEAM[1], title: 'Malin Kussi', description: 'Robotic\'s President' },
+	{ image: RMC_TEAM[2], title: 'Guy Porter', description: 'Vice President' },
+	{ image: RMC_TEAM[3], title: 'Damien Ortiz', description: 'Electrical Lead' },
 	{ image: RMC_TEAM[4], title: 'Alessia Smith', description: 'Mechanical Lead' },
-	{ image: RMC_TEAM[5], title: 'Brian Ervin', description: 'Programming Lead' },
-	{ image: RMC_TEAM[6], title: 'Tanishka Shah', description: 'Project Manager' },
-	{ image: RMC_TEAM[7], title: 'Javier Price-Butler', description: 'Chief of Development' },
-	{ image: RMC_TEAM[8], title: 'Jonah Tesler', description: 'Shop Manager' }
+	{ image: RMC_TEAM[5], title: 'Penelope Fulwood', description: 'Programming Lead' },
+	{ image: RMC_TEAM[6], title: 'Javier Price-Butler', description: 'Chief of Development' },
+	{ image: RMC_TEAM[7], title: 'Jaden Peiffer', description: 'Secretary' },
+	{ image: RMC_TEAM[8], title: 'Devin Huynh', description: 'Treasurer' }
 ]
 
 export default class RoboticMiningStyles {

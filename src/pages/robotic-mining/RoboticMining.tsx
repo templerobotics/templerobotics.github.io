@@ -12,9 +12,10 @@ import GALLERY_INFO from '../../data/RoboticsPhotoGalleryInfo'
 // Images
 // import robot from '../../assets/pics/robot/robot-2019.jpg'
 import augerBot from '../../assets/pics/robot/augerbot-promotion.mp4'
-import outreachPhoto1 from '../../assets/pics/outreach/vex.jpeg'
-import outreachPhoto2 from '../../assets/pics/outreach/expo.jpeg'
-import outreachPhoto3 from '../../assets/pics/outreach/interview.jpeg'
+import outreachPhoto1 from '../../assets/pics/photo-gallery/rmc/volunteering-FRC-2025.jpeg'
+import outreachPhoto2 from '../../assets/pics/outreach/vex.jpeg'
+import outreachPhoto3 from '../../assets/pics/outreach/expo.jpeg'
+import outreachPhoto4 from '../../assets/pics/outreach/interview.jpeg'
 import title from '../../assets/pics/logos/robotics-red.png'
 import RmcDescription from './SectionDescription'
 
@@ -43,9 +44,18 @@ const RoboticMining = (): React.ReactElement => {
 
 			<Styles.SpaceBackground>
 				<Styles.MeetTheTeam className='meet-the-team-gallery' galleryInfo={ MEET_THE_TEAM } title={ 'Meet the Team' }/>
-
 				<Styles.OutreachGallery>
 					<h2>Outreach and Events</h2>
+					<div className='outreach-image-container'>
+						<img src={ outreachPhoto1 } />
+					</div>
+					<div className='outreach-slide'>
+						<h2>Centennial FIRST Robotics Competition</h2>
+						<p>
+							Our team members volunteered at the competition by helping to judge matches, track scores,
+							and provide support wherever it was needed.
+						</p>
+					</div>
 					<div className='outreach-slide'>
 						<h2>Vex State Sectionals</h2>
 						<p>
@@ -54,10 +64,10 @@ const RoboticMining = (): React.ReactElement => {
 						</p>
 					</div>
 					<div className='outreach-image-container'>
-						<img src={ outreachPhoto1 } />
+						<img src={ outreachPhoto2 } />
 					</div>
 					<div className='outreach-image-container'>
-						<img src={ outreachPhoto2 } />
+						<img src={ outreachPhoto3 } />
 					</div>
 					<div className='outreach-slide'>
 						<h2>Philadelphia Robotics Expo</h2>
@@ -74,7 +84,7 @@ const RoboticMining = (): React.ReactElement => {
 						</p>
 					</div>
 					<div className='outreach-image-container'>
-						<img src={ outreachPhoto3 }/>
+						<img src={ outreachPhoto4 }/>
 					</div>
 				</Styles.OutreachGallery>
 

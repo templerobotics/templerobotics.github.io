@@ -12,8 +12,8 @@ import Button from '../general/button/Button'
 // Images
 import nasaLogo from '../../assets/pics/logos/nasa.png'
 import HOME_CAROUSEL_INFO from '../../data/HomeCarouselInfo'
-const  TEAMS = `https://teams.microsoft.com/l/team/19%3aeaf903fd81cd48eba95d8e769ed78544%40thread.tacv2/conversations?groupId=8f
-		78ecbb-62f3-4b2c-bda7-7488eca908ee&tenantId=716e81ef-b522-4473-8e31-10bd02ccf6e5`
+const  TEAMS = `https://teams.microsoft.com/l/team/19%3Aeaf903fd81cd48eba95d8e769ed78544%40thread.tacv2/conversations?groupId=8f78ecbb-62f3
+-4b2c-bda7-7488eca908ee&tenantId=716e81ef-b522-4473-8e31-10bd02ccf6e5`
 
 const Home = (): React.ReactElement => {
 	return (

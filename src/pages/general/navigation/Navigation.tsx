@@ -21,28 +21,36 @@ const Navigation = (): React.ReactElement => {
 
 	// State for handling dropdown visibility
 	const [showDropdown, setShowDropdown] = useState(false)
+	// const isDesktop = useMemo(() => {
+	// 	if (typeof window === 'undefined') return false
+	// 	return window.matchMedia('(hover: hover) and (pointer: fine)').matches
+	// }, [])
 
+	const isDesktop = (): boolean => {
+		if(width < Constants.MOBILE_SIZE)
+			return false
+		return true
+	}
 	// Timeout variable to prevent flickering
 	let hideDropdownTimeout: NodeJS.Timeout
 
 	// Open dropdown when hovering over "Projects"
 	const handleMouseEnter = (): void => {
-		clearTimeout(hideDropdownTimeout) // Cancel hide if mouse enters again
-		setShowDropdown(true)
+		if(isDesktop()){
+			clearTimeout(hideDropdownTimeout) // Cancel hide if mouse enters again
+			setShowDropdown(true)
+		}
 	}
 
 	// Close dropdown when mouse leaves (with small delay)
 	const handleMouseLeave = (): void => {
-		hideDropdownTimeout = setTimeout(() => {
-			setShowDropdown(false)
-		}, 400) // Small delay before closing
+		if(isDesktop()){
+			hideDropdownTimeout = setTimeout(() => {
+				setShowDropdown(false)
+			}, 400) // Small delay before closing
+		}
 	}
 
-	// Close dropdown when clicking a project
-	const handleItemClick = (): void => {
-		setShowDropdown(false) // Close dropdown when a project is clicked
-		scrollToTop()
-	}
 
 	return (
 		<>
@@ -63,7 +71,9 @@ const Navigation = (): React.ReactElement => {
 
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse className='basic-navbar-links'>
-					<Styles.NavbarLinks variant='pills' toggle={width < Constants.MOBILE_SIZE ? 1 : 0}>
+					<Styles.NavbarLinks variant='pills'
+						toggle={width < Constants.MOBILE_SIZE ? 1 : 0}
+						transparency={scroll <= 10 && width > Constants.MOBILE_SIZE ? 1 : 0}>
 						<NavLink eventKey='1' as={Link} to={Constants.PATHS.HOME} onClick={scrollToTop}>Home</NavLink>
 						<NavLink eventKey='2' as={Link} to={Constants.PATHS.EVENTS} onClick={scrollToTop}>Events</NavLink>
 						<NavLink eventKey='3' as={Link} to={Constants.PATHS.SPONSORS} onClick={scrollToTop}>Sponsors</NavLink>
@@ -73,18 +83,23 @@ const Navigation = (): React.ReactElement => {
 							onMouseEnter={handleMouseEnter}
 							onMouseLeave={handleMouseLeave}>
 							<NavDropdown
-								title='Projects'
+								title='Groups'
 								id='projects-dropdown'
 								show={showDropdown}
-								className='nav-link'>
+								className='nav-link'
+								onToggle={(nextShow /* boolean */) => {
+									if (!isDesktop()) setShowDropdown(nextShow)
+								}}
+								// Close on any item selection
+								onSelect={() => setShowDropdown(false)}>
 								<div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-									<NavDropdown.Item as={Link} to={Constants.PATHS.ROBOTICS} onClick={handleItemClick}>
+									<NavDropdown.Item eventKey='4' as={Link} to={Constants.PATHS.ROBOTICS} onClick={scrollToTop}>
 										Robotics
 									</NavDropdown.Item>
-									<NavDropdown.Item as={Link} to={Constants.PATHS.ROCKSAT} onClick={handleItemClick}>
+									<NavDropdown.Item eventKey='5' as={Link} to={Constants.PATHS.ROCKSAT} onClick={scrollToTop}>
 										RockSat
 									</NavDropdown.Item>
-									<NavDropdown.Item as={Link} to={Constants.PATHS.BALLOONING} onClick={handleItemClick}>
+									<NavDropdown.Item eventKey='6' as={Link} to={Constants.PATHS.BALLOONING} onClick={scrollToTop}>
 										NASA Ballooning
 									</NavDropdown.Item>
 								</div>
