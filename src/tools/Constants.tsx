@@ -32,14 +32,14 @@ export class COLORS {
 
 export const RMC_TEAM = [
 	require('../assets/pics/team/john-helferty.jpg'),
-	require('../assets/pics/Leads/Malin_face.jpg'),
-	require('../assets/pics/Leads/Guy_face.png'),
-	require('../assets/pics/Leads/Damien_face.png'),
-	require('../assets/pics/Leads/Alessia_face.png'),
-	require('../assets/pics/Leads/Penelope_face.png'),
-	require('../assets/pics/Leads/Javi_face.png'),
-	require('../assets/pics/Leads/Jaden_face.jpeg'),
-	require('../assets/pics/Leads/Devin_face.png')
+	require('../assets/pics/Leads/Damien_Ortiz.jpg'),
+	require('../assets/pics/Leads/Isabelle_Mingo.jpg'),
+	require('../assets/pics/Leads/Esther_Peralta.png'),
+	require('../assets/pics/Leads/Diego_Catala.jpg'),
+	require('../assets/pics/Leads/Thierry_Desormeaux.jpg'),
+	require('../assets/pics/Leads/Sehaj_Varma.jpg'),
+	require('../assets/pics/Leads/Ablante_Fesseha.png')
+
 ]
 
 export const RMC_PHOTO_GALLERY = [

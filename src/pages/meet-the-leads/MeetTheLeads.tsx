@@ -10,14 +10,14 @@ import Contact from '../general/contact/Contact'
 import Styles from './MeetTheLeadsStyles'
 
 // Images
-import JadensFace from '../../assets/pics/Leads/Jaden_face.jpeg'
-import GuysFace from '../../assets/pics/Leads/Guy_face.png'
-import MalinsFace from '../../assets/pics/Leads/Malin_face.jpg'
-import PenelopesFace from '../../assets/pics/Leads/Penelope_face.png'
-import AlessiasFace from '../../assets/pics/Leads/Alessia_face.png'
-import DamiensFace from '../../assets/pics/Leads/Damien_face.png'
-import DevinsFace from '../../assets/pics/Leads/Devin_face.png'
-import JavisFace from '../../assets/pics/Leads/Javi_face.png'
+import IsabellesFace from '../../assets/pics/Leads/Isabelle_Mingo.jpg'
+import DamiensFace from '../../assets/pics/Leads/Damien_Ortiz.jpg'
+import EsthersFace from '../../assets/pics/Leads/Esther_Peralta.png'
+import AblantesFace from '../../assets/pics/Leads/Ablante_Fesseha.png'
+import DiegosFace from '../../assets/pics/Leads/Diego_Catala.jpg'
+import SehajFace from '../../assets/pics/Leads/Sehaj_Varma.jpg'
+import ThierryFace from '../../assets/pics/Leads/Thierry_Desormeaux.jpg'
+
 // a separator is needed for some reason, troubleshoot this or create a very small section div or style this like the robotics page
 //use robotics format
 //bakround is implemented but sections are not made to be compatible, change to gallery sections
@@ -34,73 +34,64 @@ const MeetTheLeads = (): React.ReactElement => {
 					<div className='leads-slide'>
 						<h2>Meet our President!</h2>
 						<p>
-							Malin Kussi
+							Damien Ortiz
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ MalinsFace } />
+						<img src={ DamiensFace } />
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ GuysFace }/>
+						<img src={ IsabellesFace }/>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Vice President!</h2>
 						<p>
-							Guy Porter
+							Isabelle Mingo
 						</p>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Electrical Lead!</h2>
 						<p>
-							Damien Ortiz
+							Esther Peralta
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ DamiensFace }/>
+						<img src={ EsthersFace }/>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ AlessiasFace}/>
+						<img src={ DiegosFace}/>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Mechanical Lead!</h2>
 						<p>
-							Alessia Smith
+							Diego Catala-Velez
 						</p>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Programming Lead!</h2>
 						<p>
-							Penelope Fulwood
+							Thierry Lendell Desormeaux
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ PenelopesFace }/>
-					</div>
-					<div className='Leads-img-container'>
-						<img src={ JavisFace }/>
-					</div>
-					<div className='leads-slide'>
-						<h2>Meet our Chief of Marketing & Development!</h2>
-						<p>
-							Javier Price-Butler
-						</p>
+						<img src={ ThierryFace }/>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Secretary!</h2>
 						<p>
-							Jaden Peiffer
+							Sehaj Varma
 						</p>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ JadensFace }/>
+						<img src={ SehajFace }/>
 					</div>
 					<div className='Leads-img-container'>
-						<img src={ DevinsFace }/>
+						<img src={ AblantesFace }/>
 					</div>
 					<div className='leads-slide'>
 						<h2>Meet our Treasurer!</h2>
 						<p>
-							Devin Huynh
+							Ablante Fesseha
 						</p>
 					</div>
 				</Styles.LeadsGallery>
