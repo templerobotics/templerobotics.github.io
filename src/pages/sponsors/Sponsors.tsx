@@ -2,9 +2,8 @@
 import React from 'react'
 import { AiOutlineDash } from 'react-icons/ai'
 import { ReactComponent as Lockheed } from '../../assets/pics/sponsors/lockheed-martin-logo.svg'
-import { ReactComponent as Nasa } from '../../assets/pics/sponsors/nasa-logo.svg'
-import { ReactComponent as Arrow } from '../../assets/pics/sponsors/arrow-logo.svg'
-import { ReactComponent as Amtrack } from '../../assets/pics/sponsors/Amtrack-png.svg'
+// import { ReactComponent as Nasa } from '../../assets/pics/sponsors/nasa-logo.svg'
+// import { ReactComponent as Arrow } from '../../assets/pics/sponsors/arrow-logo.svg'
 import Button from '../general/button/Button'
 //import HStyles from '../home/HomeStyles'
 
@@ -25,37 +24,33 @@ const Sponsors = (): React.ReactElement => {
 			</Styles.TitleContainer>
 			<Styles.SectionHeader>
 				<div className='button-container'>
-					<Button text='Become a Sponsor' size='large' source={'https://forms.gle/pAfv3VBYJJXooiU38'}/>
-					<Button text='Sponsorship Opportunities' size='large' source={`https://1drv.ms/b/s!Amh3vGk
-					fvOw1c48kx0hFRCY6Hf4?e=OK65qr`}/>
+					{/* <Button text='Become a Sponsor' size='large' source={'https://forms.gle/pAfv3VBYJJXooiU38'}/> */}
+					<Button text='Sponsorship Brochure' size='large' source={`https://1drv.ms/b/c/35ecbc1f69bc7768/
+						EWh3vGkfvOwggDVzAAAAAAABQgeQgMJoYiolYHb4EyP9Vw?e=40IeWm`}/>
+					<Button text='Sponsorship Video' size='large' source={'https://www.youtube.com/watch?v=yWeHy4WY2-Y'}/>
 				</div>
 			</Styles.SectionHeader>
 			<div className='img-container' id='centered-img'>
 				<h1 className='title'>Current Sponsors</h1>
 			</div>
-			<div className='img-container' style={{background: '#053a92'}}>
+			{/* <div className='img-container' style={{background: '#053a92'}}>
 				<Nasa />
-			</div>
+			</div> */}
 			<div className='img-container' style={{background: 'white'}}>
-				<Amtrack/>
+				<img src={SponsorImages.HAAS} style={{width: '25%', height: '165%'}}/>
 			</div>
-
-			<div className='img-container' id='centered-img'>
-				<h1 className='title'>Previous Sponsors</h1>
-			</div>
-
-			<div className='img-container' style={{background: 'white'}}>
+			<div className='img-container' style={{background: 'white', paddingLeft: '80px'}}>
 				<Lockheed />
 			</div>
-			<div className='img-container' style={{background: 'black'}}>
-				<Arrow />
+			<div className='img-container' style={{background: 'white'}}>
+				<img src={SponsorImages.EastPenn} style={{width: '40%', height: '90%'}}/>
 			</div>
 			<div className='img-container' style={{background: 'white'}}>
-				<img src={SponsorImages.hillock} style={{width: '60%'}}/>
+				<img src={SponsorImages.Stratasys} style={{width: '40%', height: '70%'}}/>
 			</div>
-			{/* <div className='img-container' style={{background: 'wihte'}}>
-				 call amtrak image here, make sure it has been transerred into an svg
-			</div> */}
+			<div className='img-container' style={{background: 'white', height: '50%'}}>
+				<img src={SponsorImages.ALRO} style={{width: '35%', height: '200%'}}/>
+			</div>
 
 
 			<Contact/>

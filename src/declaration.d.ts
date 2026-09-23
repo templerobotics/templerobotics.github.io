@@ -1,6 +1,7 @@
 declare module '*.mp4';
 declare module '*.jpg';
 declare module '*.png';
+declare module '*.PNG';
 declare module '*.woff';
 declare module '*.woff2';
 declare module '*.otf';
