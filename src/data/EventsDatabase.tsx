@@ -3,7 +3,6 @@ import { EventObject } from '../tools/CustomTypes'
 const semesterEnd = '12/16/26'
 const EVENT_INFO: EventObject[] = [
 
-	
 	{
 		title: 'Weekly Programming Meeting',
 		description: `The weekly meeting for the programming sub-team. Learn how to program the robot in ROS (Robot Operating System)
@@ -35,10 +34,11 @@ const EVENT_INFO: EventObject[] = [
 		duration: 60 // 1 hour
 	},
 	{
-		title: 'Lockheed Martin Information Session',
-		description: 'Get a chance to gain insights on one of the largest engineering companies in the world and their hiring process.',
-		date: new Date('2026-09-30T17:00:00'),
-		location: 'Fishbowl (College of Engineering EN 102)'
+		title: 'General Body Meeting',
+		description: 'Learn about changes and upcoming workshops.',
+		date: new Date('2026-11-16T17:00:00'),
+		location: 'Fishbowl (College of Engineering EN 102)',
+		duration: 60 // 1 hour
 	}
 ]
 
