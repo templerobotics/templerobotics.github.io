@@ -48,7 +48,6 @@ Once the newest version of `Node.js` is installed, you can install the node pack
 
 ```shell
     npm i
-    
 ```
 
 Your environment should now be set up!

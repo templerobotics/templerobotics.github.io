@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SlideInfo } from '../pages/general/carousel/CarouselStyles'
-import slide1 from '../assets/pics/photo-gallery/rmc/comp-team-2024.jpg'
+import slide1 from '../assets/pics/photo-gallery/rmc/comp-team-2025.jpeg'
 import slide2 from '../assets/pics/carousel/rocksat17.jpeg'
 import slide3 from '../assets/pics/carousel/rmc-team.jpeg'
 import slide4 from '../assets/pics/carousel/balloon-team.jpeg'

@@ -32,17 +32,19 @@ export class COLORS {
 
 export const RMC_TEAM = [
 	require('../assets/pics/team/john-helferty.jpg'),
-	require('../assets/pics/Leads/roccos_face.jpg'),
-	require('../assets/pics/Leads/Malins_face.jpg'),
-	require('../assets/pics/Leads/Jadens_face.jpg'),
-	require('../assets/pics/Leads/Alessia_headshot.png'),
-	require('../assets/pics/Leads/Brian_face.png'),
-	require('../assets/pics/Leads/Tanishkas_face.jpeg'),
-	require('../assets/pics/Leads/Javi_face.png'),
-	require('../assets/pics/Leads/Jonah_Face.jpg')
+	require('../assets/pics/Leads/Damien_Ortiz.jpg'),
+	require('../assets/pics/Leads/Isabelle_Mingo.jpg'),
+	require('../assets/pics/Leads/Esther_Peralta.png'),
+	require('../assets/pics/Leads/Diego_Catala.jpg'),
+	require('../assets/pics/Leads/Thierry_Desormeaux.jpg'),
+	require('../assets/pics/Leads/Sehaj_Varma.jpg'),
+	require('../assets/pics/Leads/Ablante_Fesseha.png')
+
 ]
 
 export const RMC_PHOTO_GALLERY = [
+	require('../assets/pics/photo-gallery/rmc/comp-team-2025.jpeg'),
+	require('../assets/pics/photo-gallery/rmc/volunteering-FRC-2025.jpeg'),
 	require('../assets/pics/photo-gallery/rmc/comp-team-2024.jpg'),
 	require('../assets/pics/photo-gallery/rmc/comp-team-2023.jpg'),
 	require('../assets/pics/photo-gallery/rmc/arena-3.jpeg'),
